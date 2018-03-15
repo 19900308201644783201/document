@@ -1,0 +1,1 @@
+@extends('documents.layouts.master')
