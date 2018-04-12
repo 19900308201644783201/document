@@ -19,6 +19,7 @@
             <ul class="_dropdown-menu">
               <li><router-link :to="{ name: 'lempIndex' }"> <span class="fa fa-caret-right"></span> Lemp</router-link></li>
               <li><router-link :to="{ name: 'lempEnglish' }"> <span class="fa fa-caret-right"></span> Lemp English</router-link></li>
+              <li><router-link :to="{ name: 'lempOnMac' }"> <span class="fa fa-caret-right"></span> Lemp On Mac</router-link></li>
             </ul>
           </li>
 
@@ -28,9 +29,27 @@
               <li><router-link :to="{ name: 'linux' }"> <span class="fa fa-caret-right"></span> Index</router-link></li>
               <li><router-link :to="{ name: 'setupSsh' }"> <span class="fa fa-caret-right"></span> Setup SSH</router-link></li>
               <li><router-link :to="{ name: 'server_permission' }"> <span class="fa fa-caret-right"></span> Permission</router-link></li>
+              <li><router-link :to="{ name: 'cli-in-linux' }"> <span class="fa fa-caret-right"></span> Command line in Linux</router-link></li>
             </ul>
           </li>
-
+          <li class="_dropdown">
+            <a href="#" class="_dropdown-toggle">Mac <span class="fa fa-caret-down"></span></a>
+            <ul class="_dropdown-menu">
+              <li><router-link :to="{ name: 'brew' }"> <span class="fa fa-caret-right"></span> Brew</router-link></li>
+            </ul>
+          </li>
+          <li class="_dropdown">
+            <a href="#" class="_dropdown-toggle">Nginx <span class="fa fa-caret-down"></span></a>
+            <ul class="_dropdown-menu">
+              <li>
+                <router-link :to="{ name: 'nginx' }"> <span class="fa fa-caret-right">Nginx</span></router-link>
+              </li>
+              <li>
+                <router-link :to="{ name: 'install-nginx' }"> <span class="fa fa-caret-right">Install Nginx</span></router-link>
+              </li>
+              <li><router-link :to="{ name: 'create-vitual-nginx'}"><span class="fa fa-caret-right">Install vitual host</span></router-link></li>
+            </ul>
+          </li>
           <li><router-link :to="{ name: 'lempIndex' }">Vultr</router-link></li>
           <li><router-link :to="{ name: 'lempIndex' }">Netword</router-link></li>
         </ul><!-- end ul.navbar-nav -->

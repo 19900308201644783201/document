@@ -7,6 +7,11 @@
       <div class="panel-body">
         <h2>Giới thiệu</h2>
         <p>Một trong những thành phần chính của hệ điều hành Linux là hệ thống quyền hạn truy cập (permission) áp dụng cho mọi đối tượng (file, thư mục, link…). Hệ thống này đóng 1 vai trò quan trọng trong việc đem lại mức an ninh cao cho Linux.</p>
+
+        <p>drwxr-xr-x: chmod 755 directory_name</p>
+        <p>drwxrwxr-x: chmod 775  directory_name</p>
+        <p>sudo chmod 644 *</p>
+        <p><img src="https://i2.wp.com/echip.pro/wp-content/uploads/2016/11/Screenshot-from-2016-11-22-19-01-29.png?resize=363%2C466" alt=""></p>
         
         <h2>Chi tiết</h2>
         <p>Mỗi 1 đối tượng gắn với 3 loại quyền: read (đọc), write (sửa đổi) và execute (thực thi). Và mỗi quyền này lại được chỉ định cho 3 loại user:</p>

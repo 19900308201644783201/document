@@ -4,8 +4,7 @@
       <li><router-link :to="{ name: 'english'}">General</router-link></li>
       <li><router-link :to="{ name: 'english-vocabulary'}">Vocabulary</router-link>
         <ul>
-          <li><router-link :to="{ name: 'pronunciation' }"><i class="fa fa-angle-right leftNavIcon"></i>Vocabulary</router-link></li>
-          <li><router-link :to="{ name: 'pronunciation' }"><i class="fa fa-angle-right leftNavIcon"></i>Vocabulary</router-link></li>
+          <li><router-link :to="{ name: 'english-vocabulary' }"><i class="fa fa-angle-right leftNavIcon"></i>Vocabulary</router-link></li>
         </ul>
       </li>
       <li><router-link :to="{ name: 'pronunciation'}">Pronunciation</router-link></li>
