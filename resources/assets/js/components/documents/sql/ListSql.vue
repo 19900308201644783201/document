@@ -18,7 +18,7 @@
         </div><!-- End post-list-heading -->
         <div class="post-list-heading">
           <h1 class="post-list-title">
-            <router-link :to="{ name: 'b-tree-index-and-hash-index' }">B-tree index an hash index</router-link>
+            <router-link :to="{ name: 'DeepIndexMysql' }">Deep Index Mysql</router-link>
           </h1>
         </div><!-- End post-list-heading -->
       </div><!-- End panel-body -->

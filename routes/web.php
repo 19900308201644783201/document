@@ -18,3 +18,5 @@ Route::get('document', function () {
     return view('documents.index');
 });
 Route::get('exercise', 'ExerciseController@index');
+
+Route::resource('orders', 'OrderController');

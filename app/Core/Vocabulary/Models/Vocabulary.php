@@ -25,6 +25,7 @@ class Vocabulary extends Model
         'en_mean',
         'description',
         'example',
+        'thesaurus'
     ];
 }
 

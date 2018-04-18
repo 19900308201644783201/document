@@ -17,11 +17,12 @@ class CreateVocabularyTable extends Migration
             $table->increments('id');
             $table->string('word');
             $table->string('word_type')->nullable();
-            $table->string('pronunciation');
+            $table->string('pronunciation')->nullable();
             $table->string('en_mean')->nullable();
             $table->string('vn_mean')->nullable();
             $table->text('description')->nullable();
             $table->text('example')->nullable();
+            $table->string('thesaurus')->nullable();
             $table->timestamps();
         });
     }

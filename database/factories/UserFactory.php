@@ -14,10 +14,20 @@ use Faker\Generator as Faker;
 */
 
 $factory->define(App\User::class, function (Faker $faker) {
+    $email = $faker->unique()->safeEmail;
+    $prefix = strstr($email, '@', true);
+    $surffix = strstr($email, '@');
+    $email = $prefix . rand(1, 99999999) . $surffix;
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        'first_name'     => $faker->firstName,
+        'last_name'      => $faker->lastName,
+        'email'          => $email,
+        'dob'            => date('Y-m-d', rand(strtotime('1990-01-01'), strtotime('2000-12-01'))),
+        'address'        => $faker->city,
+        'gender'         => rand(1, 2),
         'remember_token' => str_random(10),
+        'created_at'     => date('Y-m-d'),
+        'updated_at'     => date('Y-m-d')
     ];
 });
+

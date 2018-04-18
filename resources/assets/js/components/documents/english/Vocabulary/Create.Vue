@@ -48,6 +48,13 @@
       </div>
 
       <div class="form-group">
+          <label for="" class="col-sm-2 control-label">Thesaurus</label>
+          <div class="col-sm-10">
+              <input type="text" v-model="vocabulary.thesaurus" class="form-control" placeholder="thesaurus">
+          </div>
+      </div>
+
+      <div class="form-group">
         <label for="" class="col-sm-2 control-label">Description:</label>
         <div class="col-sm-10">
           <input type="text" v-model="vocabulary.description" class="form-control" placeholder="Description">
@@ -87,7 +94,8 @@
                     vn_mean: '',
                     en_mean: '',
                     example: '',
-                    description: ''
+                    description: '',
+                    thesaurus: ''
                 },
                 keyIpas: {},
             }

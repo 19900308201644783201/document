@@ -959,7 +959,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(239);
+var	fixUrls = __webpack_require__(241);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1938,7 +1938,7 @@ var ipaKeys = [{
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(18);
-module.exports = __webpack_require__(244);
+module.exports = __webpack_require__(246);
 
 
 /***/ }),
@@ -1952,10 +1952,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_http__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__static_loader__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sass_meyer_reset_min_css__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__static_loader__ = __webpack_require__(231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sass_meyer_reset_min_css__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sass_meyer_reset_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__sass_meyer_reset_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sass_main_scss__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sass_main_scss__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sass_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__sass_main_scss__);
 
 /**
@@ -44017,8 +44017,8 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_layouts_header_Index__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_layouts_header_Index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_layouts_header_Index__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_layouts_header_HeaderMongo__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_layouts_header_HeaderMongo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_layouts_header_HeaderMongo__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_layouts_footer_Index__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_layouts_footer_Index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_layouts_footer_Index__);
 //
@@ -44032,255 +44032,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+// import headerPage from './components/layouts/header/Index'
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
-        headerPage: __WEBPACK_IMPORTED_MODULE_0__components_layouts_header_Index___default.a,
+        headerPage: __WEBPACK_IMPORTED_MODULE_0__components_layouts_header_HeaderMongo___default.a,
         footerPage: __WEBPACK_IMPORTED_MODULE_1__components_layouts_footer_Index___default.a
     }
 });
 
 /***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(51)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = null
-/* template */
-var __vue_template__ = __webpack_require__(53)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/components/layouts/header/Index.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1f42240d", Component.options)
-  } else {
-    hotAPI.reload("data-v-1f42240d", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(52);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("2a1e87eb", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1f42240d\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue", function() {
-     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1f42240d\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.header-no-margin{\n  margin-bottom: 0;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "nav",
-    { staticClass: "navbar navbar-inverse header-no-margin navbar-fixed-top" },
-    [
-      _c("div", { staticClass: "container-fluid" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("ul", { staticClass: "nav navbar-nav" }, [
-          _c(
-            "li",
-            { staticClass: "active" },
-            [_c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [_c("router-link", { attrs: { to: "/php" } }, [_vm._v("PHP")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("router-link", { attrs: { to: "/english" } }, [
-                _vm._v("English")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("router-link", { attrs: { to: "/laravel" } }, [
-                _vm._v("Laravel")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [_c("router-link", { attrs: { to: "/vue" } }, [_vm._v("Vue")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("router-link", { attrs: { to: "/javascript" } }, [
-                _vm._v("JS")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [_c("router-link", { attrs: { to: "/css" } }, [_vm._v("CSS")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("router-link", { attrs: { to: "/typescript" } }, [
-                _vm._v("TypeScript")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("router-link", { attrs: { to: "/developer" } }, [
-                _vm._v("Developer")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [_c("router-link", { attrs: { to: "/sql" } }, [_vm._v("SQL")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("router-link", { attrs: { to: "/server" } }, [
-                _vm._v("Server")
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [_c("router-link", { attrs: { to: "/git" } }, [_vm._v("Git")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "li",
-            [
-              _c("router-link", { attrs: { to: "/git" } }, [
-                _vm._v("Design Pattern")
-              ])
-            ],
-            1
-          )
-        ])
-      ])
-    ]
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar-header" }, [
-      _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-        _vm._v("Document")
-      ])
-    ])
-  }
-]
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1f42240d", module.exports)
-  }
-}
-
-/***/ }),
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -47159,15 +46925,17 @@ if (inBrowser && window.Vue) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_documents_home__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_documents_home___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_documents_home__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_documents_english_router__ = __webpack_require__(68);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_documents_server_router__ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_documents_developer_router__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_documents_git_router___ = __webpack_require__(173);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_documents_sql_router__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_documents_css_router__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_documents_php_router__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_documents_laravel_router__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_documents_javascript_router__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_documents_vue_router__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_documents_server_router__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_documents_developer_router__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_documents_git_router___ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_documents_sql_router__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_documents_css_router__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_documents_php_router__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_documents_laravel_router__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_documents_javascript_router__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_documents_vue_router__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_documents_mongodb_router__ = __webpack_require__(253);
+
 
 
 
@@ -47184,7 +46952,7 @@ if (inBrowser && window.Vue) {
 
 
 var baseRoutes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_1__components_documents_home___default.a }, { path: '/typescript', component: __WEBPACK_IMPORTED_MODULE_0__components_documents_typescript_index_vue___default.a }];
-var routes = baseRoutes.concat(__WEBPACK_IMPORTED_MODULE_2__components_documents_english_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__components_documents_server_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__components_documents_developer_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_5__components_documents_git_router___["a" /* default */], __WEBPACK_IMPORTED_MODULE_6__components_documents_sql_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_7__components_documents_css_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_8__components_documents_php_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_9__components_documents_laravel_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_10__components_documents_javascript_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_11__components_documents_vue_router__["a" /* default */]);
+var routes = baseRoutes.concat(__WEBPACK_IMPORTED_MODULE_2__components_documents_english_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_3__components_documents_server_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_4__components_documents_developer_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_5__components_documents_git_router___["a" /* default */], __WEBPACK_IMPORTED_MODULE_6__components_documents_sql_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_7__components_documents_css_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_8__components_documents_php_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_9__components_documents_laravel_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_10__components_documents_javascript_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_11__components_documents_vue_router__["a" /* default */], __WEBPACK_IMPORTED_MODULE_12__components_documents_mongodb_router__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (routes);
 
@@ -48736,6 +48504,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -48750,7 +48525,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 vn_mean: '',
                 en_mean: '',
                 example: '',
-                description: ''
+                description: '',
+                thesaurus: ''
             },
             keyIpas: {}
         };
@@ -49019,6 +48795,42 @@ var render = function() {
                 _c(
                   "label",
                   { staticClass: "col-sm-2 control-label", attrs: { for: "" } },
+                  [_vm._v("Thesaurus")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-10" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.vocabulary.thesaurus,
+                        expression: "vocabulary.thesaurus"
+                      }
+                    ],
+                    staticClass: "form-control",
+                    attrs: { type: "text", placeholder: "thesaurus" },
+                    domProps: { value: _vm.vocabulary.thesaurus },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.vocabulary,
+                          "thesaurus",
+                          $event.target.value
+                        )
+                      }
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "form-group" }, [
+                _c(
+                  "label",
+                  { staticClass: "col-sm-2 control-label", attrs: { for: "" } },
                   [_vm._v("Description:")]
                 ),
                 _vm._v(" "),
@@ -49221,6 +49033,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -49235,7 +49054,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 vn_mean: '',
                 en_mean: '',
                 example: '',
-                description: ''
+                description: '',
+                thesaurus: ''
             },
             keyIpas: {}
         };
@@ -49510,6 +49330,38 @@ var render = function() {
               _c(
                 "label",
                 { staticClass: "col-sm-2 control-label", attrs: { for: "" } },
+                [_vm._v("Thesaurus")]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-sm-10" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.vocabulary.thesaurus,
+                      expression: "vocabulary.thesaurus"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", placeholder: "thesaurus" },
+                  domProps: { value: _vm.vocabulary.thesaurus },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.vocabulary, "thesaurus", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c(
+                "label",
+                { staticClass: "col-sm-2 control-label", attrs: { for: "" } },
                 [_vm._v("Description:")]
               ),
               _vm._v(" "),
@@ -49686,6 +49538,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -49697,7 +49556,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 vn_mean: '',
                 en_mean: '',
                 example: '',
-                description: ''
+                description: '',
+                thesaurus: ''
             }
         };
     },
@@ -49920,6 +49780,38 @@ var render = function() {
                       return
                     }
                     _vm.$set(_vm.vocabulary, "example", $event.target.value)
+                  }
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "col-sm-2 control-label", attrs: { for: "" } },
+              [_vm._v("Thesaurus")]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-10" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.vocabulary.thesaurus,
+                    expression: "vocabulary.thesaurus"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: "thesaurus" },
+                domProps: { value: _vm.vocabulary.thesaurus },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.vocabulary, "thesaurus", $event.target.value)
                   }
                 }
               })
@@ -51171,15 +51063,19 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(108)
+}
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(108)
+var __vue_script__ = __webpack_require__(110)
 /* template */
-var __vue_template__ = __webpack_require__(115)
+var __vue_template__ = __webpack_require__(117)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -51215,11 +51111,51 @@ module.exports = Component.exports
 
 /***/ }),
 /* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(109);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("b1dab120", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-45654d75\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-45654d75\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */\n  opacity: 0.5;\n}\n.form-control::-moz-placeholder { /* Firefox 19+ */\n  opacity: 0.5;\n}\n.form-control:-ms-input-placeholder { /* IE 10+ */\n  opacity: 0.5;\n}\n.form-control:-moz-placeholder { /* Firefox 18- */\n  opacity: 0.5;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Sidebar_Index__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Sidebar_Index__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Sidebar_Index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Sidebar_Index__);
 //
 //
@@ -51236,19 +51172,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(110)
+  __webpack_require__(112)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(113)
+var __vue_script__ = __webpack_require__(115)
 /* template */
-var __vue_template__ = __webpack_require__(114)
+var __vue_template__ = __webpack_require__(116)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51287,13 +51223,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(111);
+var content = __webpack_require__(113);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -51313,12 +51249,12 @@ if(false) {
 }
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
 // imports
-exports.i(__webpack_require__(112), "");
+exports.i(__webpack_require__(114), "");
 exports.push([module.i, "@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);", ""]);
 
 // module
@@ -51328,7 +51264,7 @@ exports.push([module.i, "\n", ""]);
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -51342,7 +51278,7 @@ exports.push([module.i, "/* Hide for mobile, show later */\n._sidebar {\n  displ
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51407,7 +51343,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51532,7 +51468,7 @@ if (false) {
 }
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -51557,35 +51493,35 @@ if (false) {
 }
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lemp_index__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lemp_index__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lemp_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__lemp_index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lemp_index_eng__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lemp_index_eng__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lemp_index_eng___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__lemp_index_eng__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lemp_lem_on_mac__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lemp_lem_on_mac__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lemp_lem_on_mac___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__lemp_lem_on_mac__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__linux_index__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__linux_index__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__linux_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__linux_index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linux_ssh__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linux_ssh__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linux_ssh___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__linux_ssh__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linux_permission__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linux_permission__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linux_permission___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__linux_permission__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mac_brew__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mac_brew__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__mac_brew___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__mac_brew__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mac_index__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mac_index__ = __webpack_require__(152);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__mac_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__mac_index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__nginx_InstallNginx__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__nginx_InstallNginx__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__nginx_InstallNginx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__nginx_InstallNginx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nginx__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nginx__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nginx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__nginx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__nginx_CreateVitualHost__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__nginx_CreateVitualHost__ = __webpack_require__(159);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__nginx_CreateVitualHost___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__nginx_CreateVitualHost__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__linux_CliInLinux__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__linux_CliInLinux__ = __webpack_require__(161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__linux_CliInLinux___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__linux_CliInLinux__);
 
 
@@ -51657,15 +51593,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(118)
+var __vue_script__ = __webpack_require__(120)
 /* template */
-var __vue_template__ = __webpack_require__(125)
+var __vue_template__ = __webpack_require__(127)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51704,12 +51640,12 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__side_bar__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__side_bar__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__side_bar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__side_bar__);
 //
 //
@@ -51726,19 +51662,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(120)
+  __webpack_require__(122)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(123)
+var __vue_script__ = __webpack_require__(125)
 /* template */
-var __vue_template__ = __webpack_require__(124)
+var __vue_template__ = __webpack_require__(126)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -51777,13 +51713,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(121);
+var content = __webpack_require__(123);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -51803,12 +51739,12 @@ if(false) {
 }
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
 // imports
-exports.i(__webpack_require__(122), "");
+exports.i(__webpack_require__(124), "");
 
 // module
 exports.push([module.i, "\n", ""]);
@@ -51817,7 +51753,7 @@ exports.push([module.i, "\n", ""]);
 
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -51831,7 +51767,7 @@ exports.push([module.i, "/* Hide for mobile, show later */\n._sidebar {\n  displ
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51921,7 +51857,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -52215,7 +52151,7 @@ if (false) {
 }
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -52240,19 +52176,19 @@ if (false) {
 }
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(127)
+  __webpack_require__(129)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(129)
+var __vue_template__ = __webpack_require__(131)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52291,13 +52227,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(128);
+var content = __webpack_require__(130);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -52317,7 +52253,7 @@ if(false) {
 }
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -52331,7 +52267,7 @@ exports.push([module.i, "\np{\n    line-height: 1.65;\n    color: #0b1a33;\n    
 
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -52676,19 +52612,19 @@ if (false) {
 }
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(131)
+  __webpack_require__(133)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(133)
+var __vue_template__ = __webpack_require__(135)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -52727,13 +52663,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(132);
+var content = __webpack_require__(134);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -52753,7 +52689,7 @@ if(false) {
 }
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -52767,7 +52703,7 @@ exports.push([module.i, "\n.highlight {\n  color: #e94849\n}\n", ""]);
 
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -53659,19 +53595,19 @@ if (false) {
 }
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(135)
+  __webpack_require__(137)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(137)
+var __vue_template__ = __webpack_require__(139)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53710,13 +53646,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(136);
+var content = __webpack_require__(138);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -53736,7 +53672,7 @@ if(false) {
 }
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -53750,7 +53686,7 @@ exports.push([module.i, "\n.highlight {\n  color: #e94849\n}\n", ""]);
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -53871,7 +53807,7 @@ if (false) {
 }
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -53879,7 +53815,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(139)
+var __vue_template__ = __webpack_require__(141)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -53918,7 +53854,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -53951,19 +53887,19 @@ if (false) {
 }
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(141)
+  __webpack_require__(143)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(143)
+var __vue_template__ = __webpack_require__(145)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -54002,13 +53938,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(142);
+var content = __webpack_require__(144);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -54028,7 +53964,7 @@ if(false) {
 }
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -54042,7 +53978,7 @@ exports.push([module.i, "\n.highlight{\n  color: red;\n}\n", ""]);
 
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -55094,19 +55030,19 @@ if (false) {
 }
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(145)
+  __webpack_require__(147)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(147)
+var __vue_template__ = __webpack_require__(149)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -55145,13 +55081,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(146);
+var content = __webpack_require__(148);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -55171,7 +55107,7 @@ if(false) {
 }
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -55185,7 +55121,7 @@ exports.push([module.i, "\nstrong {\n  color: #c72020;\n}\n.label-span {\n  font
 
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -55529,7 +55465,7 @@ if (false) {
 }
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -55537,7 +55473,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(149)
+var __vue_template__ = __webpack_require__(151)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -55576,7 +55512,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -55659,7 +55595,7 @@ if (false) {
 }
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var normalizeComponent = __webpack_require__(0)
@@ -55689,7 +55625,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -55697,7 +55633,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(152)
+var __vue_template__ = __webpack_require__(154)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -55736,7 +55672,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -55807,19 +55743,19 @@ if (false) {
 }
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(154)
+  __webpack_require__(156)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(156)
+var __vue_template__ = __webpack_require__(158)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -55858,13 +55794,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(155);
+var content = __webpack_require__(157);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -55884,7 +55820,7 @@ if(false) {
 }
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -55898,7 +55834,7 @@ exports.push([module.i, "\n.red {\n  color:red;\n}\n", ""]);
 
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -56066,7 +56002,7 @@ if (false) {
 }
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -56074,7 +56010,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(158)
+var __vue_template__ = __webpack_require__(160)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -56113,7 +56049,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 158 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -56374,7 +56310,7 @@ if (false) {
 }
 
 /***/ }),
-/* 159 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -56382,7 +56318,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(160)
+var __vue_template__ = __webpack_require__(162)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -56421,7 +56357,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 160 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -56508,19 +56444,19 @@ if (false) {
 }
 
 /***/ }),
-/* 161 */
+/* 163 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listDeveloper__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listDeveloper__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listDeveloper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__listDeveloper__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SkillWebDeveloper__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SkillWebDeveloper__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SkillWebDeveloper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__SkillWebDeveloper__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exercise_general_Index__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exercise_general_Index__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__exercise_general_Index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__exercise_general_Index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__exercise_algorithm_Index__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__exercise_algorithm_Index__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__exercise_algorithm_Index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__exercise_algorithm_Index__);
 
 
@@ -56553,15 +56489,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(163)
+var __vue_script__ = __webpack_require__(165)
 /* template */
-var __vue_template__ = __webpack_require__(164)
+var __vue_template__ = __webpack_require__(166)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -56600,7 +56536,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -56616,7 +56552,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 164 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -56636,7 +56572,7 @@ if (false) {
 }
 
 /***/ }),
-/* 165 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -56644,7 +56580,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(166)
+var __vue_template__ = __webpack_require__(168)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -56683,7 +56619,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 166 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -56761,7 +56697,7 @@ if (false) {
 }
 
 /***/ }),
-/* 167 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -56769,7 +56705,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(168)
+var __vue_template__ = __webpack_require__(170)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -56808,7 +56744,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 168 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -57141,7 +57077,7 @@ if (false) {
 }
 
 /***/ }),
-/* 169 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -57149,7 +57085,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(170)
+var __vue_template__ = __webpack_require__(172)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -57188,7 +57124,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 170 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -57502,7 +57438,7 @@ if (false) {
 }
 
 /***/ }),
-/* 171 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -57510,7 +57446,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(172)
+var __vue_template__ = __webpack_require__(174)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -57549,7 +57485,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 172 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -57678,17 +57614,17 @@ if (false) {
 }
 
 /***/ }),
-/* 173 */
+/* 175 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListGits__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListGits__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListGits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ListGits__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__GithubUsingSSH__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__GithubUsingSSH__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__GithubUsingSSH___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__GithubUsingSSH__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__GithubUsingSSHMultipleAccount__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__GithubUsingSSHMultipleAccount__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__GithubUsingSSHMultipleAccount___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__GithubUsingSSHMultipleAccount__);
 
 
@@ -57716,15 +57652,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 174 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(175)
+var __vue_script__ = __webpack_require__(177)
 /* template */
-var __vue_template__ = __webpack_require__(176)
+var __vue_template__ = __webpack_require__(178)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -57763,7 +57699,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 175 */
+/* 177 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57780,7 +57716,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -57800,7 +57736,7 @@ if (false) {
 }
 
 /***/ }),
-/* 177 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -57808,7 +57744,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(178)
+var __vue_template__ = __webpack_require__(180)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -57847,7 +57783,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 178 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -57914,19 +57850,19 @@ if (false) {
 }
 
 /***/ }),
-/* 179 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(180)
+  __webpack_require__(182)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(182)
+var __vue_template__ = __webpack_require__(184)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -57965,13 +57901,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 180 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(181);
+var content = __webpack_require__(183);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -57991,7 +57927,7 @@ if(false) {
 }
 
 /***/ }),
-/* 181 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -58005,7 +57941,7 @@ exports.push([module.i, "\np{\n  line-height: 1.65;\n  color: #0b1a33;\n  font-s
 
 
 /***/ }),
-/* 182 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -58228,7 +58164,7 @@ if (false) {
 }
 
 /***/ }),
-/* 183 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -58236,7 +58172,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(184)
+var __vue_template__ = __webpack_require__(186)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -58275,7 +58211,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 184 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -58575,18 +58511,21 @@ if (false) {
 }
 
 /***/ }),
-/* 185 */
+/* 187 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(188);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bTreeAndHashIndex__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bTreeAndHashIndex__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__bTreeAndHashIndex___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__bTreeAndHashIndex__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MysqlAndMongoDB__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MysqlAndMongoDB__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__MysqlAndMongoDB___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__MysqlAndMongoDB__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ListSql__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ListSql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__ListSql__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DeepIndexMysql__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__DeepIndexMysql___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__DeepIndexMysql__);
+
 
 
 
@@ -58611,19 +58550,23 @@ if (false) {
     path: 'mongodb-and-mysql',
     name: 'mongodb-and-mysql',
     component: __WEBPACK_IMPORTED_MODULE_2__MysqlAndMongoDB___default.a
+  }, {
+    path: 'deep-index-mysql',
+    name: 'DeepIndexMysql',
+    component: __WEBPACK_IMPORTED_MODULE_4__DeepIndexMysql___default.a
   }]
 }]);
 
 /***/ }),
-/* 186 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(187)
+var __vue_script__ = __webpack_require__(189)
 /* template */
-var __vue_template__ = __webpack_require__(188)
+var __vue_template__ = __webpack_require__(190)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -58662,7 +58605,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 187 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58678,7 +58621,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 188 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -58698,7 +58641,7 @@ if (false) {
 }
 
 /***/ }),
-/* 189 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -58706,7 +58649,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(190)
+var __vue_template__ = __webpack_require__(192)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -58745,7 +58688,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 190 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -58856,14 +58799,10 @@ if (false) {
 }
 
 /***/ }),
-/* 191 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(192)
-}
 var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
@@ -58872,7 +58811,7 @@ var __vue_template__ = __webpack_require__(194)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -58907,46 +58846,6 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 192 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(193);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(2)("22de1563", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4de550c4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MysqlAndMongoDB.vue", function() {
-     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-4de550c4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./MysqlAndMongoDB.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 193 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(1)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.comment {\n    color:red;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
 /* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -58961,366 +58860,584 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-10 col-md-offset-2 main" }, [
-      _c("div", { staticClass: "panel panel-default" }, [
-        _c("div", { staticClass: "panel-heading" }, [
-          _c("h1", { staticClass: "text-center" }, [
-            _vm._v("Mysql and MongoDB")
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          { staticClass: "col-xl-9 offset-xl-0 col-lg-10 offset-lg-1" },
+          [
+            _c("div", { staticClass: "post-content-wrapper" }, [
+              _c("div", { staticClass: "post-meta" }, [
+                _c("h1", { staticClass: "is-markdown-title" }, [
+                  _vm._v("Introduce About SCSS")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-contents post-content" }, [
+                _c("h2", [_vm._v("MongoDB là gì?")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "- MongoDB là một hệ quản trị cơ sở dữ liệu mã nguồn mở được viết bằng C++ thuộc NoSQL. Nó được thiết kế theo kiểu hướng đối tượng, các bảng trong MongoDB được cấu trúc rất linh hoạt, cho phép các dữ liệu lưu trữ trên bảng không cần tuân theo một cấu trúc nhất định nào cả (điều này rất thích hợp để làm big data)."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "- MongoDB lưu trữ dữ liệu theo hướng tài liệu (document), các dữ liệu được lưu trữ trong document kiểu JSON nên truy vấn sẽ rất nhanh."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Nếu như bạn biết sử dụng JSON thì trong MongoDB cũng có cấu trúc lưu trữ tương tự, chính vì thế nó có hiệu suất cao, tương tác nhanh và khả năng mở rộng tốt"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Database là gì?")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Database là gì?\n        Database là một Ô chứa dữ liệu ở mức vật lý (physical), mỗi database sẽ có nhiều collection và được thiết lập lưu trữ ở một nơi trong máy chủ máy tính. Một máy chủ MongoDB thường có thể tạo nhiều cơ sở dữ liệu."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Collection là gì?")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Collection trong MongoDB là nhóm các tài liệu (document), nó tương đương với một bảng (table) trong CSDL thông thường nên mỗi collection sẽ thuộc về một database duy nhất. Tuy nhiên nó có một sực khác biệt đó là nó không có ràng buộc Relationship như các hệ quản trị CSDL khác nên việc truy xuất rất nhanh, chính vì thế mỗi collection có thể chứa nhiều thể loại khác nhau không giống như table trong hệ quản trị mysql là các field cố định."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Document là gì?")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Document trong MongoDB có cấu trúc tương tự như kiểu dữ liệu JSON, nghĩa là sẽ có các cặp (key => giá trị) nên nó có tính năng động rất lớn. Document ta có thể hiểu nó giống như các record dữ liệu trong MYSQL, tuy nhiên nó có sự khác biệt là các cặp (key => value) có thể không giống nhau ở mỗi document. "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Các lưu ý khi thiết kế lược đồ MongoDB")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Khi thiết kế CSDL thì MongoDB không giống như trong MySQL nên cần cân nhắc "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v("Cấu trúc theo yêu cầu của người dùng (khách hàng)")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Kết hợp chung vào chung một document nếu nó có dính líu với nhau. Nếu không tách chúng ra và truy vấn nhiều lần để lấy kết quả theo mong muốn"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Dupplicate data (nhân đôi dữ liệu) ở mức hạn chế vì năm 2015 vấn đề dung lượng lưu trữ không quan trọng nữa mà họ chỉ quan tâm tới tốc độ truy vấn"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Thực hiện JOIN trong khi insert, không thể JOIN khi select được."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Tối ưu hóa CSDL cho các trường hợp thường xuyên sử dụng"
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Ưu điểm của mongoDB")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "Schema linh hoạt: Do MongoDB sử dụng lưu trữ dữ liệu dưới dạng Document JSON nên mỗi một collection sẽ các các kích cỡ và các document khác nhau"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Cấu trúc đối tượng rõ ràng: Tuy rằng cấu trúc của dữ liệu là linh hoạt nhưng đối tượng của nó được xác định rất rõ ràng."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v("ử dụng bộ nhớ nội tại, nên truy vấn sẽ rất nhanh")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("MongoDB rất dễ mở rộng.")]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Không có các join: Điều này cũng góp phần tạo nên tốc độ truy vấn cực nhanh trên mongoDB."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v("MongoDB phù hợp cho các ứng dụng realtime.")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Nhược điểm của mongoDB")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "MongoDB không có các tính chất ràng buộc như trong RDBMS nên khi thao tác với mongoDB thì phải hết sức cẩn thận"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "MongoDB sử dụng sẽ hao tốn tài nguyên của hệ thống nhiều hơn RDBMS. Nhưng đến thời điểm hiện tại thì vấn đề này không còn là điều lo ngại nữa (Máy giờ trâu bò lắm rồi)"
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Khi nào sử dụng MongoDB")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "MongoDB thật sự rất hot nhưng không phải lúc nào ta sử dụng nó cũng tốt, có những trường hợp không nên sử dụng và nên sử dụng, chi tiết thế nào thì chúng ta cùng thảo luận nhé"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "- Nếu website của bạn có tính chất INSERT cao, bởi vì mặc định MongoDB có sẵn cơ chế ghi với tốc độ cao và an toàn."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "- Website của bạn ở dạng thời gian thực nhiều, nghĩa là nhiều người thao tác với ứng dung. Nếu trong quá trình load bị lỗi tại một điểm nào đó thì nó sẽ bỏ qua phần đó nên sẽ an toàn"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "- Website bạn có nhiều dữ liệu quá, giả sử web bạn có đến 10 triệu records thì đó là cơn ác mộng với MYSQL. Bởi vì MongoDB có khả năng tìm kiến thông tin liên quan cũng khá nhanh nên trường hợp này nên dùng nó."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "- Máy chủ không có hệ quản trị CSDL, trường hợp này thường bạn sẽ sử dụng SQLITE hoặc là MongoDB"
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("So sánh Mysql and MongoDB")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Trong các loại RDBMS đều có khái niệm table (bảng) và mỗi table sẽ có các thông tin (column) xác định, có nghĩa bạn không thể chỉnh sửa cấu trúc lưu trữ của một table được. \n        Nhưng với MongoDB thì lại khác, các collection (table trong MySQL) lưu trữ trong MongoDB có sự linh động và cấu trúc có thể khác nhau, nghĩa là một collection bạn có thể lưu hai loại dữ liệu hoàn toàn khác nhau (theo node)."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Thiết kế trong Mysql and MongoDB")]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("Trường hợp RDBMS: ")]),
+                  _vm._v(
+                    " có các table, nên khi truy vấn ta sẽ join các bảng lại với nhau để lấy thông tin"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v("\n"),
+                    _c("span", [
+                      _vm._v(
+                        "- posts(id, title, description, url, likes, post_by)"
+                      )
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", [_vm._v("- tag_list(id, post_id, tag)")]),
+                    _vm._v("\n"),
+                    _c("span", [
+                      _vm._v(
+                        "- comment(id, post_id, by_user, message, data_time, likes)"
+                      )
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("Trường hợp MongoDB")]),
+                  _vm._v(
+                    ": Ta sẽ có 1 collection tên post có cấu trúc như sau:"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v("\n{\n   "),
+                    _c("span", [_vm._v("_id: ObjectId(7df78ad8902c)")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("title: 'What is the MongoDb',")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("description: 'MongoDB  NO-SQL',")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("by: POST_BY,")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("url: URL_OF_POST,")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("tags: [TAG1, TAG2, TAG3],")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("likes: TOTAL_LIKES,")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("comments: [")]),
+                    _vm._v("\n      {\n         "),
+                    _c("span", [_vm._v("user:'COMMENT_BY',")]),
+                    _vm._v("\n         "),
+                    _c("span", [_vm._v("message: TEXT,")]),
+                    _vm._v("\n         "),
+                    _c("span", [_vm._v("dateCreated: DATE_TIME,")]),
+                    _vm._v("\n         "),
+                    _c("span", [_vm._v("like: 1")]),
+                    _vm._v("\n      },\n      {\n         "),
+                    _c("span", [_vm._v("user:'COMMENT_BY',")]),
+                    _vm._v("\n         "),
+                    _c("span", [_vm._v("message: TEXT,")]),
+                    _vm._v("\n         "),
+                    _c("span", [_vm._v("dateCreated: DATE_TIME,")]),
+                    _vm._v("\n         "),
+                    _c("span", [_vm._v("like: 2")]),
+                    _vm._v("\n      }\n   ]\n}          \n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Trong đó ta thấy key _id là do hệ thống tự tạo ra một field như vậy làm khóa chính. Đây là cấu trúc của một mẫu document trong MongoDB, như vậy khi có thêm comment thì ta sẽ thêm nó vào phần comment của tin."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [_c("strong", [_vm._v("Trường hợp RDBMS: ")])]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v("\n"),
+                    _c("span", [_vm._v("- product(id, name, price, status)")]),
+                    _vm._v("\n"),
+                    _c("span", [
+                      _vm._v("- product_image(id, image_path, product_id)")
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("Trường hợp MongoDB")]),
+                  _vm._v(
+                    ": Ta sẽ có 1 collection tên product có cấu trúc như sau:"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v("\n{\n   "),
+                    _c("span", [_vm._v("_id: ObjectId(7df78ad8902c)")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("name: 'product name',")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("price: 50000,")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("status: 0,")]),
+                    _vm._v("\n   "),
+                    _c("span", [_vm._v("image: [")]),
+                    _vm._v("\n      "),
+                    _c("span", [_vm._v('{"image_path": "image url1"},')]),
+                    _vm._v("\n      "),
+                    _c("span", [_vm._v('{"image_path": "image url2"},')]),
+                    _vm._v("\n      "),
+                    _c("span", [_vm._v('{"image_path": "image url3"},')]),
+                    _vm._v("\n   ]\n}\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [_c("strong", [_vm._v("Trường hợp MongoDB")])]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v("\n{\n  "),
+                    _c("span", [_vm._v('"_id": 1001,')]),
+                    _vm._v("\n  "),
+                    _c("span", [_vm._v("\"title\": 'welcome to MongoDB',")]),
+                    _vm._v("\n  "),
+                    _c("span", [_vm._v('"course_id": 1,')]),
+                    _vm._v("\n  "),
+                    _c("span", [_vm._v('"duration_in_sec": 1707,')]),
+                    _vm._v("\n  "),
+                    _c("span", [_vm._v('"lectures": [')]),
+                    _vm._v("\n    {\n      "),
+                    _c("span", [_vm._v('"id": 10101,')]),
+                    _vm._v("\n      "),
+                    _c("span", [
+                      _vm._v('"title": "welcome and thanks for comming",')
+                    ]),
+                    _vm._v("\n      "),
+                    _c("span", [
+                      _vm._v(
+                        '"video_url": "https://s3.amazonaws.com/../welcome.mp4",'
+                      )
+                    ]),
+                    _vm._v("\n      "),
+                    _c("span", [_vm._v('"duration_in_sec": 380')]),
+                    _vm._v("\n    },\n    {\n      "),
+                    _c("span", [_vm._v('"id": 10102,')]),
+                    _vm._v("\n      "),
+                    _c("span", [_vm._v('"title": "Lynux install MongoBD",')]),
+                    _vm._v("\n      "),
+                    _c("span", [
+                      _vm._v(
+                        '"video_url": "https://s3.amazonaws.com/../install mongoDB.mp4",'
+                      )
+                    ]),
+                    _vm._v("\n      "),
+                    _c("span", [_vm._v('"duration_in_sec": 307')]),
+                    _vm._v("\n    }\n  ]\n}\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [
+                    _vm._v("In RDBMS: How do we model with documents?")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v("\n"),
+                    _c("span", [
+                      _vm._v("Book: id, title, ISBN, published, [publish_id]")
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", [_vm._v("Publisher: id, name, founded")]),
+                    _vm._v("\n"),
+                    _c("span", [_vm._v("User: id, email, created")]),
+                    _vm._v("\n"),
+                    _c("span", [
+                      _vm._v("Rating: id, [user_id], [book_id], value")
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Cấu trúc Mysql and MongoDB")]),
+                _vm._v(" "),
+                _c("table", { staticClass: "table table-striped" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v("Mysql")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("MongoDB")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [_vm._v("database")]),
+                      _c("td", [_vm._v("database")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("table")]),
+                      _c("td", [_vm._v("collection")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Row/")]),
+                      _c("td", [_vm._v("Document")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("column")]),
+                      _c("td", [_vm._v("field")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Table Join")]),
+                      _c("td", [_vm._v("Embedded Documents")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Primary Key")]),
+                      _c("td", [_vm._v("Primary Key (mặc định là _id)")])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Các lệnh trong MongoDB")]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v("\nuse DB_NAME "),
+                    _c("span", { staticClass: "comment" }, [
+                      _vm._v("// use database")
+                    ]),
+                    _vm._v("\ndb "),
+                    _c("span", { staticClass: "comment" }, [
+                      _vm._v("// check database is using")
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "comment" }, [
+                      _vm._v(
+                        "Lưu ý trong mysql dùng dấu `;` để ngăn cách 2 dòng lệnh, nhưng trong mongoDB thì không sử dụng"
+                      )
+                    ]),
+                    _vm._v("\nshow dbs "),
+                    _c("span", { staticClass: "comment" }, [
+                      _vm._v("// Show list databases")
+                    ]),
+                    _vm._v(
+                      "\nuse freetutsdb db.dropDatabase()  // thực hiện 2 lệnh này để xoá db đang sử dụng\n"
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Insert Documents")]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("db.collection.insertOne()")]),
+                  _vm._v(" Insert a document into collection")
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [_vm._v("\ndb.collection.insertOne(\n)\n")])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("db.collection.insertMany()")]),
+                  _vm._v(
+                    " can insert multiple documents into collection. Pass an array of documents to the method."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "The following example inserts new documents into the inventory collection:"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", [
+                    _vm._v(
+                      'db.inventory.insertMany([\n   // MongoDB adds the _id field with an ObjectId if _id is not present\n   { item: "journal", qty: 25, status: "A",\n       size: { h: 14, w: 21, uom: "cm" }, tags: [ "blank", "red" ] },\n   { item: "notebook", qty: 50, status: "A",\n       size: { h: 8.5, w: 11, uom: "in" }, tags: [ "red", "blank" ] },\n   { item: "paper", qty: 100, status: "D",\n       size: { h: 8.5, w: 11, uom: "in" }, tags: [ "red", "blank", "plain" ] }\n]);\n'
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("1.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("2.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("3.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 hidden-lg-down d-flex" }, [
+          _c("div", { staticClass: "post-sidebar flexbox" }, [
+            _c("div", { staticClass: "js-sidebar" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "sidebar-sticky sidebar-content-wrapper docked top"
+                },
+                [
+                  _c("div", { staticClass: "sidebar-content" }, [
+                    _c("div", { staticClass: "post-index" }, [
+                      _c("div", { staticClass: "section-title-line" }, [
+                        _c("h4", { staticClass: "text-uppercase" }, [
+                          _vm._v("Index")
+                        ]),
+                        _vm._v(" "),
+                        _c("hr", { staticClass: "filler-line" })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "ul",
+                        {
+                          staticClass: "post-toc nav",
+                          attrs: { id: "markdown-toc" }
+                        },
+                        [
+                          _c(
+                            "li",
+                            { staticClass: "nav-item index-item-level-2" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "post-toc-link nav-link active",
+                                  attrs: { href: "#vay-thi-svg-la-cai-gi-0" }
+                                },
+                                [_vm._v("Vậy thì... SVG là cái gì?")]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item index-item-level-3" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "post-toc-link nav-link",
+                                  attrs: {
+                                    href: "#bao-dam-chat-luong-hinh-anh-2"
+                                  }
+                                },
+                                [_vm._v("Bảo đảm chất lượng hình ảnh")]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "panel-body" }, [
-          _c("h2", [_vm._v("MongoDB là gì?")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "- MongoDB là một hệ quản trị cơ sở dữ liệu mã nguồn mở được viết bằng C++ thuộc NoSQL. Nó được thiết kế theo kiểu hướng đối tượng, các bảng trong MongoDB được cấu trúc rất linh hoạt, cho phép các dữ liệu lưu trữ trên bảng không cần tuân theo một cấu trúc nhất định nào cả (điều này rất thích hợp để làm big data)."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "- MongoDB lưu trữ dữ liệu theo hướng tài liệu (document), các dữ liệu được lưu trữ trong document kiểu JSON nên truy vấn sẽ rất nhanh."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Nếu như bạn biết sử dụng JSON thì trong MongoDB cũng có cấu trúc lưu trữ tương tự, chính vì thế nó có hiệu suất cao, tương tác nhanh và khả năng mở rộng tốt"
-            )
-          ]),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Database là gì?")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Database là gì?\n        Database là một Ô chứa dữ liệu ở mức vật lý (physical), mỗi database sẽ có nhiều collection và được thiết lập lưu trữ ở một nơi trong máy chủ máy tính. Một máy chủ MongoDB thường có thể tạo nhiều cơ sở dữ liệu."
-            )
-          ]),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Collection là gì?")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Collection trong MongoDB là nhóm các tài liệu (document), nó tương đương với một bảng (table) trong CSDL thông thường nên mỗi collection sẽ thuộc về một database duy nhất. Tuy nhiên nó có một sực khác biệt đó là nó không có ràng buộc Relationship như các hệ quản trị CSDL khác nên việc truy xuất rất nhanh, chính vì thế mỗi collection có thể chứa nhiều thể loại khác nhau không giống như table trong hệ quản trị mysql là các field cố định."
-            )
-          ]),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Document là gì?")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Document trong MongoDB có cấu trúc tương tự như kiểu dữ liệu JSON, nghĩa là sẽ có các cặp (key => giá trị) nên nó có tính năng động rất lớn. Document ta có thể hiểu nó giống như các record dữ liệu trong MYSQL, tuy nhiên nó có sự khác biệt là các cặp (key => value) có thể không giống nhau ở mỗi document. "
-            )
-          ]),
-          _vm._v(" "),
-          _c("h2", [_vm._v("Các lưu ý khi thiết kế lược đồ MongoDB")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Khi thiết kế CSDL thì MongoDB không giống như trong MySQL nên cần cân nhắc "
-            )
-          ]),
-          _vm._v(" "),
-          _c("ul", [
-            _c("li", [
-              _vm._v("Cấu trúc theo yêu cầu của người dùng (khách hàng)")
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "Kết hợp chung vào chung một document nếu nó có dính líu với nhau. Nếu không tách chúng ra và truy vấn nhiều lần để lấy kết quả theo mong muốn"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "Dupplicate data (nhân đôi dữ liệu) ở mức hạn chế vì năm 2015 vấn đề dung lượng lưu trữ không quan trọng nữa mà họ chỉ quan tâm tới tốc độ truy vấn"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "Thực hiện JOIN trong khi insert, không thể JOIN khi select được."
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v("Tối ưu hóa CSDL cho các trường hợp thường xuyên sử dụng")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("h2", [_vm._v("Ưu điểm của mongoDB")]),
-          _vm._v(" "),
-          _c("ul", [
-            _c("li", [
-              _vm._v(
-                "Schema linh hoạt: Do MongoDB sử dụng lưu trữ dữ liệu dưới dạng Document JSON nên mỗi một collection sẽ các các kích cỡ và các document khác nhau"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "Cấu trúc đối tượng rõ ràng: Tuy rằng cấu trúc của dữ liệu là linh hoạt nhưng đối tượng của nó được xác định rất rõ ràng."
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v("ử dụng bộ nhớ nội tại, nên truy vấn sẽ rất nhanh")
-            ]),
-            _vm._v(" "),
-            _c("li", [_vm._v("MongoDB rất dễ mở rộng.")]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "Không có các join: Điều này cũng góp phần tạo nên tốc độ truy vấn cực nhanh trên mongoDB."
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [_vm._v("MongoDB phù hợp cho các ứng dụng realtime.")])
-          ]),
-          _vm._v(" "),
-          _c("h2", [_vm._v("Nhược điểm của mongoDB")]),
-          _vm._v(" "),
-          _c("ul", [
-            _c("li", [
-              _vm._v(
-                "MongoDB không có các tính chất ràng buộc như trong RDBMS nên khi thao tác với mongoDB thì phải hết sức cẩn thận"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "MongoDB sử dụng sẽ hao tốn tài nguyên của hệ thống nhiều hơn RDBMS. Nhưng đến thời điểm hiện tại thì vấn đề này không còn là điều lo ngại nữa (Máy giờ trâu bò lắm rồi)"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("h2", [_vm._v("Khi nào sử dụng MongoDB")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "MongoDB thật sự rất hot nhưng không phải lúc nào ta sử dụng nó cũng tốt, có những trường hợp không nên sử dụng và nên sử dụng, chi tiết thế nào thì chúng ta cùng thảo luận nhé"
-            )
-          ]),
-          _vm._v(" "),
-          _c("ul", [
-            _c("li", [
-              _vm._v(
-                "- Nếu website của bạn có tính chất INSERT cao, bởi vì mặc định MongoDB có sẵn cơ chế ghi với tốc độ cao và an toàn."
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "- Website của bạn ở dạng thời gian thực nhiều, nghĩa là nhiều người thao tác với ứng dung. Nếu trong quá trình load bị lỗi tại một điểm nào đó thì nó sẽ bỏ qua phần đó nên sẽ an toàn"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "- Website bạn có nhiều dữ liệu quá, giả sử web bạn có đến 10 triệu records thì đó là cơn ác mộng với MYSQL. Bởi vì MongoDB có khả năng tìm kiến thông tin liên quan cũng khá nhanh nên trường hợp này nên dùng nó."
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "- Máy chủ không có hệ quản trị CSDL, trường hợp này thường bạn sẽ sử dụng SQLITE hoặc là MongoDB"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("h2", [_vm._v("So sánh Mysql and MongoDB")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Trong các loại RDBMS đều có khái niệm table (bảng) và mỗi table sẽ có các thông tin (column) xác định, có nghĩa bạn không thể chỉnh sửa cấu trúc lưu trữ của một table được. \n        Nhưng với MongoDB thì lại khác, các collection (table trong MySQL) lưu trữ trong MongoDB có sự linh động và cấu trúc có thể khác nhau, nghĩa là một collection bạn có thể lưu hai loại dữ liệu hoàn toàn khác nhau (theo node)."
-            )
-          ]),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Thiết kế trong Mysql and MongoDB")]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("Trường hợp RDBMS: ")]),
-            _vm._v(
-              " có các table, nên khi truy vấn ta sẽ join các bảng lại với nhau để lấy thông tin"
-            )
-          ]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v(
-                "\n- posts(id, title, description, url, likes, post_by)\n- tag_list(id, post_id, tag)\n- comment(id, post_id, by_user, message, data_time, likes)\n"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("Trường hợp MongoDB")]),
-            _vm._v(": Ta sẽ có 1 collection tên post có cấu trúc như sau:")
-          ]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v(
-                "\n{\n   _id: ObjectId(7df78ad8902c)\n   title: 'What is the MongoDb', \n   description: 'MongoDB  NO-SQL',\n   by: POST_BY,\n   url: URL_OF_POST,\n   tags: [TAG1, TAG2, TAG3],\n   likes: TOTAL_LIKES, \n   comments: [    \n      {\n         user:'COMMENT_BY',\n         message: TEXT,\n         dateCreated: DATE_TIME,\n         like: 1\n      },\n      {\n         user:'COMMENT_BY',\n         message: TEXT,\n         dateCreated: DATE_TIME,\n         like: 2\n      }\n   ]\n}          \n"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Trong đó ta thấy key _id là do hệ thống tự tạo ra một field như vậy làm khóa chính. Đây là cấu trúc của một mẫu document trong MongoDB, như vậy khi có thêm comment thì ta sẽ thêm nó vào phần comment của tin."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [_c("strong", [_vm._v("Trường hợp RDBMS: ")])]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v(
-                "\n- product(id, name, price, status)\n- product_image(id, image_path, product_id)\n"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("Trường hợp MongoDB")]),
-            _vm._v(": Ta sẽ có 1 collection tên product có cấu trúc như sau:")
-          ]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v(
-                '\n{\n   _id: ObjectId(7df78ad8902c)\n   name: \'product name\',\n   price: 50000,\n   status: 0,\n   image: [\n      {"image_path": "image url1"},\n      {"image_path": "image url2"},\n      {"image_path": "image url3"},\n   ]\n}          \n'
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [_c("strong", [_vm._v("Trường hợp MongoDB")])]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v(
-                '\n{\n  "_id": 1001,\n  "title": \'welcome to MongoDB\',\n  "course_id": 1,\n  "duration_in_sec": 1707,\n  "lectures": [\n    {\n      "id": 10101,\n      "title": "welcome and thanks for comming",\n      "video_url": "https://s3.amazonaws.com/../welcome.mp4",\n      "duration_in_sec": 380\n    },\n    {\n      "id": 10102,\n      "title": "Lynux install MongoBD",\n      "video_url": "https://s3.amazonaws.com/../install mongoDB.mp4",\n      "duration_in_sec": 307\n    }\n  ]\n}\n'
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("In RDBMS: How do we model with documents?")])
-          ]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v(
-                "\nBook: id, title, ISBN, published, [publish_id]\nPublisher: id, name, founded\nUser: id, email, created\nRating: id, [user_id], [book_id], value\n"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Cấu trúc Mysql and MongoDB")]),
-          _vm._v(" "),
-          _c("table", { staticClass: "table table-striped" }, [
-            _c("thead", [
-              _c("tr", [
-                _c("th", [_vm._v("Mysql")]),
-                _vm._v(" "),
-                _c("th", [_vm._v("MongoDB")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("tbody", [
-              _c("tr", [
-                _c("td", [_vm._v("database")]),
-                _c("td", [_vm._v("database")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("table")]),
-                _c("td", [_vm._v("collection")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Row/")]),
-                _c("td", [_vm._v("Document")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("column")]),
-                _c("td", [_vm._v("field")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Table Join")]),
-                _c("td", [_vm._v("Embedded Documents")])
-              ]),
-              _vm._v(" "),
-              _c("tr", [
-                _c("td", [_vm._v("Primary Key")]),
-                _c("td", [_vm._v("Primary Key (mặc định là _id)")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("h2", [_vm._v("Các lệnh trong MongoDB")]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v("\nuse DB_NAME "),
-              _c("span", { staticClass: "comment" }, [
-                _vm._v("// use database")
-              ]),
-              _vm._v("\ndb "),
-              _c("span", { staticClass: "comment" }, [
-                _vm._v("// check database is using")
-              ]),
-              _vm._v("\n"),
-              _c("span", { staticClass: "comment" }, [
-                _vm._v(
-                  "Lưu ý trong mysql dùng dấu `;` để ngăn cách 2 dòng lệnh, nhưng trong mongoDB thì không sử dụng"
-                )
-              ]),
-              _vm._v("\nshow dbs "),
-              _c("span", { staticClass: "comment" }, [
-                _vm._v("// Show list databases")
-              ]),
-              _vm._v(
-                "\nuse freetutsdb db.dropDatabase()  // thực hiện 2 lệnh này để xoá db đang sử dụng\n"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Insert Documents")]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("db.collection.insertOne()")]),
-            _vm._v(" Insert a document into collection")
-          ]),
-          _vm._v(" "),
-          _c("pre", [_c("code", [_vm._v("\ndb.collection.insertOne(\n)\n")])]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("db.collection.insertMany()")]),
-            _vm._v(
-              " can insert multiple documents into collection. Pass an array of documents to the method."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "The following example inserts new documents into the inventory collection:"
-            )
-          ]),
-          _vm._v(" "),
-          _c("pre", [
-            _c("code", [
-              _vm._v(
-                'db.inventory.insertMany([\n   // MongoDB adds the _id field with an ObjectId if _id is not present\n   { item: "journal", qty: 25, status: "A",\n       size: { h: 14, w: 21, uom: "cm" }, tags: [ "blank", "red" ] },\n   { item: "notebook", qty: 50, status: "A",\n       size: { h: 8.5, w: 11, uom: "in" }, tags: [ "red", "blank" ] },\n   { item: "paper", qty: 100, status: "D",\n       size: { h: 8.5, w: 11, uom: "in" }, tags: [ "red", "blank", "plain" ] }\n]);\n'
-              )
-            ])
-          ])
-        ])
+        _c(
+          "a",
+          {
+            staticClass: "hidden-sm-down top-btn-is-visible",
+            attrs: { id: "top-btn", href: "javascript:void(0);" }
+          },
+          [
+            _c("i", {
+              staticClass: "fa fa-arrow-up",
+              attrs: { "aria-hidden": "true" }
+            })
+          ]
+        )
       ])
     ])
   }
@@ -59429,11 +59546,9 @@ var render = function() {
             "h1",
             { staticClass: "post-list-title" },
             [
-              _c(
-                "router-link",
-                { attrs: { to: { name: "b-tree-index-and-hash-index" } } },
-                [_vm._v("B-tree index an hash index")]
-              )
+              _c("router-link", { attrs: { to: { name: "DeepIndexMysql" } } }, [
+                _vm._v("Deep Index Mysql")
+              ])
             ],
             1
           )
@@ -59463,14 +59578,720 @@ if (false) {
 
 /***/ }),
 /* 197 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(198)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/documents/sql/DeepIndexMysql.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-8b0ebc6a", Component.options)
+  } else {
+    hotAPI.reload("data-v-8b0ebc6a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "container" }, [
+        _c(
+          "div",
+          { staticClass: "col-xl-9 offset-xl-0 col-lg-10 offset-lg-1" },
+          [
+            _c("div", { staticClass: "post-content-wrapper" }, [
+              _c("div", { staticClass: "post-meta" }, [
+                _c("h1", { staticClass: "is-markdown-title" }, [
+                  _vm._v("Deep Index Mysql")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md-contents post-content" }, [
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("1.Introduce")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Index là một trong những yếu tố quan trọng nhất góp phần vào việc nâng cao hiệu suất của cơ sở dữ liệu. Index trong SQL tăng tốc độ của quá trình truy vấn dữ liệu bằng cách cung cấp phương pháp truy xuất nhanh chóng tới các dòng trong các bảng, tương tự như cách mà mục lục của một cuốn sách giúp bạn nhanh chóng tìm đến một trang bất kỳ mà bạn muốn trong cuốn sách đó.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Index trong SQL Server được tạo ra trên các cột trong bảng hoặc View. Chúng cung cấp một phương pháp giúp bạn nhanh chóng tìm kiếm dữ liệu dựa trên các giá trị trong các cột. Ví dụ, nếu bạn tạo ra một Index trên cột khóa chính và sau đó tìm kiếm một dòng dữ liệu dựa trên một trong các giá trị của cột này, đầu tiên SQL Server sẽ tìm giá trị này trong Index, sau đó nó sử dụng Index để nhanh chóng xác định vị trí của dòng dữ liệu bạn cần tìm. Nếu không có Index, SQL Server sẽ thực hiện động tác quét qua toàn bộ bảng (table scan) để xác định vị trí dòng cần tìm. Giống như khi bạn cần tìm kiếm thông tin trên một quyển sách, nếu bạn định nghĩa được thông tin mình cần tìm dựa trên các phần mục lục sách cung cấp: tên tác giả, keyword v.v.. bạn chỉ cần đến phần mục lục của sách và tìm kiếm trong mục lục thay vì bạn phải tìm hết cả quyển sách.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Index trong SQL Server có thể tạo trên hầu hết các cột trong bảng hoặc View. Tuy nhiên chúng ta không nên tạo index trên các cột có kiểu dữ liệu quá lớn vì để sử dụng index SQL server cần chi phí để quản lý một vùng nhớ mình tạm gọi nó là mục lục ở đây. Độ lớn của mục lục sẽ tỉ lệ thuận với length index key bạn sử dụng.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Index trong SQL Server được tạo thành từ một tập hợp các page (các Index Node) và chúng được tổ chức trong một cấu trúc có tên gọi là B-tree. Tất nhiên ngoài B-tree ra thì SQL còn sử dụng thêm các kiểu index phức tạp khác nữa, nhưng trong bài này mình sẽ chỉ tập trung vào B-tree là cấu trúc thông dụng nhất. Một index chứa các keys được xây dựng từ một hoặc nhiều cột trong table hoặc view.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("2.B-tree")]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("img", {
+                    attrs: {
+                      src:
+                        "https://viblo.asia/uploads/07e46ca3-70b3-471c-ba0f-c32aeaa4f8a4.png",
+                      alt: ""
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Chi tiết hơn bạn có thể tham khảo tại đây hoặc lên google và tìm kiếm 😄 Chúng ta có thể hiểu index sẽ cung cấp cho chúng ta danh sách các bản ghi của các column được chỉ định theo thứ tự tăng dần. Tức là để tìm ra số 10 thì chúng ta phải tìm kiếm nó ở khoảng giữa số 9 và 12. Nếu giữa 9 và 12 mà không có thì không cần tìm tiếp nữa, vì chắc chắn nó không ở chỗ khác đâu 😄. CÒn nếu không có index thì chúng ta phải tìm toàn bộ thôi. SQL server hoạt động giống như những gì chúng ta làm, thế nên đừng bắt nó thực hiện scan hết toàn bộ dữ liệu nha, vất vả lắm.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Khi một truy vấn được xây dựng dựa trên các cột được tạo Index, cỗ máy thực thi truy vấn sẽ bắt đầu tại nút gốc và điều hướng qua các nút trung gian cho đến khi cỗ máy truy vấn tìm được đến nút lá. Ví dụ, nếu bạn đang tìm kiếm giá trị 123 trong một cột được tạo index, ví dụ như cột ID chẳng hạn, đầu tiên cỗ máy truy vấn sẽ tìm ở nút gốc (Root Level) để xác định page nào sẽ được tham chiếu tới ở level trung gian (Intemediate Level). Trong ví dụ này, trang đầu tiên chỉ các giá trị từ 1-100, và trang thứ hai là các giá trị 101-200, vì vậy cỗ máy truy vấn sẽ đi đến trang thứ hai ở level trung gian. Cỗ máy truy vấn sau đó sẽ xác định trang tiếp theo mà nó phải tham chiếu tới ở level trung gian kế tiếp. Cuối cùng, cỗ máy truy vấn sẽ tìm đến nút lá cho giá trị 123. Nút lá sẽ chứa toàn bộ dòng dữ liệu hoặc nó chỉ chứa một con trỏ làm tham chiếu dến dòng dữ liệu.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [
+                  _vm._v("3.Phân loại Index")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Về cơ bản index phân thành 2 loại là Clustered Index và Non-Clustered Index"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Clustered Index")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Clustered Index lưu trữ và sắp xếp dữ liệu vật lý trong table hoặc view dựa trên các giá trị khóa của chúng. Các cột khóa này được chỉ định trong định nghĩa index. Mỗi table hoặc view chỉ có duy nhất một Clusterd Index vì bản thân các dòng dữ liệu được lưu trữ và sắp xếp theo thứ tự vật lý dựa trên các cột trong loại Index này.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Khi dữ liệu trong table hoặc view cần được lưu trữ và sắp xếp theo một thứ tự nhất định chính là lúc cần dùng đến Clustered Index. Khi một table có một Clusted Index thì khi đó table được gọi là Clustered Table. Giống như bạn có 1 mục lục, bạn tìm kiếm đến 1 mục và chỉ việc click vào expand thông tin ra là xong, không cần phải đi đâu khác nữa.\n                "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Non-Clustered Index")]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Non-Clustered có một cấu trúc tách biệt với data row trong table hoặc view. Mỗi một index loại này chứa các giá trị của các cột khóa trong khai báo của index, và mỗi một bản ghi giá trị của key trong index này chứa một con trỏ tới dòng dữ liệu tương ứng của nó trong table.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Mỗi con trỏ từ một dòng của Non-Clustered index tới một dòng dữ liệu trong table được gọi là “row locator”. Cấu trúc của row locator phụ thuộc vào việc các trang dữ liệu được lưu trong HEAP hay trong một Clustered Table như đã diễn giải ở mục Clustered Index ở trên. Đối với HEAP, row locator là một con trỏ tới dòng dữ liệu, với clustered table, row locator chính là khóa index của clustered index.\n                "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Composite index")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Là kiểu Index có nhiều hơn 1 cột. Cả hai kiểu index cơ sở là Clustered Index và Non Clustered Index cũng có thể đồng thời là là kiểu Composite index.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Unique index")]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("ul", [
+                    _c("li", [
+                      _vm._v(
+                        "\n                        Là kiểu Index dùng để đảm bảo tính duy nhất trong các cột được tạo Index. Nếu Index loại này được tạo dựa trên nhiều cột, thì tính duy nhất của giá trị được tính trên tất cả các cột đó, không chỉ riêng rẽ từng cột. Ví dụ, nếu bạn đã tạo ra một Index trên các cột FirstName và LastName trong một bảng, thì giá trị của 2 cột này kết hợp với nhau phải là duy nhất, nhưng riêng rẽ từng cột thì giá trị vẫn có thể trùng nhau.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _vm._v(
+                        "\n                        Một Unique Index được tự động tạo ra khi bạn định nghĩa một khóa chính (Primary Key) hoặc một ràng buộc duy nhất (Unique Constraint):\n                    "
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h4", [_vm._v("Primary Key")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Khi bạn định nghĩa một ràng buộc khoá chính trên một hoặc nhiều cột của bảng, SQL Server tự động tạo ra một Unique - Clustered Index nếu chưa có một Clustered Index nào tồn tại trên bảng hoặc view.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h1", [_vm._v("Index Design")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Vì Index có thể chiếm nhiều không gian của ổ cứng, do đó không nên triển khai quá nhiều Index nếu như chúng không thực sự cần thiết. Ngoài ra, Index sẽ được tự động cập nhật khi bản thân các dòng dữ liệu được cập nhật, do đó có thể dẫn đến phát sinh thêm chi phí và ảnh hưởng đến hiệu suất của quá trình xử lý dữ liệu. Vì vậy, việc thiết kế Index trong SQL Server cần phải có một số cân nhắc trước khi thực hiện chúng..\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("ul", [
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Nếu một bảng có khối lượng dữ liệu lớn nhưng tần suất cập nhật dữ liệu thấp, bạn nên sử dụng nhiều Index cần thiết để cải thiện hiệu suất truy vấn, . Tuy nhiên, cần cân nhắc kĩ khi sử dụng Index trên các bảng nhỏ vì cỗ máy truy vấn có thể mất nhiều thời gian và chi phí để tìm kiếm dữ liệu dựa trên các Index hơn là tìm kiếm dữ liệu dựa trên việc thực hiện một thao tác scan table.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Đối với Clustered Index, hãy cố gắng giữ cho độ dài của các cột được lập Index càng ngắn càng tốt. Lý tưởng nhất là tạo Clustered Index trên cột có thuộc tính Unique và không cho phép giá trị Null.. Đây là lý do tại sao các khóa chính thường được sử dụng cho Clustered Index của bảng, bên cạnh đó, việc xem xét các truy vấn thường thực hiện trên bảng cũng cần được tính đến khi xác định các cột nên tham gia vào một Clustered Index..\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Tính duy nhất của các giá trị trong một cột có tác động đến hiệu suất của Index. Nhìn chung, càng nhiều giá trị trùng lặp thì hiệu suất thực thi của Index càng kém. Nói cách khác, tính duy nhất của giá trị trong một cột càng cao thì hiệu suất của Index càng cao. Do đó, nếu xác định các giá trị của một cột nào đó trong một table là duy nhất thì khi đó bạn nên tạo một Unique Index trên cột đó. Giả sử bạn có index là FirstName,\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Đối với Composite Index, cần phải xem xét thứ tự của các cột trong định nghĩa của Index. Cột nào thường được sử dụng trong các biểu thức so sánh ở mệnh đề WHERE (như WHERE FirstName = 'Charlie') sẽ được liệt kê đầu tiên. Thứ tự của các cột tiếp theo sẽ được liệt kê dựa trên tính duy nhất của các giá trị trong cột, trong đó tính duy nhất của giá trị trong cột càng cao thì càng được liệt kê trước.\n                "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "\n                    Bạn cũng có thể tạo Index trên các Computed Column nếu chúng đáp ứng được các yêu cầu nhất định. Ví dụ, biểu thức được sử dụng để tạo ra các giá trị trong cột phải được xác định (có nghĩa là nó luôn luôn trả về kết quả tương tự cho một tập của các giá trị đầu vào).\n                "
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [
+                  _vm._v("5. Sử dụng Index trong câu query")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "rong một câu lệnh SQL, một điều kiện tìm kiếm ở mệnh đề WHERE được gọi là sargable (viết tắt từ Search Argument-Able) nếu index có thể được sử dụng khi thực hiện câu lệnh (giả sử cột tương ứng có index). Ví dụ, với câu lệnh sau: Trong bảng Customer chúng ta sử dụng index trên CustomerID"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", { staticClass: "language-SQL" }, [
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.Customer\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" CustomerID = "),
+                    _c("span", { staticClass: "hljs-number" }, [
+                      _vm._v("1234")
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                thì điều kiện “CustomerID = 1234″ là sargable, vì nó cho phép index trên cột CustomerID được sử dụng. Vì index giúp tăng hiệu năng của câu lệnh lên rất nhiều, việc viết code để sao cho các điều kiện tìm kiếm trở thành sargable là một mục tiêu rất quan trọng. Một nguyên tắc rất cơ bản trong SQL Server mà bạn có thể áp dụng trong rất nhiều trường hợp, đó là cột cần tìm phải đứng một mình ở một phía của biểu thức tìm kiếm, nói cách khác là không có hàm số hay phép tính toán nào áp dụng trên cột đó. Hãy xem xét hai câu lệnh dưới đây:\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", { staticClass: "language-SQL" }, [
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("USE")
+                    ]),
+                    _vm._v(" AdventureWorks\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [_vm._v("GO")]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-comment" }, [
+                      _vm._v("-- câu lệnh 1 (non-sargable)")
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" * "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" Sales.Individual\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" CustomerID+"),
+                    _c("span", { staticClass: "hljs-number" }, [_vm._v("2")]),
+                    _vm._v(" = "),
+                    _c("span", { staticClass: "hljs-number" }, [
+                      _vm._v("11002")
+                    ]),
+                    _vm._v("\n\n"),
+                    _c("span", { staticClass: "hljs-comment" }, [
+                      _vm._v("-- câu lệnh 2 (sargable)")
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" * "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" Sales.Individual\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" CustomerID = "),
+                    _c("span", { staticClass: "hljs-number" }, [
+                      _vm._v("11000")
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Index đã không được sử dụng vì khi bạn áp dụng một phép tính toán trên cột, hệ thống phải "
+                  ),
+                  _c("strong", [
+                    _vm._v(
+                      "thực hiện tính toán đó trên từng node trên cây index trước khi có thể lấy kết quả để so sánh với giá trị cần tìm"
+                    )
+                  ]),
+                  _vm._v(
+                    ". Vì thế nó phải duyệt tuần tự qua từng node thay vì tìm theo kiểu nhị phân (index seek, như với câu lệnh 2). Và đây là các con số thống kê về IO và thời gian thực hiện:\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", { staticClass: "language-SQL" }, [
+                    _vm._v(
+                      "Câu lệnh 1 (non-sargable):\nTable 'Individual'. Scan count 1, logical reads 3088, physical reads 35\nCPU time = 0 ms, elapsed time = 259 ms.\n\nCâu lệnh 2 (sargable):\nTable 'Individual'. Scan count 0, logical reads 3, physical reads 3\nCPU time = 0 ms, elapsed time = 19 ms.\n"
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "\n                Ví dụ, khi cần tìm tất cả các đơn hàng được thực hiện trong ngày 21/08/2009, một cách trực giác có thể bạn nghĩ ngay đến một trong các cách làm sau:\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", { staticClass: "language-SQL" }, [
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.DonHang\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("CONVERT")
+                    ]),
+                    _vm._v("("),
+                    _c("span", { staticClass: "hljs-built_in" }, [
+                      _vm._v("VARCHAR")
+                    ]),
+                    _vm._v(",OrderDate,"),
+                    _c("span", { staticClass: "hljs-number" }, [_vm._v("103")]),
+                    _vm._v(") = "),
+                    _c("span", { staticClass: "hljs-string" }, [
+                      _vm._v("'21/08/2009'")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-comment" }, [
+                      _vm._v("--cắt bỏ phần thời gian, chỉ giữ lại phần ngày")
+                    ]),
+                    _vm._v("\n\n"),
+                    _c("span", { staticClass: "hljs-comment" }, [
+                      _vm._v("-- hoặc")
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.DonHang\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("DATEPART")
+                    ]),
+                    _vm._v("(d,OrderDate) ="),
+                    _c("span", { staticClass: "hljs-number" }, [_vm._v("21")]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("AND")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("DATEPART")
+                    ]),
+                    _vm._v("(m,OrderDate)="),
+                    _c("span", { staticClass: "hljs-number" }, [_vm._v("8")]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("AND")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("DATEPART")
+                    ]),
+                    _vm._v("("),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("YEAR")
+                    ]),
+                    _vm._v(",OrderDate)="),
+                    _c("span", { staticClass: "hljs-number" }, [
+                      _vm._v("2009")
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Cả hai cách viết trên đều làm mất tác dụng index trên trường OrderDate. Cách viết đúng phải là:"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", { staticClass: "language-SQL" }, [
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.DonHang\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" OrderDate >= "),
+                    _c("span", { staticClass: "hljs-string" }, [
+                      _vm._v("'20090821'")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("AND")
+                    ]),
+                    _vm._v(" OrderDate < "),
+                    _c("span", { staticClass: "hljs-string" }, [
+                      _vm._v("'20090822'")
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "bạn cần tìm tất cả các khách hàng có tên bắt đầu bằng chữ C, như Can, Công, Cường… Các cách viết sau là không sargable"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", { staticClass: "language-SQL" }, [
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.Customer\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SUBSTRING")
+                    ]),
+                    _vm._v("(Ten,"),
+                    _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+                    _vm._v(","),
+                    _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+                    _vm._v(") = "),
+                    _c("span", { staticClass: "hljs-string" }, [_vm._v("'C'")]),
+                    _vm._v("\n\n"),
+                    _c("span", { staticClass: "hljs-comment" }, [
+                      _vm._v("--hoặc")
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.Customer\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("LEFT")
+                    ]),
+                    _vm._v("(Ten,"),
+                    _c("span", { staticClass: "hljs-number" }, [_vm._v("1")]),
+                    _vm._v(") = "),
+                    _c("span", { staticClass: "hljs-string" }, [_vm._v("'C'")]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("cách viết sử dụng index:")]),
+                _vm._v(" "),
+                _c("pre", [
+                  _c("code", { staticClass: "language-SQL" }, [
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.Customer\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" Ten >= "),
+                    _c("span", { staticClass: "hljs-string" }, [_vm._v("'C'")]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("AND")
+                    ]),
+                    _vm._v(" Ten< ‘D’\n\n"),
+                    _c("span", { staticClass: "hljs-comment" }, [
+                      _vm._v("--hoặc")
+                    ]),
+                    _vm._v("\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("SELECT")
+                    ]),
+                    _vm._v(" *\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("FROM")
+                    ]),
+                    _vm._v(" dbo.Customer\n"),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("WHERE")
+                    ]),
+                    _vm._v(" Ten "),
+                    _c("span", { staticClass: "hljs-keyword" }, [
+                      _vm._v("like")
+                    ]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hljs-string" }, [
+                      _vm._v("'C%'")
+                    ]),
+                    _vm._v("\n")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("3.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("3.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("3.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("3.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("3.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")]),
+                _vm._v(" "),
+                _c("h1", { attrs: { id: "abc" } }, [_vm._v("3.Abc")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Introduce about scss")])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 hidden-lg-down d-flex" }, [
+          _c("div", { staticClass: "post-sidebar flexbox" }, [
+            _c("div", { staticClass: "js-sidebar" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "sidebar-sticky sidebar-content-wrapper docked top"
+                },
+                [
+                  _c("div", { staticClass: "sidebar-content" }, [
+                    _c("div", { staticClass: "post-index" }, [
+                      _c("div", { staticClass: "section-title-line" }, [
+                        _c("h4", { staticClass: "text-uppercase" }, [
+                          _vm._v("Index")
+                        ]),
+                        _vm._v(" "),
+                        _c("hr", { staticClass: "filler-line" })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "ul",
+                        {
+                          staticClass: "post-toc nav",
+                          attrs: { id: "markdown-toc" }
+                        },
+                        [
+                          _c(
+                            "li",
+                            { staticClass: "nav-item index-item-level-2" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "post-toc-link nav-link active",
+                                  attrs: { href: "#vay-thi-svg-la-cai-gi-0" }
+                                },
+                                [_vm._v("Vậy thì... SVG là cái gì?")]
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "li",
+                            { staticClass: "nav-item index-item-level-3" },
+                            [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "post-toc-link nav-link",
+                                  attrs: {
+                                    href: "#bao-dam-chat-luong-hinh-anh-2"
+                                  }
+                                },
+                                [_vm._v("Bảo đảm chất lượng hình ảnh")]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "hidden-sm-down top-btn-is-visible",
+            attrs: { id: "top-btn", href: "javascript:void(0);" }
+          },
+          [
+            _c("i", {
+              staticClass: "fa fa-arrow-up",
+              attrs: { "aria-hidden": "true" }
+            })
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-8b0ebc6a", module.exports)
+  }
+}
+
+/***/ }),
+/* 199 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listCss__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listCss__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__listCss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__listCss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scss__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scss__ = __webpack_require__(205);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__scss__);
 
 
@@ -59495,15 +60316,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 198 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(199)
+var __vue_script__ = __webpack_require__(201)
 /* template */
-var __vue_template__ = __webpack_require__(200)
+var __vue_template__ = __webpack_require__(202)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -59542,7 +60363,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 199 */
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59558,7 +60379,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 200 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59578,7 +60399,7 @@ if (false) {
 }
 
 /***/ }),
-/* 201 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -59586,7 +60407,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(202)
+var __vue_template__ = __webpack_require__(204)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -59625,7 +60446,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 202 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59673,7 +60494,7 @@ if (false) {
 }
 
 /***/ }),
-/* 203 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -59681,7 +60502,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(204)
+var __vue_template__ = __webpack_require__(206)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -59720,7 +60541,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 204 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59849,13 +60670,13 @@ if (false) {
 }
 
 /***/ }),
-/* 205 */
+/* 207 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPHP__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPHP__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListPHP___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ListPHP__);
 
 
@@ -59873,15 +60694,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 206 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(207)
+var __vue_script__ = __webpack_require__(209)
 /* template */
-var __vue_template__ = __webpack_require__(208)
+var __vue_template__ = __webpack_require__(210)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -59920,7 +60741,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 207 */
+/* 209 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -59938,7 +60759,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 208 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -59958,7 +60779,7 @@ if (false) {
 }
 
 /***/ }),
-/* 209 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -59966,7 +60787,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(210)
+var __vue_template__ = __webpack_require__(212)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60005,7 +60826,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 210 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60057,13 +60878,13 @@ if (false) {
 }
 
 /***/ }),
-/* 211 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListLaravel__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListLaravel__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListLaravel___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ListLaravel__);
 
 
@@ -60081,15 +60902,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 212 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(213)
+var __vue_script__ = __webpack_require__(215)
 /* template */
-var __vue_template__ = __webpack_require__(214)
+var __vue_template__ = __webpack_require__(216)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60128,7 +60949,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 213 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60144,7 +60965,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 214 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60164,7 +60985,7 @@ if (false) {
 }
 
 /***/ }),
-/* 215 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -60172,7 +60993,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(216)
+var __vue_template__ = __webpack_require__(218)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60211,7 +61032,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 216 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60263,13 +61084,13 @@ if (false) {
 }
 
 /***/ }),
-/* 217 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListJavascript__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListJavascript__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListJavascript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ListJavascript__);
 
 
@@ -60287,15 +61108,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 218 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(219)
+var __vue_script__ = __webpack_require__(221)
 /* template */
-var __vue_template__ = __webpack_require__(220)
+var __vue_template__ = __webpack_require__(222)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60334,7 +61155,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 219 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60352,7 +61173,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 220 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60372,7 +61193,7 @@ if (false) {
 }
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -60380,7 +61201,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(222)
+var __vue_template__ = __webpack_require__(224)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60419,7 +61240,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60471,13 +61292,13 @@ if (false) {
 }
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListVue__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListVue__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ListVue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__ListVue__);
 
 
@@ -60495,15 +61316,15 @@ if (false) {
 }]);
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
-var __vue_script__ = __webpack_require__(225)
+var __vue_script__ = __webpack_require__(227)
 /* template */
-var __vue_template__ = __webpack_require__(226)
+var __vue_template__ = __webpack_require__(228)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60542,7 +61363,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -60560,7 +61381,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60580,7 +61401,7 @@ if (false) {
 }
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -60588,7 +61409,7 @@ var normalizeComponent = __webpack_require__(0)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(228)
+var __vue_template__ = __webpack_require__(230)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -60627,7 +61448,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -60679,22 +61500,22 @@ if (false) {
 }
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_font_awesome_css_font_awesome_min_css__ = __webpack_require__(230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_font_awesome_css_font_awesome_min_css__ = __webpack_require__(232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_font_awesome_css_font_awesome_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_font_awesome_css_font_awesome_min_css__);
 
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(231);
+var content = __webpack_require__(233);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -60719,22 +61540,22 @@ if(false) {
 }
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(232);
+var escape = __webpack_require__(234);
 exports = module.exports = __webpack_require__(1)(false);
 // imports
 
 
 // module
-exports.push([module.i, "/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */@font-face{font-family:'FontAwesome';src:url(" + escape(__webpack_require__(233)) + ");src:url(" + escape(__webpack_require__(234)) + "?#iefix&v=4.7.0) format('embedded-opentype'),url(" + escape(__webpack_require__(235)) + ") format('woff2'),url(" + escape(__webpack_require__(236)) + ") format('woff'),url(" + escape(__webpack_require__(237)) + ") format('truetype'),url(" + escape(__webpack_require__(238)) + "#fontawesomeregular) format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";-webkit-transform:scale(1, -1);-ms-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:\"\\F000\"}.fa-music:before{content:\"\\F001\"}.fa-search:before{content:\"\\F002\"}.fa-envelope-o:before{content:\"\\F003\"}.fa-heart:before{content:\"\\F004\"}.fa-star:before{content:\"\\F005\"}.fa-star-o:before{content:\"\\F006\"}.fa-user:before{content:\"\\F007\"}.fa-film:before{content:\"\\F008\"}.fa-th-large:before{content:\"\\F009\"}.fa-th:before{content:\"\\F00A\"}.fa-th-list:before{content:\"\\F00B\"}.fa-check:before{content:\"\\F00C\"}.fa-remove:before,.fa-close:before,.fa-times:before{content:\"\\F00D\"}.fa-search-plus:before{content:\"\\F00E\"}.fa-search-minus:before{content:\"\\F010\"}.fa-power-off:before{content:\"\\F011\"}.fa-signal:before{content:\"\\F012\"}.fa-gear:before,.fa-cog:before{content:\"\\F013\"}.fa-trash-o:before{content:\"\\F014\"}.fa-home:before{content:\"\\F015\"}.fa-file-o:before{content:\"\\F016\"}.fa-clock-o:before{content:\"\\F017\"}.fa-road:before{content:\"\\F018\"}.fa-download:before{content:\"\\F019\"}.fa-arrow-circle-o-down:before{content:\"\\F01A\"}.fa-arrow-circle-o-up:before{content:\"\\F01B\"}.fa-inbox:before{content:\"\\F01C\"}.fa-play-circle-o:before{content:\"\\F01D\"}.fa-rotate-right:before,.fa-repeat:before{content:\"\\F01E\"}.fa-refresh:before{content:\"\\F021\"}.fa-list-alt:before{content:\"\\F022\"}.fa-lock:before{content:\"\\F023\"}.fa-flag:before{content:\"\\F024\"}.fa-headphones:before{content:\"\\F025\"}.fa-volume-off:before{content:\"\\F026\"}.fa-volume-down:before{content:\"\\F027\"}.fa-volume-up:before{content:\"\\F028\"}.fa-qrcode:before{content:\"\\F029\"}.fa-barcode:before{content:\"\\F02A\"}.fa-tag:before{content:\"\\F02B\"}.fa-tags:before{content:\"\\F02C\"}.fa-book:before{content:\"\\F02D\"}.fa-bookmark:before{content:\"\\F02E\"}.fa-print:before{content:\"\\F02F\"}.fa-camera:before{content:\"\\F030\"}.fa-font:before{content:\"\\F031\"}.fa-bold:before{content:\"\\F032\"}.fa-italic:before{content:\"\\F033\"}.fa-text-height:before{content:\"\\F034\"}.fa-text-width:before{content:\"\\F035\"}.fa-align-left:before{content:\"\\F036\"}.fa-align-center:before{content:\"\\F037\"}.fa-align-right:before{content:\"\\F038\"}.fa-align-justify:before{content:\"\\F039\"}.fa-list:before{content:\"\\F03A\"}.fa-dedent:before,.fa-outdent:before{content:\"\\F03B\"}.fa-indent:before{content:\"\\F03C\"}.fa-video-camera:before{content:\"\\F03D\"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:\"\\F03E\"}.fa-pencil:before{content:\"\\F040\"}.fa-map-marker:before{content:\"\\F041\"}.fa-adjust:before{content:\"\\F042\"}.fa-tint:before{content:\"\\F043\"}.fa-edit:before,.fa-pencil-square-o:before{content:\"\\F044\"}.fa-share-square-o:before{content:\"\\F045\"}.fa-check-square-o:before{content:\"\\F046\"}.fa-arrows:before{content:\"\\F047\"}.fa-step-backward:before{content:\"\\F048\"}.fa-fast-backward:before{content:\"\\F049\"}.fa-backward:before{content:\"\\F04A\"}.fa-play:before{content:\"\\F04B\"}.fa-pause:before{content:\"\\F04C\"}.fa-stop:before{content:\"\\F04D\"}.fa-forward:before{content:\"\\F04E\"}.fa-fast-forward:before{content:\"\\F050\"}.fa-step-forward:before{content:\"\\F051\"}.fa-eject:before{content:\"\\F052\"}.fa-chevron-left:before{content:\"\\F053\"}.fa-chevron-right:before{content:\"\\F054\"}.fa-plus-circle:before{content:\"\\F055\"}.fa-minus-circle:before{content:\"\\F056\"}.fa-times-circle:before{content:\"\\F057\"}.fa-check-circle:before{content:\"\\F058\"}.fa-question-circle:before{content:\"\\F059\"}.fa-info-circle:before{content:\"\\F05A\"}.fa-crosshairs:before{content:\"\\F05B\"}.fa-times-circle-o:before{content:\"\\F05C\"}.fa-check-circle-o:before{content:\"\\F05D\"}.fa-ban:before{content:\"\\F05E\"}.fa-arrow-left:before{content:\"\\F060\"}.fa-arrow-right:before{content:\"\\F061\"}.fa-arrow-up:before{content:\"\\F062\"}.fa-arrow-down:before{content:\"\\F063\"}.fa-mail-forward:before,.fa-share:before{content:\"\\F064\"}.fa-expand:before{content:\"\\F065\"}.fa-compress:before{content:\"\\F066\"}.fa-plus:before{content:\"\\F067\"}.fa-minus:before{content:\"\\F068\"}.fa-asterisk:before{content:\"\\F069\"}.fa-exclamation-circle:before{content:\"\\F06A\"}.fa-gift:before{content:\"\\F06B\"}.fa-leaf:before{content:\"\\F06C\"}.fa-fire:before{content:\"\\F06D\"}.fa-eye:before{content:\"\\F06E\"}.fa-eye-slash:before{content:\"\\F070\"}.fa-warning:before,.fa-exclamation-triangle:before{content:\"\\F071\"}.fa-plane:before{content:\"\\F072\"}.fa-calendar:before{content:\"\\F073\"}.fa-random:before{content:\"\\F074\"}.fa-comment:before{content:\"\\F075\"}.fa-magnet:before{content:\"\\F076\"}.fa-chevron-up:before{content:\"\\F077\"}.fa-chevron-down:before{content:\"\\F078\"}.fa-retweet:before{content:\"\\F079\"}.fa-shopping-cart:before{content:\"\\F07A\"}.fa-folder:before{content:\"\\F07B\"}.fa-folder-open:before{content:\"\\F07C\"}.fa-arrows-v:before{content:\"\\F07D\"}.fa-arrows-h:before{content:\"\\F07E\"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:\"\\F080\"}.fa-twitter-square:before{content:\"\\F081\"}.fa-facebook-square:before{content:\"\\F082\"}.fa-camera-retro:before{content:\"\\F083\"}.fa-key:before{content:\"\\F084\"}.fa-gears:before,.fa-cogs:before{content:\"\\F085\"}.fa-comments:before{content:\"\\F086\"}.fa-thumbs-o-up:before{content:\"\\F087\"}.fa-thumbs-o-down:before{content:\"\\F088\"}.fa-star-half:before{content:\"\\F089\"}.fa-heart-o:before{content:\"\\F08A\"}.fa-sign-out:before{content:\"\\F08B\"}.fa-linkedin-square:before{content:\"\\F08C\"}.fa-thumb-tack:before{content:\"\\F08D\"}.fa-external-link:before{content:\"\\F08E\"}.fa-sign-in:before{content:\"\\F090\"}.fa-trophy:before{content:\"\\F091\"}.fa-github-square:before{content:\"\\F092\"}.fa-upload:before{content:\"\\F093\"}.fa-lemon-o:before{content:\"\\F094\"}.fa-phone:before{content:\"\\F095\"}.fa-square-o:before{content:\"\\F096\"}.fa-bookmark-o:before{content:\"\\F097\"}.fa-phone-square:before{content:\"\\F098\"}.fa-twitter:before{content:\"\\F099\"}.fa-facebook-f:before,.fa-facebook:before{content:\"\\F09A\"}.fa-github:before{content:\"\\F09B\"}.fa-unlock:before{content:\"\\F09C\"}.fa-credit-card:before{content:\"\\F09D\"}.fa-feed:before,.fa-rss:before{content:\"\\F09E\"}.fa-hdd-o:before{content:\"\\F0A0\"}.fa-bullhorn:before{content:\"\\F0A1\"}.fa-bell:before{content:\"\\F0F3\"}.fa-certificate:before{content:\"\\F0A3\"}.fa-hand-o-right:before{content:\"\\F0A4\"}.fa-hand-o-left:before{content:\"\\F0A5\"}.fa-hand-o-up:before{content:\"\\F0A6\"}.fa-hand-o-down:before{content:\"\\F0A7\"}.fa-arrow-circle-left:before{content:\"\\F0A8\"}.fa-arrow-circle-right:before{content:\"\\F0A9\"}.fa-arrow-circle-up:before{content:\"\\F0AA\"}.fa-arrow-circle-down:before{content:\"\\F0AB\"}.fa-globe:before{content:\"\\F0AC\"}.fa-wrench:before{content:\"\\F0AD\"}.fa-tasks:before{content:\"\\F0AE\"}.fa-filter:before{content:\"\\F0B0\"}.fa-briefcase:before{content:\"\\F0B1\"}.fa-arrows-alt:before{content:\"\\F0B2\"}.fa-group:before,.fa-users:before{content:\"\\F0C0\"}.fa-chain:before,.fa-link:before{content:\"\\F0C1\"}.fa-cloud:before{content:\"\\F0C2\"}.fa-flask:before{content:\"\\F0C3\"}.fa-cut:before,.fa-scissors:before{content:\"\\F0C4\"}.fa-copy:before,.fa-files-o:before{content:\"\\F0C5\"}.fa-paperclip:before{content:\"\\F0C6\"}.fa-save:before,.fa-floppy-o:before{content:\"\\F0C7\"}.fa-square:before{content:\"\\F0C8\"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:\"\\F0C9\"}.fa-list-ul:before{content:\"\\F0CA\"}.fa-list-ol:before{content:\"\\F0CB\"}.fa-strikethrough:before{content:\"\\F0CC\"}.fa-underline:before{content:\"\\F0CD\"}.fa-table:before{content:\"\\F0CE\"}.fa-magic:before{content:\"\\F0D0\"}.fa-truck:before{content:\"\\F0D1\"}.fa-pinterest:before{content:\"\\F0D2\"}.fa-pinterest-square:before{content:\"\\F0D3\"}.fa-google-plus-square:before{content:\"\\F0D4\"}.fa-google-plus:before{content:\"\\F0D5\"}.fa-money:before{content:\"\\F0D6\"}.fa-caret-down:before{content:\"\\F0D7\"}.fa-caret-up:before{content:\"\\F0D8\"}.fa-caret-left:before{content:\"\\F0D9\"}.fa-caret-right:before{content:\"\\F0DA\"}.fa-columns:before{content:\"\\F0DB\"}.fa-unsorted:before,.fa-sort:before{content:\"\\F0DC\"}.fa-sort-down:before,.fa-sort-desc:before{content:\"\\F0DD\"}.fa-sort-up:before,.fa-sort-asc:before{content:\"\\F0DE\"}.fa-envelope:before{content:\"\\F0E0\"}.fa-linkedin:before{content:\"\\F0E1\"}.fa-rotate-left:before,.fa-undo:before{content:\"\\F0E2\"}.fa-legal:before,.fa-gavel:before{content:\"\\F0E3\"}.fa-dashboard:before,.fa-tachometer:before{content:\"\\F0E4\"}.fa-comment-o:before{content:\"\\F0E5\"}.fa-comments-o:before{content:\"\\F0E6\"}.fa-flash:before,.fa-bolt:before{content:\"\\F0E7\"}.fa-sitemap:before{content:\"\\F0E8\"}.fa-umbrella:before{content:\"\\F0E9\"}.fa-paste:before,.fa-clipboard:before{content:\"\\F0EA\"}.fa-lightbulb-o:before{content:\"\\F0EB\"}.fa-exchange:before{content:\"\\F0EC\"}.fa-cloud-download:before{content:\"\\F0ED\"}.fa-cloud-upload:before{content:\"\\F0EE\"}.fa-user-md:before{content:\"\\F0F0\"}.fa-stethoscope:before{content:\"\\F0F1\"}.fa-suitcase:before{content:\"\\F0F2\"}.fa-bell-o:before{content:\"\\F0A2\"}.fa-coffee:before{content:\"\\F0F4\"}.fa-cutlery:before{content:\"\\F0F5\"}.fa-file-text-o:before{content:\"\\F0F6\"}.fa-building-o:before{content:\"\\F0F7\"}.fa-hospital-o:before{content:\"\\F0F8\"}.fa-ambulance:before{content:\"\\F0F9\"}.fa-medkit:before{content:\"\\F0FA\"}.fa-fighter-jet:before{content:\"\\F0FB\"}.fa-beer:before{content:\"\\F0FC\"}.fa-h-square:before{content:\"\\F0FD\"}.fa-plus-square:before{content:\"\\F0FE\"}.fa-angle-double-left:before{content:\"\\F100\"}.fa-angle-double-right:before{content:\"\\F101\"}.fa-angle-double-up:before{content:\"\\F102\"}.fa-angle-double-down:before{content:\"\\F103\"}.fa-angle-left:before{content:\"\\F104\"}.fa-angle-right:before{content:\"\\F105\"}.fa-angle-up:before{content:\"\\F106\"}.fa-angle-down:before{content:\"\\F107\"}.fa-desktop:before{content:\"\\F108\"}.fa-laptop:before{content:\"\\F109\"}.fa-tablet:before{content:\"\\F10A\"}.fa-mobile-phone:before,.fa-mobile:before{content:\"\\F10B\"}.fa-circle-o:before{content:\"\\F10C\"}.fa-quote-left:before{content:\"\\F10D\"}.fa-quote-right:before{content:\"\\F10E\"}.fa-spinner:before{content:\"\\F110\"}.fa-circle:before{content:\"\\F111\"}.fa-mail-reply:before,.fa-reply:before{content:\"\\F112\"}.fa-github-alt:before{content:\"\\F113\"}.fa-folder-o:before{content:\"\\F114\"}.fa-folder-open-o:before{content:\"\\F115\"}.fa-smile-o:before{content:\"\\F118\"}.fa-frown-o:before{content:\"\\F119\"}.fa-meh-o:before{content:\"\\F11A\"}.fa-gamepad:before{content:\"\\F11B\"}.fa-keyboard-o:before{content:\"\\F11C\"}.fa-flag-o:before{content:\"\\F11D\"}.fa-flag-checkered:before{content:\"\\F11E\"}.fa-terminal:before{content:\"\\F120\"}.fa-code:before{content:\"\\F121\"}.fa-mail-reply-all:before,.fa-reply-all:before{content:\"\\F122\"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:\"\\F123\"}.fa-location-arrow:before{content:\"\\F124\"}.fa-crop:before{content:\"\\F125\"}.fa-code-fork:before{content:\"\\F126\"}.fa-unlink:before,.fa-chain-broken:before{content:\"\\F127\"}.fa-question:before{content:\"\\F128\"}.fa-info:before{content:\"\\F129\"}.fa-exclamation:before{content:\"\\F12A\"}.fa-superscript:before{content:\"\\F12B\"}.fa-subscript:before{content:\"\\F12C\"}.fa-eraser:before{content:\"\\F12D\"}.fa-puzzle-piece:before{content:\"\\F12E\"}.fa-microphone:before{content:\"\\F130\"}.fa-microphone-slash:before{content:\"\\F131\"}.fa-shield:before{content:\"\\F132\"}.fa-calendar-o:before{content:\"\\F133\"}.fa-fire-extinguisher:before{content:\"\\F134\"}.fa-rocket:before{content:\"\\F135\"}.fa-maxcdn:before{content:\"\\F136\"}.fa-chevron-circle-left:before{content:\"\\F137\"}.fa-chevron-circle-right:before{content:\"\\F138\"}.fa-chevron-circle-up:before{content:\"\\F139\"}.fa-chevron-circle-down:before{content:\"\\F13A\"}.fa-html5:before{content:\"\\F13B\"}.fa-css3:before{content:\"\\F13C\"}.fa-anchor:before{content:\"\\F13D\"}.fa-unlock-alt:before{content:\"\\F13E\"}.fa-bullseye:before{content:\"\\F140\"}.fa-ellipsis-h:before{content:\"\\F141\"}.fa-ellipsis-v:before{content:\"\\F142\"}.fa-rss-square:before{content:\"\\F143\"}.fa-play-circle:before{content:\"\\F144\"}.fa-ticket:before{content:\"\\F145\"}.fa-minus-square:before{content:\"\\F146\"}.fa-minus-square-o:before{content:\"\\F147\"}.fa-level-up:before{content:\"\\F148\"}.fa-level-down:before{content:\"\\F149\"}.fa-check-square:before{content:\"\\F14A\"}.fa-pencil-square:before{content:\"\\F14B\"}.fa-external-link-square:before{content:\"\\F14C\"}.fa-share-square:before{content:\"\\F14D\"}.fa-compass:before{content:\"\\F14E\"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:\"\\F150\"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:\"\\F151\"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:\"\\F152\"}.fa-euro:before,.fa-eur:before{content:\"\\F153\"}.fa-gbp:before{content:\"\\F154\"}.fa-dollar:before,.fa-usd:before{content:\"\\F155\"}.fa-rupee:before,.fa-inr:before{content:\"\\F156\"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:\"\\F157\"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:\"\\F158\"}.fa-won:before,.fa-krw:before{content:\"\\F159\"}.fa-bitcoin:before,.fa-btc:before{content:\"\\F15A\"}.fa-file:before{content:\"\\F15B\"}.fa-file-text:before{content:\"\\F15C\"}.fa-sort-alpha-asc:before{content:\"\\F15D\"}.fa-sort-alpha-desc:before{content:\"\\F15E\"}.fa-sort-amount-asc:before{content:\"\\F160\"}.fa-sort-amount-desc:before{content:\"\\F161\"}.fa-sort-numeric-asc:before{content:\"\\F162\"}.fa-sort-numeric-desc:before{content:\"\\F163\"}.fa-thumbs-up:before{content:\"\\F164\"}.fa-thumbs-down:before{content:\"\\F165\"}.fa-youtube-square:before{content:\"\\F166\"}.fa-youtube:before{content:\"\\F167\"}.fa-xing:before{content:\"\\F168\"}.fa-xing-square:before{content:\"\\F169\"}.fa-youtube-play:before{content:\"\\F16A\"}.fa-dropbox:before{content:\"\\F16B\"}.fa-stack-overflow:before{content:\"\\F16C\"}.fa-instagram:before{content:\"\\F16D\"}.fa-flickr:before{content:\"\\F16E\"}.fa-adn:before{content:\"\\F170\"}.fa-bitbucket:before{content:\"\\F171\"}.fa-bitbucket-square:before{content:\"\\F172\"}.fa-tumblr:before{content:\"\\F173\"}.fa-tumblr-square:before{content:\"\\F174\"}.fa-long-arrow-down:before{content:\"\\F175\"}.fa-long-arrow-up:before{content:\"\\F176\"}.fa-long-arrow-left:before{content:\"\\F177\"}.fa-long-arrow-right:before{content:\"\\F178\"}.fa-apple:before{content:\"\\F179\"}.fa-windows:before{content:\"\\F17A\"}.fa-android:before{content:\"\\F17B\"}.fa-linux:before{content:\"\\F17C\"}.fa-dribbble:before{content:\"\\F17D\"}.fa-skype:before{content:\"\\F17E\"}.fa-foursquare:before{content:\"\\F180\"}.fa-trello:before{content:\"\\F181\"}.fa-female:before{content:\"\\F182\"}.fa-male:before{content:\"\\F183\"}.fa-gittip:before,.fa-gratipay:before{content:\"\\F184\"}.fa-sun-o:before{content:\"\\F185\"}.fa-moon-o:before{content:\"\\F186\"}.fa-archive:before{content:\"\\F187\"}.fa-bug:before{content:\"\\F188\"}.fa-vk:before{content:\"\\F189\"}.fa-weibo:before{content:\"\\F18A\"}.fa-renren:before{content:\"\\F18B\"}.fa-pagelines:before{content:\"\\F18C\"}.fa-stack-exchange:before{content:\"\\F18D\"}.fa-arrow-circle-o-right:before{content:\"\\F18E\"}.fa-arrow-circle-o-left:before{content:\"\\F190\"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:\"\\F191\"}.fa-dot-circle-o:before{content:\"\\F192\"}.fa-wheelchair:before{content:\"\\F193\"}.fa-vimeo-square:before{content:\"\\F194\"}.fa-turkish-lira:before,.fa-try:before{content:\"\\F195\"}.fa-plus-square-o:before{content:\"\\F196\"}.fa-space-shuttle:before{content:\"\\F197\"}.fa-slack:before{content:\"\\F198\"}.fa-envelope-square:before{content:\"\\F199\"}.fa-wordpress:before{content:\"\\F19A\"}.fa-openid:before{content:\"\\F19B\"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:\"\\F19C\"}.fa-mortar-board:before,.fa-graduation-cap:before{content:\"\\F19D\"}.fa-yahoo:before{content:\"\\F19E\"}.fa-google:before{content:\"\\F1A0\"}.fa-reddit:before{content:\"\\F1A1\"}.fa-reddit-square:before{content:\"\\F1A2\"}.fa-stumbleupon-circle:before{content:\"\\F1A3\"}.fa-stumbleupon:before{content:\"\\F1A4\"}.fa-delicious:before{content:\"\\F1A5\"}.fa-digg:before{content:\"\\F1A6\"}.fa-pied-piper-pp:before{content:\"\\F1A7\"}.fa-pied-piper-alt:before{content:\"\\F1A8\"}.fa-drupal:before{content:\"\\F1A9\"}.fa-joomla:before{content:\"\\F1AA\"}.fa-language:before{content:\"\\F1AB\"}.fa-fax:before{content:\"\\F1AC\"}.fa-building:before{content:\"\\F1AD\"}.fa-child:before{content:\"\\F1AE\"}.fa-paw:before{content:\"\\F1B0\"}.fa-spoon:before{content:\"\\F1B1\"}.fa-cube:before{content:\"\\F1B2\"}.fa-cubes:before{content:\"\\F1B3\"}.fa-behance:before{content:\"\\F1B4\"}.fa-behance-square:before{content:\"\\F1B5\"}.fa-steam:before{content:\"\\F1B6\"}.fa-steam-square:before{content:\"\\F1B7\"}.fa-recycle:before{content:\"\\F1B8\"}.fa-automobile:before,.fa-car:before{content:\"\\F1B9\"}.fa-cab:before,.fa-taxi:before{content:\"\\F1BA\"}.fa-tree:before{content:\"\\F1BB\"}.fa-spotify:before{content:\"\\F1BC\"}.fa-deviantart:before{content:\"\\F1BD\"}.fa-soundcloud:before{content:\"\\F1BE\"}.fa-database:before{content:\"\\F1C0\"}.fa-file-pdf-o:before{content:\"\\F1C1\"}.fa-file-word-o:before{content:\"\\F1C2\"}.fa-file-excel-o:before{content:\"\\F1C3\"}.fa-file-powerpoint-o:before{content:\"\\F1C4\"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:\"\\F1C5\"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:\"\\F1C6\"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:\"\\F1C7\"}.fa-file-movie-o:before,.fa-file-video-o:before{content:\"\\F1C8\"}.fa-file-code-o:before{content:\"\\F1C9\"}.fa-vine:before{content:\"\\F1CA\"}.fa-codepen:before{content:\"\\F1CB\"}.fa-jsfiddle:before{content:\"\\F1CC\"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:\"\\F1CD\"}.fa-circle-o-notch:before{content:\"\\F1CE\"}.fa-ra:before,.fa-resistance:before,.fa-rebel:before{content:\"\\F1D0\"}.fa-ge:before,.fa-empire:before{content:\"\\F1D1\"}.fa-git-square:before{content:\"\\F1D2\"}.fa-git:before{content:\"\\F1D3\"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:\"\\F1D4\"}.fa-tencent-weibo:before{content:\"\\F1D5\"}.fa-qq:before{content:\"\\F1D6\"}.fa-wechat:before,.fa-weixin:before{content:\"\\F1D7\"}.fa-send:before,.fa-paper-plane:before{content:\"\\F1D8\"}.fa-send-o:before,.fa-paper-plane-o:before{content:\"\\F1D9\"}.fa-history:before{content:\"\\F1DA\"}.fa-circle-thin:before{content:\"\\F1DB\"}.fa-header:before{content:\"\\F1DC\"}.fa-paragraph:before{content:\"\\F1DD\"}.fa-sliders:before{content:\"\\F1DE\"}.fa-share-alt:before{content:\"\\F1E0\"}.fa-share-alt-square:before{content:\"\\F1E1\"}.fa-bomb:before{content:\"\\F1E2\"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:\"\\F1E3\"}.fa-tty:before{content:\"\\F1E4\"}.fa-binoculars:before{content:\"\\F1E5\"}.fa-plug:before{content:\"\\F1E6\"}.fa-slideshare:before{content:\"\\F1E7\"}.fa-twitch:before{content:\"\\F1E8\"}.fa-yelp:before{content:\"\\F1E9\"}.fa-newspaper-o:before{content:\"\\F1EA\"}.fa-wifi:before{content:\"\\F1EB\"}.fa-calculator:before{content:\"\\F1EC\"}.fa-paypal:before{content:\"\\F1ED\"}.fa-google-wallet:before{content:\"\\F1EE\"}.fa-cc-visa:before{content:\"\\F1F0\"}.fa-cc-mastercard:before{content:\"\\F1F1\"}.fa-cc-discover:before{content:\"\\F1F2\"}.fa-cc-amex:before{content:\"\\F1F3\"}.fa-cc-paypal:before{content:\"\\F1F4\"}.fa-cc-stripe:before{content:\"\\F1F5\"}.fa-bell-slash:before{content:\"\\F1F6\"}.fa-bell-slash-o:before{content:\"\\F1F7\"}.fa-trash:before{content:\"\\F1F8\"}.fa-copyright:before{content:\"\\F1F9\"}.fa-at:before{content:\"\\F1FA\"}.fa-eyedropper:before{content:\"\\F1FB\"}.fa-paint-brush:before{content:\"\\F1FC\"}.fa-birthday-cake:before{content:\"\\F1FD\"}.fa-area-chart:before{content:\"\\F1FE\"}.fa-pie-chart:before{content:\"\\F200\"}.fa-line-chart:before{content:\"\\F201\"}.fa-lastfm:before{content:\"\\F202\"}.fa-lastfm-square:before{content:\"\\F203\"}.fa-toggle-off:before{content:\"\\F204\"}.fa-toggle-on:before{content:\"\\F205\"}.fa-bicycle:before{content:\"\\F206\"}.fa-bus:before{content:\"\\F207\"}.fa-ioxhost:before{content:\"\\F208\"}.fa-angellist:before{content:\"\\F209\"}.fa-cc:before{content:\"\\F20A\"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:\"\\F20B\"}.fa-meanpath:before{content:\"\\F20C\"}.fa-buysellads:before{content:\"\\F20D\"}.fa-connectdevelop:before{content:\"\\F20E\"}.fa-dashcube:before{content:\"\\F210\"}.fa-forumbee:before{content:\"\\F211\"}.fa-leanpub:before{content:\"\\F212\"}.fa-sellsy:before{content:\"\\F213\"}.fa-shirtsinbulk:before{content:\"\\F214\"}.fa-simplybuilt:before{content:\"\\F215\"}.fa-skyatlas:before{content:\"\\F216\"}.fa-cart-plus:before{content:\"\\F217\"}.fa-cart-arrow-down:before{content:\"\\F218\"}.fa-diamond:before{content:\"\\F219\"}.fa-ship:before{content:\"\\F21A\"}.fa-user-secret:before{content:\"\\F21B\"}.fa-motorcycle:before{content:\"\\F21C\"}.fa-street-view:before{content:\"\\F21D\"}.fa-heartbeat:before{content:\"\\F21E\"}.fa-venus:before{content:\"\\F221\"}.fa-mars:before{content:\"\\F222\"}.fa-mercury:before{content:\"\\F223\"}.fa-intersex:before,.fa-transgender:before{content:\"\\F224\"}.fa-transgender-alt:before{content:\"\\F225\"}.fa-venus-double:before{content:\"\\F226\"}.fa-mars-double:before{content:\"\\F227\"}.fa-venus-mars:before{content:\"\\F228\"}.fa-mars-stroke:before{content:\"\\F229\"}.fa-mars-stroke-v:before{content:\"\\F22A\"}.fa-mars-stroke-h:before{content:\"\\F22B\"}.fa-neuter:before{content:\"\\F22C\"}.fa-genderless:before{content:\"\\F22D\"}.fa-facebook-official:before{content:\"\\F230\"}.fa-pinterest-p:before{content:\"\\F231\"}.fa-whatsapp:before{content:\"\\F232\"}.fa-server:before{content:\"\\F233\"}.fa-user-plus:before{content:\"\\F234\"}.fa-user-times:before{content:\"\\F235\"}.fa-hotel:before,.fa-bed:before{content:\"\\F236\"}.fa-viacoin:before{content:\"\\F237\"}.fa-train:before{content:\"\\F238\"}.fa-subway:before{content:\"\\F239\"}.fa-medium:before{content:\"\\F23A\"}.fa-yc:before,.fa-y-combinator:before{content:\"\\F23B\"}.fa-optin-monster:before{content:\"\\F23C\"}.fa-opencart:before{content:\"\\F23D\"}.fa-expeditedssl:before{content:\"\\F23E\"}.fa-battery-4:before,.fa-battery:before,.fa-battery-full:before{content:\"\\F240\"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:\"\\F241\"}.fa-battery-2:before,.fa-battery-half:before{content:\"\\F242\"}.fa-battery-1:before,.fa-battery-quarter:before{content:\"\\F243\"}.fa-battery-0:before,.fa-battery-empty:before{content:\"\\F244\"}.fa-mouse-pointer:before{content:\"\\F245\"}.fa-i-cursor:before{content:\"\\F246\"}.fa-object-group:before{content:\"\\F247\"}.fa-object-ungroup:before{content:\"\\F248\"}.fa-sticky-note:before{content:\"\\F249\"}.fa-sticky-note-o:before{content:\"\\F24A\"}.fa-cc-jcb:before{content:\"\\F24B\"}.fa-cc-diners-club:before{content:\"\\F24C\"}.fa-clone:before{content:\"\\F24D\"}.fa-balance-scale:before{content:\"\\F24E\"}.fa-hourglass-o:before{content:\"\\F250\"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:\"\\F251\"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:\"\\F252\"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:\"\\F253\"}.fa-hourglass:before{content:\"\\F254\"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:\"\\F255\"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:\"\\F256\"}.fa-hand-scissors-o:before{content:\"\\F257\"}.fa-hand-lizard-o:before{content:\"\\F258\"}.fa-hand-spock-o:before{content:\"\\F259\"}.fa-hand-pointer-o:before{content:\"\\F25A\"}.fa-hand-peace-o:before{content:\"\\F25B\"}.fa-trademark:before{content:\"\\F25C\"}.fa-registered:before{content:\"\\F25D\"}.fa-creative-commons:before{content:\"\\F25E\"}.fa-gg:before{content:\"\\F260\"}.fa-gg-circle:before{content:\"\\F261\"}.fa-tripadvisor:before{content:\"\\F262\"}.fa-odnoklassniki:before{content:\"\\F263\"}.fa-odnoklassniki-square:before{content:\"\\F264\"}.fa-get-pocket:before{content:\"\\F265\"}.fa-wikipedia-w:before{content:\"\\F266\"}.fa-safari:before{content:\"\\F267\"}.fa-chrome:before{content:\"\\F268\"}.fa-firefox:before{content:\"\\F269\"}.fa-opera:before{content:\"\\F26A\"}.fa-internet-explorer:before{content:\"\\F26B\"}.fa-tv:before,.fa-television:before{content:\"\\F26C\"}.fa-contao:before{content:\"\\F26D\"}.fa-500px:before{content:\"\\F26E\"}.fa-amazon:before{content:\"\\F270\"}.fa-calendar-plus-o:before{content:\"\\F271\"}.fa-calendar-minus-o:before{content:\"\\F272\"}.fa-calendar-times-o:before{content:\"\\F273\"}.fa-calendar-check-o:before{content:\"\\F274\"}.fa-industry:before{content:\"\\F275\"}.fa-map-pin:before{content:\"\\F276\"}.fa-map-signs:before{content:\"\\F277\"}.fa-map-o:before{content:\"\\F278\"}.fa-map:before{content:\"\\F279\"}.fa-commenting:before{content:\"\\F27A\"}.fa-commenting-o:before{content:\"\\F27B\"}.fa-houzz:before{content:\"\\F27C\"}.fa-vimeo:before{content:\"\\F27D\"}.fa-black-tie:before{content:\"\\F27E\"}.fa-fonticons:before{content:\"\\F280\"}.fa-reddit-alien:before{content:\"\\F281\"}.fa-edge:before{content:\"\\F282\"}.fa-credit-card-alt:before{content:\"\\F283\"}.fa-codiepie:before{content:\"\\F284\"}.fa-modx:before{content:\"\\F285\"}.fa-fort-awesome:before{content:\"\\F286\"}.fa-usb:before{content:\"\\F287\"}.fa-product-hunt:before{content:\"\\F288\"}.fa-mixcloud:before{content:\"\\F289\"}.fa-scribd:before{content:\"\\F28A\"}.fa-pause-circle:before{content:\"\\F28B\"}.fa-pause-circle-o:before{content:\"\\F28C\"}.fa-stop-circle:before{content:\"\\F28D\"}.fa-stop-circle-o:before{content:\"\\F28E\"}.fa-shopping-bag:before{content:\"\\F290\"}.fa-shopping-basket:before{content:\"\\F291\"}.fa-hashtag:before{content:\"\\F292\"}.fa-bluetooth:before{content:\"\\F293\"}.fa-bluetooth-b:before{content:\"\\F294\"}.fa-percent:before{content:\"\\F295\"}.fa-gitlab:before{content:\"\\F296\"}.fa-wpbeginner:before{content:\"\\F297\"}.fa-wpforms:before{content:\"\\F298\"}.fa-envira:before{content:\"\\F299\"}.fa-universal-access:before{content:\"\\F29A\"}.fa-wheelchair-alt:before{content:\"\\F29B\"}.fa-question-circle-o:before{content:\"\\F29C\"}.fa-blind:before{content:\"\\F29D\"}.fa-audio-description:before{content:\"\\F29E\"}.fa-volume-control-phone:before{content:\"\\F2A0\"}.fa-braille:before{content:\"\\F2A1\"}.fa-assistive-listening-systems:before{content:\"\\F2A2\"}.fa-asl-interpreting:before,.fa-american-sign-language-interpreting:before{content:\"\\F2A3\"}.fa-deafness:before,.fa-hard-of-hearing:before,.fa-deaf:before{content:\"\\F2A4\"}.fa-glide:before{content:\"\\F2A5\"}.fa-glide-g:before{content:\"\\F2A6\"}.fa-signing:before,.fa-sign-language:before{content:\"\\F2A7\"}.fa-low-vision:before{content:\"\\F2A8\"}.fa-viadeo:before{content:\"\\F2A9\"}.fa-viadeo-square:before{content:\"\\F2AA\"}.fa-snapchat:before{content:\"\\F2AB\"}.fa-snapchat-ghost:before{content:\"\\F2AC\"}.fa-snapchat-square:before{content:\"\\F2AD\"}.fa-pied-piper:before{content:\"\\F2AE\"}.fa-first-order:before{content:\"\\F2B0\"}.fa-yoast:before{content:\"\\F2B1\"}.fa-themeisle:before{content:\"\\F2B2\"}.fa-google-plus-circle:before,.fa-google-plus-official:before{content:\"\\F2B3\"}.fa-fa:before,.fa-font-awesome:before{content:\"\\F2B4\"}.fa-handshake-o:before{content:\"\\F2B5\"}.fa-envelope-open:before{content:\"\\F2B6\"}.fa-envelope-open-o:before{content:\"\\F2B7\"}.fa-linode:before{content:\"\\F2B8\"}.fa-address-book:before{content:\"\\F2B9\"}.fa-address-book-o:before{content:\"\\F2BA\"}.fa-vcard:before,.fa-address-card:before{content:\"\\F2BB\"}.fa-vcard-o:before,.fa-address-card-o:before{content:\"\\F2BC\"}.fa-user-circle:before{content:\"\\F2BD\"}.fa-user-circle-o:before{content:\"\\F2BE\"}.fa-user-o:before{content:\"\\F2C0\"}.fa-id-badge:before{content:\"\\F2C1\"}.fa-drivers-license:before,.fa-id-card:before{content:\"\\F2C2\"}.fa-drivers-license-o:before,.fa-id-card-o:before{content:\"\\F2C3\"}.fa-quora:before{content:\"\\F2C4\"}.fa-free-code-camp:before{content:\"\\F2C5\"}.fa-telegram:before{content:\"\\F2C6\"}.fa-thermometer-4:before,.fa-thermometer:before,.fa-thermometer-full:before{content:\"\\F2C7\"}.fa-thermometer-3:before,.fa-thermometer-three-quarters:before{content:\"\\F2C8\"}.fa-thermometer-2:before,.fa-thermometer-half:before{content:\"\\F2C9\"}.fa-thermometer-1:before,.fa-thermometer-quarter:before{content:\"\\F2CA\"}.fa-thermometer-0:before,.fa-thermometer-empty:before{content:\"\\F2CB\"}.fa-shower:before{content:\"\\F2CC\"}.fa-bathtub:before,.fa-s15:before,.fa-bath:before{content:\"\\F2CD\"}.fa-podcast:before{content:\"\\F2CE\"}.fa-window-maximize:before{content:\"\\F2D0\"}.fa-window-minimize:before{content:\"\\F2D1\"}.fa-window-restore:before{content:\"\\F2D2\"}.fa-times-rectangle:before,.fa-window-close:before{content:\"\\F2D3\"}.fa-times-rectangle-o:before,.fa-window-close-o:before{content:\"\\F2D4\"}.fa-bandcamp:before{content:\"\\F2D5\"}.fa-grav:before{content:\"\\F2D6\"}.fa-etsy:before{content:\"\\F2D7\"}.fa-imdb:before{content:\"\\F2D8\"}.fa-ravelry:before{content:\"\\F2D9\"}.fa-eercast:before{content:\"\\F2DA\"}.fa-microchip:before{content:\"\\F2DB\"}.fa-snowflake-o:before{content:\"\\F2DC\"}.fa-superpowers:before{content:\"\\F2DD\"}.fa-wpexplorer:before{content:\"\\F2DE\"}.fa-meetup:before{content:\"\\F2E0\"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}\n", ""]);
+exports.push([module.i, "/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */@font-face{font-family:'FontAwesome';src:url(" + escape(__webpack_require__(235)) + ");src:url(" + escape(__webpack_require__(236)) + "?#iefix&v=4.7.0) format('embedded-opentype'),url(" + escape(__webpack_require__(237)) + ") format('woff2'),url(" + escape(__webpack_require__(238)) + ") format('woff'),url(" + escape(__webpack_require__(239)) + ") format('truetype'),url(" + escape(__webpack_require__(240)) + "#fontawesomeregular) format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-fw{width:1.28571429em;text-align:center}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em;text-align:center}.fa-li.fa-lg{left:-1.85714286em}.fa-border{padding:.2em .25em .15em;border:solid .08em #eee;border-radius:.1em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left{margin-right:.3em}.fa.fa-pull-right{margin-left:.3em}.pull-right{float:right}.pull-left{float:left}.fa.pull-left{margin-right:.3em}.fa.pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-rotate-90{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";-webkit-transform:scale(-1, 1);-ms-transform:scale(-1, 1);transform:scale(-1, 1)}.fa-flip-vertical{-ms-filter:\"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";-webkit-transform:scale(1, -1);-ms-transform:scale(1, -1);transform:scale(1, -1)}:root .fa-rotate-90,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-flip-horizontal,:root .fa-flip-vertical{filter:none}.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}.fa-stack-1x{line-height:inherit}.fa-stack-2x{font-size:2em}.fa-inverse{color:#fff}.fa-glass:before{content:\"\\F000\"}.fa-music:before{content:\"\\F001\"}.fa-search:before{content:\"\\F002\"}.fa-envelope-o:before{content:\"\\F003\"}.fa-heart:before{content:\"\\F004\"}.fa-star:before{content:\"\\F005\"}.fa-star-o:before{content:\"\\F006\"}.fa-user:before{content:\"\\F007\"}.fa-film:before{content:\"\\F008\"}.fa-th-large:before{content:\"\\F009\"}.fa-th:before{content:\"\\F00A\"}.fa-th-list:before{content:\"\\F00B\"}.fa-check:before{content:\"\\F00C\"}.fa-remove:before,.fa-close:before,.fa-times:before{content:\"\\F00D\"}.fa-search-plus:before{content:\"\\F00E\"}.fa-search-minus:before{content:\"\\F010\"}.fa-power-off:before{content:\"\\F011\"}.fa-signal:before{content:\"\\F012\"}.fa-gear:before,.fa-cog:before{content:\"\\F013\"}.fa-trash-o:before{content:\"\\F014\"}.fa-home:before{content:\"\\F015\"}.fa-file-o:before{content:\"\\F016\"}.fa-clock-o:before{content:\"\\F017\"}.fa-road:before{content:\"\\F018\"}.fa-download:before{content:\"\\F019\"}.fa-arrow-circle-o-down:before{content:\"\\F01A\"}.fa-arrow-circle-o-up:before{content:\"\\F01B\"}.fa-inbox:before{content:\"\\F01C\"}.fa-play-circle-o:before{content:\"\\F01D\"}.fa-rotate-right:before,.fa-repeat:before{content:\"\\F01E\"}.fa-refresh:before{content:\"\\F021\"}.fa-list-alt:before{content:\"\\F022\"}.fa-lock:before{content:\"\\F023\"}.fa-flag:before{content:\"\\F024\"}.fa-headphones:before{content:\"\\F025\"}.fa-volume-off:before{content:\"\\F026\"}.fa-volume-down:before{content:\"\\F027\"}.fa-volume-up:before{content:\"\\F028\"}.fa-qrcode:before{content:\"\\F029\"}.fa-barcode:before{content:\"\\F02A\"}.fa-tag:before{content:\"\\F02B\"}.fa-tags:before{content:\"\\F02C\"}.fa-book:before{content:\"\\F02D\"}.fa-bookmark:before{content:\"\\F02E\"}.fa-print:before{content:\"\\F02F\"}.fa-camera:before{content:\"\\F030\"}.fa-font:before{content:\"\\F031\"}.fa-bold:before{content:\"\\F032\"}.fa-italic:before{content:\"\\F033\"}.fa-text-height:before{content:\"\\F034\"}.fa-text-width:before{content:\"\\F035\"}.fa-align-left:before{content:\"\\F036\"}.fa-align-center:before{content:\"\\F037\"}.fa-align-right:before{content:\"\\F038\"}.fa-align-justify:before{content:\"\\F039\"}.fa-list:before{content:\"\\F03A\"}.fa-dedent:before,.fa-outdent:before{content:\"\\F03B\"}.fa-indent:before{content:\"\\F03C\"}.fa-video-camera:before{content:\"\\F03D\"}.fa-photo:before,.fa-image:before,.fa-picture-o:before{content:\"\\F03E\"}.fa-pencil:before{content:\"\\F040\"}.fa-map-marker:before{content:\"\\F041\"}.fa-adjust:before{content:\"\\F042\"}.fa-tint:before{content:\"\\F043\"}.fa-edit:before,.fa-pencil-square-o:before{content:\"\\F044\"}.fa-share-square-o:before{content:\"\\F045\"}.fa-check-square-o:before{content:\"\\F046\"}.fa-arrows:before{content:\"\\F047\"}.fa-step-backward:before{content:\"\\F048\"}.fa-fast-backward:before{content:\"\\F049\"}.fa-backward:before{content:\"\\F04A\"}.fa-play:before{content:\"\\F04B\"}.fa-pause:before{content:\"\\F04C\"}.fa-stop:before{content:\"\\F04D\"}.fa-forward:before{content:\"\\F04E\"}.fa-fast-forward:before{content:\"\\F050\"}.fa-step-forward:before{content:\"\\F051\"}.fa-eject:before{content:\"\\F052\"}.fa-chevron-left:before{content:\"\\F053\"}.fa-chevron-right:before{content:\"\\F054\"}.fa-plus-circle:before{content:\"\\F055\"}.fa-minus-circle:before{content:\"\\F056\"}.fa-times-circle:before{content:\"\\F057\"}.fa-check-circle:before{content:\"\\F058\"}.fa-question-circle:before{content:\"\\F059\"}.fa-info-circle:before{content:\"\\F05A\"}.fa-crosshairs:before{content:\"\\F05B\"}.fa-times-circle-o:before{content:\"\\F05C\"}.fa-check-circle-o:before{content:\"\\F05D\"}.fa-ban:before{content:\"\\F05E\"}.fa-arrow-left:before{content:\"\\F060\"}.fa-arrow-right:before{content:\"\\F061\"}.fa-arrow-up:before{content:\"\\F062\"}.fa-arrow-down:before{content:\"\\F063\"}.fa-mail-forward:before,.fa-share:before{content:\"\\F064\"}.fa-expand:before{content:\"\\F065\"}.fa-compress:before{content:\"\\F066\"}.fa-plus:before{content:\"\\F067\"}.fa-minus:before{content:\"\\F068\"}.fa-asterisk:before{content:\"\\F069\"}.fa-exclamation-circle:before{content:\"\\F06A\"}.fa-gift:before{content:\"\\F06B\"}.fa-leaf:before{content:\"\\F06C\"}.fa-fire:before{content:\"\\F06D\"}.fa-eye:before{content:\"\\F06E\"}.fa-eye-slash:before{content:\"\\F070\"}.fa-warning:before,.fa-exclamation-triangle:before{content:\"\\F071\"}.fa-plane:before{content:\"\\F072\"}.fa-calendar:before{content:\"\\F073\"}.fa-random:before{content:\"\\F074\"}.fa-comment:before{content:\"\\F075\"}.fa-magnet:before{content:\"\\F076\"}.fa-chevron-up:before{content:\"\\F077\"}.fa-chevron-down:before{content:\"\\F078\"}.fa-retweet:before{content:\"\\F079\"}.fa-shopping-cart:before{content:\"\\F07A\"}.fa-folder:before{content:\"\\F07B\"}.fa-folder-open:before{content:\"\\F07C\"}.fa-arrows-v:before{content:\"\\F07D\"}.fa-arrows-h:before{content:\"\\F07E\"}.fa-bar-chart-o:before,.fa-bar-chart:before{content:\"\\F080\"}.fa-twitter-square:before{content:\"\\F081\"}.fa-facebook-square:before{content:\"\\F082\"}.fa-camera-retro:before{content:\"\\F083\"}.fa-key:before{content:\"\\F084\"}.fa-gears:before,.fa-cogs:before{content:\"\\F085\"}.fa-comments:before{content:\"\\F086\"}.fa-thumbs-o-up:before{content:\"\\F087\"}.fa-thumbs-o-down:before{content:\"\\F088\"}.fa-star-half:before{content:\"\\F089\"}.fa-heart-o:before{content:\"\\F08A\"}.fa-sign-out:before{content:\"\\F08B\"}.fa-linkedin-square:before{content:\"\\F08C\"}.fa-thumb-tack:before{content:\"\\F08D\"}.fa-external-link:before{content:\"\\F08E\"}.fa-sign-in:before{content:\"\\F090\"}.fa-trophy:before{content:\"\\F091\"}.fa-github-square:before{content:\"\\F092\"}.fa-upload:before{content:\"\\F093\"}.fa-lemon-o:before{content:\"\\F094\"}.fa-phone:before{content:\"\\F095\"}.fa-square-o:before{content:\"\\F096\"}.fa-bookmark-o:before{content:\"\\F097\"}.fa-phone-square:before{content:\"\\F098\"}.fa-twitter:before{content:\"\\F099\"}.fa-facebook-f:before,.fa-facebook:before{content:\"\\F09A\"}.fa-github:before{content:\"\\F09B\"}.fa-unlock:before{content:\"\\F09C\"}.fa-credit-card:before{content:\"\\F09D\"}.fa-feed:before,.fa-rss:before{content:\"\\F09E\"}.fa-hdd-o:before{content:\"\\F0A0\"}.fa-bullhorn:before{content:\"\\F0A1\"}.fa-bell:before{content:\"\\F0F3\"}.fa-certificate:before{content:\"\\F0A3\"}.fa-hand-o-right:before{content:\"\\F0A4\"}.fa-hand-o-left:before{content:\"\\F0A5\"}.fa-hand-o-up:before{content:\"\\F0A6\"}.fa-hand-o-down:before{content:\"\\F0A7\"}.fa-arrow-circle-left:before{content:\"\\F0A8\"}.fa-arrow-circle-right:before{content:\"\\F0A9\"}.fa-arrow-circle-up:before{content:\"\\F0AA\"}.fa-arrow-circle-down:before{content:\"\\F0AB\"}.fa-globe:before{content:\"\\F0AC\"}.fa-wrench:before{content:\"\\F0AD\"}.fa-tasks:before{content:\"\\F0AE\"}.fa-filter:before{content:\"\\F0B0\"}.fa-briefcase:before{content:\"\\F0B1\"}.fa-arrows-alt:before{content:\"\\F0B2\"}.fa-group:before,.fa-users:before{content:\"\\F0C0\"}.fa-chain:before,.fa-link:before{content:\"\\F0C1\"}.fa-cloud:before{content:\"\\F0C2\"}.fa-flask:before{content:\"\\F0C3\"}.fa-cut:before,.fa-scissors:before{content:\"\\F0C4\"}.fa-copy:before,.fa-files-o:before{content:\"\\F0C5\"}.fa-paperclip:before{content:\"\\F0C6\"}.fa-save:before,.fa-floppy-o:before{content:\"\\F0C7\"}.fa-square:before{content:\"\\F0C8\"}.fa-navicon:before,.fa-reorder:before,.fa-bars:before{content:\"\\F0C9\"}.fa-list-ul:before{content:\"\\F0CA\"}.fa-list-ol:before{content:\"\\F0CB\"}.fa-strikethrough:before{content:\"\\F0CC\"}.fa-underline:before{content:\"\\F0CD\"}.fa-table:before{content:\"\\F0CE\"}.fa-magic:before{content:\"\\F0D0\"}.fa-truck:before{content:\"\\F0D1\"}.fa-pinterest:before{content:\"\\F0D2\"}.fa-pinterest-square:before{content:\"\\F0D3\"}.fa-google-plus-square:before{content:\"\\F0D4\"}.fa-google-plus:before{content:\"\\F0D5\"}.fa-money:before{content:\"\\F0D6\"}.fa-caret-down:before{content:\"\\F0D7\"}.fa-caret-up:before{content:\"\\F0D8\"}.fa-caret-left:before{content:\"\\F0D9\"}.fa-caret-right:before{content:\"\\F0DA\"}.fa-columns:before{content:\"\\F0DB\"}.fa-unsorted:before,.fa-sort:before{content:\"\\F0DC\"}.fa-sort-down:before,.fa-sort-desc:before{content:\"\\F0DD\"}.fa-sort-up:before,.fa-sort-asc:before{content:\"\\F0DE\"}.fa-envelope:before{content:\"\\F0E0\"}.fa-linkedin:before{content:\"\\F0E1\"}.fa-rotate-left:before,.fa-undo:before{content:\"\\F0E2\"}.fa-legal:before,.fa-gavel:before{content:\"\\F0E3\"}.fa-dashboard:before,.fa-tachometer:before{content:\"\\F0E4\"}.fa-comment-o:before{content:\"\\F0E5\"}.fa-comments-o:before{content:\"\\F0E6\"}.fa-flash:before,.fa-bolt:before{content:\"\\F0E7\"}.fa-sitemap:before{content:\"\\F0E8\"}.fa-umbrella:before{content:\"\\F0E9\"}.fa-paste:before,.fa-clipboard:before{content:\"\\F0EA\"}.fa-lightbulb-o:before{content:\"\\F0EB\"}.fa-exchange:before{content:\"\\F0EC\"}.fa-cloud-download:before{content:\"\\F0ED\"}.fa-cloud-upload:before{content:\"\\F0EE\"}.fa-user-md:before{content:\"\\F0F0\"}.fa-stethoscope:before{content:\"\\F0F1\"}.fa-suitcase:before{content:\"\\F0F2\"}.fa-bell-o:before{content:\"\\F0A2\"}.fa-coffee:before{content:\"\\F0F4\"}.fa-cutlery:before{content:\"\\F0F5\"}.fa-file-text-o:before{content:\"\\F0F6\"}.fa-building-o:before{content:\"\\F0F7\"}.fa-hospital-o:before{content:\"\\F0F8\"}.fa-ambulance:before{content:\"\\F0F9\"}.fa-medkit:before{content:\"\\F0FA\"}.fa-fighter-jet:before{content:\"\\F0FB\"}.fa-beer:before{content:\"\\F0FC\"}.fa-h-square:before{content:\"\\F0FD\"}.fa-plus-square:before{content:\"\\F0FE\"}.fa-angle-double-left:before{content:\"\\F100\"}.fa-angle-double-right:before{content:\"\\F101\"}.fa-angle-double-up:before{content:\"\\F102\"}.fa-angle-double-down:before{content:\"\\F103\"}.fa-angle-left:before{content:\"\\F104\"}.fa-angle-right:before{content:\"\\F105\"}.fa-angle-up:before{content:\"\\F106\"}.fa-angle-down:before{content:\"\\F107\"}.fa-desktop:before{content:\"\\F108\"}.fa-laptop:before{content:\"\\F109\"}.fa-tablet:before{content:\"\\F10A\"}.fa-mobile-phone:before,.fa-mobile:before{content:\"\\F10B\"}.fa-circle-o:before{content:\"\\F10C\"}.fa-quote-left:before{content:\"\\F10D\"}.fa-quote-right:before{content:\"\\F10E\"}.fa-spinner:before{content:\"\\F110\"}.fa-circle:before{content:\"\\F111\"}.fa-mail-reply:before,.fa-reply:before{content:\"\\F112\"}.fa-github-alt:before{content:\"\\F113\"}.fa-folder-o:before{content:\"\\F114\"}.fa-folder-open-o:before{content:\"\\F115\"}.fa-smile-o:before{content:\"\\F118\"}.fa-frown-o:before{content:\"\\F119\"}.fa-meh-o:before{content:\"\\F11A\"}.fa-gamepad:before{content:\"\\F11B\"}.fa-keyboard-o:before{content:\"\\F11C\"}.fa-flag-o:before{content:\"\\F11D\"}.fa-flag-checkered:before{content:\"\\F11E\"}.fa-terminal:before{content:\"\\F120\"}.fa-code:before{content:\"\\F121\"}.fa-mail-reply-all:before,.fa-reply-all:before{content:\"\\F122\"}.fa-star-half-empty:before,.fa-star-half-full:before,.fa-star-half-o:before{content:\"\\F123\"}.fa-location-arrow:before{content:\"\\F124\"}.fa-crop:before{content:\"\\F125\"}.fa-code-fork:before{content:\"\\F126\"}.fa-unlink:before,.fa-chain-broken:before{content:\"\\F127\"}.fa-question:before{content:\"\\F128\"}.fa-info:before{content:\"\\F129\"}.fa-exclamation:before{content:\"\\F12A\"}.fa-superscript:before{content:\"\\F12B\"}.fa-subscript:before{content:\"\\F12C\"}.fa-eraser:before{content:\"\\F12D\"}.fa-puzzle-piece:before{content:\"\\F12E\"}.fa-microphone:before{content:\"\\F130\"}.fa-microphone-slash:before{content:\"\\F131\"}.fa-shield:before{content:\"\\F132\"}.fa-calendar-o:before{content:\"\\F133\"}.fa-fire-extinguisher:before{content:\"\\F134\"}.fa-rocket:before{content:\"\\F135\"}.fa-maxcdn:before{content:\"\\F136\"}.fa-chevron-circle-left:before{content:\"\\F137\"}.fa-chevron-circle-right:before{content:\"\\F138\"}.fa-chevron-circle-up:before{content:\"\\F139\"}.fa-chevron-circle-down:before{content:\"\\F13A\"}.fa-html5:before{content:\"\\F13B\"}.fa-css3:before{content:\"\\F13C\"}.fa-anchor:before{content:\"\\F13D\"}.fa-unlock-alt:before{content:\"\\F13E\"}.fa-bullseye:before{content:\"\\F140\"}.fa-ellipsis-h:before{content:\"\\F141\"}.fa-ellipsis-v:before{content:\"\\F142\"}.fa-rss-square:before{content:\"\\F143\"}.fa-play-circle:before{content:\"\\F144\"}.fa-ticket:before{content:\"\\F145\"}.fa-minus-square:before{content:\"\\F146\"}.fa-minus-square-o:before{content:\"\\F147\"}.fa-level-up:before{content:\"\\F148\"}.fa-level-down:before{content:\"\\F149\"}.fa-check-square:before{content:\"\\F14A\"}.fa-pencil-square:before{content:\"\\F14B\"}.fa-external-link-square:before{content:\"\\F14C\"}.fa-share-square:before{content:\"\\F14D\"}.fa-compass:before{content:\"\\F14E\"}.fa-toggle-down:before,.fa-caret-square-o-down:before{content:\"\\F150\"}.fa-toggle-up:before,.fa-caret-square-o-up:before{content:\"\\F151\"}.fa-toggle-right:before,.fa-caret-square-o-right:before{content:\"\\F152\"}.fa-euro:before,.fa-eur:before{content:\"\\F153\"}.fa-gbp:before{content:\"\\F154\"}.fa-dollar:before,.fa-usd:before{content:\"\\F155\"}.fa-rupee:before,.fa-inr:before{content:\"\\F156\"}.fa-cny:before,.fa-rmb:before,.fa-yen:before,.fa-jpy:before{content:\"\\F157\"}.fa-ruble:before,.fa-rouble:before,.fa-rub:before{content:\"\\F158\"}.fa-won:before,.fa-krw:before{content:\"\\F159\"}.fa-bitcoin:before,.fa-btc:before{content:\"\\F15A\"}.fa-file:before{content:\"\\F15B\"}.fa-file-text:before{content:\"\\F15C\"}.fa-sort-alpha-asc:before{content:\"\\F15D\"}.fa-sort-alpha-desc:before{content:\"\\F15E\"}.fa-sort-amount-asc:before{content:\"\\F160\"}.fa-sort-amount-desc:before{content:\"\\F161\"}.fa-sort-numeric-asc:before{content:\"\\F162\"}.fa-sort-numeric-desc:before{content:\"\\F163\"}.fa-thumbs-up:before{content:\"\\F164\"}.fa-thumbs-down:before{content:\"\\F165\"}.fa-youtube-square:before{content:\"\\F166\"}.fa-youtube:before{content:\"\\F167\"}.fa-xing:before{content:\"\\F168\"}.fa-xing-square:before{content:\"\\F169\"}.fa-youtube-play:before{content:\"\\F16A\"}.fa-dropbox:before{content:\"\\F16B\"}.fa-stack-overflow:before{content:\"\\F16C\"}.fa-instagram:before{content:\"\\F16D\"}.fa-flickr:before{content:\"\\F16E\"}.fa-adn:before{content:\"\\F170\"}.fa-bitbucket:before{content:\"\\F171\"}.fa-bitbucket-square:before{content:\"\\F172\"}.fa-tumblr:before{content:\"\\F173\"}.fa-tumblr-square:before{content:\"\\F174\"}.fa-long-arrow-down:before{content:\"\\F175\"}.fa-long-arrow-up:before{content:\"\\F176\"}.fa-long-arrow-left:before{content:\"\\F177\"}.fa-long-arrow-right:before{content:\"\\F178\"}.fa-apple:before{content:\"\\F179\"}.fa-windows:before{content:\"\\F17A\"}.fa-android:before{content:\"\\F17B\"}.fa-linux:before{content:\"\\F17C\"}.fa-dribbble:before{content:\"\\F17D\"}.fa-skype:before{content:\"\\F17E\"}.fa-foursquare:before{content:\"\\F180\"}.fa-trello:before{content:\"\\F181\"}.fa-female:before{content:\"\\F182\"}.fa-male:before{content:\"\\F183\"}.fa-gittip:before,.fa-gratipay:before{content:\"\\F184\"}.fa-sun-o:before{content:\"\\F185\"}.fa-moon-o:before{content:\"\\F186\"}.fa-archive:before{content:\"\\F187\"}.fa-bug:before{content:\"\\F188\"}.fa-vk:before{content:\"\\F189\"}.fa-weibo:before{content:\"\\F18A\"}.fa-renren:before{content:\"\\F18B\"}.fa-pagelines:before{content:\"\\F18C\"}.fa-stack-exchange:before{content:\"\\F18D\"}.fa-arrow-circle-o-right:before{content:\"\\F18E\"}.fa-arrow-circle-o-left:before{content:\"\\F190\"}.fa-toggle-left:before,.fa-caret-square-o-left:before{content:\"\\F191\"}.fa-dot-circle-o:before{content:\"\\F192\"}.fa-wheelchair:before{content:\"\\F193\"}.fa-vimeo-square:before{content:\"\\F194\"}.fa-turkish-lira:before,.fa-try:before{content:\"\\F195\"}.fa-plus-square-o:before{content:\"\\F196\"}.fa-space-shuttle:before{content:\"\\F197\"}.fa-slack:before{content:\"\\F198\"}.fa-envelope-square:before{content:\"\\F199\"}.fa-wordpress:before{content:\"\\F19A\"}.fa-openid:before{content:\"\\F19B\"}.fa-institution:before,.fa-bank:before,.fa-university:before{content:\"\\F19C\"}.fa-mortar-board:before,.fa-graduation-cap:before{content:\"\\F19D\"}.fa-yahoo:before{content:\"\\F19E\"}.fa-google:before{content:\"\\F1A0\"}.fa-reddit:before{content:\"\\F1A1\"}.fa-reddit-square:before{content:\"\\F1A2\"}.fa-stumbleupon-circle:before{content:\"\\F1A3\"}.fa-stumbleupon:before{content:\"\\F1A4\"}.fa-delicious:before{content:\"\\F1A5\"}.fa-digg:before{content:\"\\F1A6\"}.fa-pied-piper-pp:before{content:\"\\F1A7\"}.fa-pied-piper-alt:before{content:\"\\F1A8\"}.fa-drupal:before{content:\"\\F1A9\"}.fa-joomla:before{content:\"\\F1AA\"}.fa-language:before{content:\"\\F1AB\"}.fa-fax:before{content:\"\\F1AC\"}.fa-building:before{content:\"\\F1AD\"}.fa-child:before{content:\"\\F1AE\"}.fa-paw:before{content:\"\\F1B0\"}.fa-spoon:before{content:\"\\F1B1\"}.fa-cube:before{content:\"\\F1B2\"}.fa-cubes:before{content:\"\\F1B3\"}.fa-behance:before{content:\"\\F1B4\"}.fa-behance-square:before{content:\"\\F1B5\"}.fa-steam:before{content:\"\\F1B6\"}.fa-steam-square:before{content:\"\\F1B7\"}.fa-recycle:before{content:\"\\F1B8\"}.fa-automobile:before,.fa-car:before{content:\"\\F1B9\"}.fa-cab:before,.fa-taxi:before{content:\"\\F1BA\"}.fa-tree:before{content:\"\\F1BB\"}.fa-spotify:before{content:\"\\F1BC\"}.fa-deviantart:before{content:\"\\F1BD\"}.fa-soundcloud:before{content:\"\\F1BE\"}.fa-database:before{content:\"\\F1C0\"}.fa-file-pdf-o:before{content:\"\\F1C1\"}.fa-file-word-o:before{content:\"\\F1C2\"}.fa-file-excel-o:before{content:\"\\F1C3\"}.fa-file-powerpoint-o:before{content:\"\\F1C4\"}.fa-file-photo-o:before,.fa-file-picture-o:before,.fa-file-image-o:before{content:\"\\F1C5\"}.fa-file-zip-o:before,.fa-file-archive-o:before{content:\"\\F1C6\"}.fa-file-sound-o:before,.fa-file-audio-o:before{content:\"\\F1C7\"}.fa-file-movie-o:before,.fa-file-video-o:before{content:\"\\F1C8\"}.fa-file-code-o:before{content:\"\\F1C9\"}.fa-vine:before{content:\"\\F1CA\"}.fa-codepen:before{content:\"\\F1CB\"}.fa-jsfiddle:before{content:\"\\F1CC\"}.fa-life-bouy:before,.fa-life-buoy:before,.fa-life-saver:before,.fa-support:before,.fa-life-ring:before{content:\"\\F1CD\"}.fa-circle-o-notch:before{content:\"\\F1CE\"}.fa-ra:before,.fa-resistance:before,.fa-rebel:before{content:\"\\F1D0\"}.fa-ge:before,.fa-empire:before{content:\"\\F1D1\"}.fa-git-square:before{content:\"\\F1D2\"}.fa-git:before{content:\"\\F1D3\"}.fa-y-combinator-square:before,.fa-yc-square:before,.fa-hacker-news:before{content:\"\\F1D4\"}.fa-tencent-weibo:before{content:\"\\F1D5\"}.fa-qq:before{content:\"\\F1D6\"}.fa-wechat:before,.fa-weixin:before{content:\"\\F1D7\"}.fa-send:before,.fa-paper-plane:before{content:\"\\F1D8\"}.fa-send-o:before,.fa-paper-plane-o:before{content:\"\\F1D9\"}.fa-history:before{content:\"\\F1DA\"}.fa-circle-thin:before{content:\"\\F1DB\"}.fa-header:before{content:\"\\F1DC\"}.fa-paragraph:before{content:\"\\F1DD\"}.fa-sliders:before{content:\"\\F1DE\"}.fa-share-alt:before{content:\"\\F1E0\"}.fa-share-alt-square:before{content:\"\\F1E1\"}.fa-bomb:before{content:\"\\F1E2\"}.fa-soccer-ball-o:before,.fa-futbol-o:before{content:\"\\F1E3\"}.fa-tty:before{content:\"\\F1E4\"}.fa-binoculars:before{content:\"\\F1E5\"}.fa-plug:before{content:\"\\F1E6\"}.fa-slideshare:before{content:\"\\F1E7\"}.fa-twitch:before{content:\"\\F1E8\"}.fa-yelp:before{content:\"\\F1E9\"}.fa-newspaper-o:before{content:\"\\F1EA\"}.fa-wifi:before{content:\"\\F1EB\"}.fa-calculator:before{content:\"\\F1EC\"}.fa-paypal:before{content:\"\\F1ED\"}.fa-google-wallet:before{content:\"\\F1EE\"}.fa-cc-visa:before{content:\"\\F1F0\"}.fa-cc-mastercard:before{content:\"\\F1F1\"}.fa-cc-discover:before{content:\"\\F1F2\"}.fa-cc-amex:before{content:\"\\F1F3\"}.fa-cc-paypal:before{content:\"\\F1F4\"}.fa-cc-stripe:before{content:\"\\F1F5\"}.fa-bell-slash:before{content:\"\\F1F6\"}.fa-bell-slash-o:before{content:\"\\F1F7\"}.fa-trash:before{content:\"\\F1F8\"}.fa-copyright:before{content:\"\\F1F9\"}.fa-at:before{content:\"\\F1FA\"}.fa-eyedropper:before{content:\"\\F1FB\"}.fa-paint-brush:before{content:\"\\F1FC\"}.fa-birthday-cake:before{content:\"\\F1FD\"}.fa-area-chart:before{content:\"\\F1FE\"}.fa-pie-chart:before{content:\"\\F200\"}.fa-line-chart:before{content:\"\\F201\"}.fa-lastfm:before{content:\"\\F202\"}.fa-lastfm-square:before{content:\"\\F203\"}.fa-toggle-off:before{content:\"\\F204\"}.fa-toggle-on:before{content:\"\\F205\"}.fa-bicycle:before{content:\"\\F206\"}.fa-bus:before{content:\"\\F207\"}.fa-ioxhost:before{content:\"\\F208\"}.fa-angellist:before{content:\"\\F209\"}.fa-cc:before{content:\"\\F20A\"}.fa-shekel:before,.fa-sheqel:before,.fa-ils:before{content:\"\\F20B\"}.fa-meanpath:before{content:\"\\F20C\"}.fa-buysellads:before{content:\"\\F20D\"}.fa-connectdevelop:before{content:\"\\F20E\"}.fa-dashcube:before{content:\"\\F210\"}.fa-forumbee:before{content:\"\\F211\"}.fa-leanpub:before{content:\"\\F212\"}.fa-sellsy:before{content:\"\\F213\"}.fa-shirtsinbulk:before{content:\"\\F214\"}.fa-simplybuilt:before{content:\"\\F215\"}.fa-skyatlas:before{content:\"\\F216\"}.fa-cart-plus:before{content:\"\\F217\"}.fa-cart-arrow-down:before{content:\"\\F218\"}.fa-diamond:before{content:\"\\F219\"}.fa-ship:before{content:\"\\F21A\"}.fa-user-secret:before{content:\"\\F21B\"}.fa-motorcycle:before{content:\"\\F21C\"}.fa-street-view:before{content:\"\\F21D\"}.fa-heartbeat:before{content:\"\\F21E\"}.fa-venus:before{content:\"\\F221\"}.fa-mars:before{content:\"\\F222\"}.fa-mercury:before{content:\"\\F223\"}.fa-intersex:before,.fa-transgender:before{content:\"\\F224\"}.fa-transgender-alt:before{content:\"\\F225\"}.fa-venus-double:before{content:\"\\F226\"}.fa-mars-double:before{content:\"\\F227\"}.fa-venus-mars:before{content:\"\\F228\"}.fa-mars-stroke:before{content:\"\\F229\"}.fa-mars-stroke-v:before{content:\"\\F22A\"}.fa-mars-stroke-h:before{content:\"\\F22B\"}.fa-neuter:before{content:\"\\F22C\"}.fa-genderless:before{content:\"\\F22D\"}.fa-facebook-official:before{content:\"\\F230\"}.fa-pinterest-p:before{content:\"\\F231\"}.fa-whatsapp:before{content:\"\\F232\"}.fa-server:before{content:\"\\F233\"}.fa-user-plus:before{content:\"\\F234\"}.fa-user-times:before{content:\"\\F235\"}.fa-hotel:before,.fa-bed:before{content:\"\\F236\"}.fa-viacoin:before{content:\"\\F237\"}.fa-train:before{content:\"\\F238\"}.fa-subway:before{content:\"\\F239\"}.fa-medium:before{content:\"\\F23A\"}.fa-yc:before,.fa-y-combinator:before{content:\"\\F23B\"}.fa-optin-monster:before{content:\"\\F23C\"}.fa-opencart:before{content:\"\\F23D\"}.fa-expeditedssl:before{content:\"\\F23E\"}.fa-battery-4:before,.fa-battery:before,.fa-battery-full:before{content:\"\\F240\"}.fa-battery-3:before,.fa-battery-three-quarters:before{content:\"\\F241\"}.fa-battery-2:before,.fa-battery-half:before{content:\"\\F242\"}.fa-battery-1:before,.fa-battery-quarter:before{content:\"\\F243\"}.fa-battery-0:before,.fa-battery-empty:before{content:\"\\F244\"}.fa-mouse-pointer:before{content:\"\\F245\"}.fa-i-cursor:before{content:\"\\F246\"}.fa-object-group:before{content:\"\\F247\"}.fa-object-ungroup:before{content:\"\\F248\"}.fa-sticky-note:before{content:\"\\F249\"}.fa-sticky-note-o:before{content:\"\\F24A\"}.fa-cc-jcb:before{content:\"\\F24B\"}.fa-cc-diners-club:before{content:\"\\F24C\"}.fa-clone:before{content:\"\\F24D\"}.fa-balance-scale:before{content:\"\\F24E\"}.fa-hourglass-o:before{content:\"\\F250\"}.fa-hourglass-1:before,.fa-hourglass-start:before{content:\"\\F251\"}.fa-hourglass-2:before,.fa-hourglass-half:before{content:\"\\F252\"}.fa-hourglass-3:before,.fa-hourglass-end:before{content:\"\\F253\"}.fa-hourglass:before{content:\"\\F254\"}.fa-hand-grab-o:before,.fa-hand-rock-o:before{content:\"\\F255\"}.fa-hand-stop-o:before,.fa-hand-paper-o:before{content:\"\\F256\"}.fa-hand-scissors-o:before{content:\"\\F257\"}.fa-hand-lizard-o:before{content:\"\\F258\"}.fa-hand-spock-o:before{content:\"\\F259\"}.fa-hand-pointer-o:before{content:\"\\F25A\"}.fa-hand-peace-o:before{content:\"\\F25B\"}.fa-trademark:before{content:\"\\F25C\"}.fa-registered:before{content:\"\\F25D\"}.fa-creative-commons:before{content:\"\\F25E\"}.fa-gg:before{content:\"\\F260\"}.fa-gg-circle:before{content:\"\\F261\"}.fa-tripadvisor:before{content:\"\\F262\"}.fa-odnoklassniki:before{content:\"\\F263\"}.fa-odnoklassniki-square:before{content:\"\\F264\"}.fa-get-pocket:before{content:\"\\F265\"}.fa-wikipedia-w:before{content:\"\\F266\"}.fa-safari:before{content:\"\\F267\"}.fa-chrome:before{content:\"\\F268\"}.fa-firefox:before{content:\"\\F269\"}.fa-opera:before{content:\"\\F26A\"}.fa-internet-explorer:before{content:\"\\F26B\"}.fa-tv:before,.fa-television:before{content:\"\\F26C\"}.fa-contao:before{content:\"\\F26D\"}.fa-500px:before{content:\"\\F26E\"}.fa-amazon:before{content:\"\\F270\"}.fa-calendar-plus-o:before{content:\"\\F271\"}.fa-calendar-minus-o:before{content:\"\\F272\"}.fa-calendar-times-o:before{content:\"\\F273\"}.fa-calendar-check-o:before{content:\"\\F274\"}.fa-industry:before{content:\"\\F275\"}.fa-map-pin:before{content:\"\\F276\"}.fa-map-signs:before{content:\"\\F277\"}.fa-map-o:before{content:\"\\F278\"}.fa-map:before{content:\"\\F279\"}.fa-commenting:before{content:\"\\F27A\"}.fa-commenting-o:before{content:\"\\F27B\"}.fa-houzz:before{content:\"\\F27C\"}.fa-vimeo:before{content:\"\\F27D\"}.fa-black-tie:before{content:\"\\F27E\"}.fa-fonticons:before{content:\"\\F280\"}.fa-reddit-alien:before{content:\"\\F281\"}.fa-edge:before{content:\"\\F282\"}.fa-credit-card-alt:before{content:\"\\F283\"}.fa-codiepie:before{content:\"\\F284\"}.fa-modx:before{content:\"\\F285\"}.fa-fort-awesome:before{content:\"\\F286\"}.fa-usb:before{content:\"\\F287\"}.fa-product-hunt:before{content:\"\\F288\"}.fa-mixcloud:before{content:\"\\F289\"}.fa-scribd:before{content:\"\\F28A\"}.fa-pause-circle:before{content:\"\\F28B\"}.fa-pause-circle-o:before{content:\"\\F28C\"}.fa-stop-circle:before{content:\"\\F28D\"}.fa-stop-circle-o:before{content:\"\\F28E\"}.fa-shopping-bag:before{content:\"\\F290\"}.fa-shopping-basket:before{content:\"\\F291\"}.fa-hashtag:before{content:\"\\F292\"}.fa-bluetooth:before{content:\"\\F293\"}.fa-bluetooth-b:before{content:\"\\F294\"}.fa-percent:before{content:\"\\F295\"}.fa-gitlab:before{content:\"\\F296\"}.fa-wpbeginner:before{content:\"\\F297\"}.fa-wpforms:before{content:\"\\F298\"}.fa-envira:before{content:\"\\F299\"}.fa-universal-access:before{content:\"\\F29A\"}.fa-wheelchair-alt:before{content:\"\\F29B\"}.fa-question-circle-o:before{content:\"\\F29C\"}.fa-blind:before{content:\"\\F29D\"}.fa-audio-description:before{content:\"\\F29E\"}.fa-volume-control-phone:before{content:\"\\F2A0\"}.fa-braille:before{content:\"\\F2A1\"}.fa-assistive-listening-systems:before{content:\"\\F2A2\"}.fa-asl-interpreting:before,.fa-american-sign-language-interpreting:before{content:\"\\F2A3\"}.fa-deafness:before,.fa-hard-of-hearing:before,.fa-deaf:before{content:\"\\F2A4\"}.fa-glide:before{content:\"\\F2A5\"}.fa-glide-g:before{content:\"\\F2A6\"}.fa-signing:before,.fa-sign-language:before{content:\"\\F2A7\"}.fa-low-vision:before{content:\"\\F2A8\"}.fa-viadeo:before{content:\"\\F2A9\"}.fa-viadeo-square:before{content:\"\\F2AA\"}.fa-snapchat:before{content:\"\\F2AB\"}.fa-snapchat-ghost:before{content:\"\\F2AC\"}.fa-snapchat-square:before{content:\"\\F2AD\"}.fa-pied-piper:before{content:\"\\F2AE\"}.fa-first-order:before{content:\"\\F2B0\"}.fa-yoast:before{content:\"\\F2B1\"}.fa-themeisle:before{content:\"\\F2B2\"}.fa-google-plus-circle:before,.fa-google-plus-official:before{content:\"\\F2B3\"}.fa-fa:before,.fa-font-awesome:before{content:\"\\F2B4\"}.fa-handshake-o:before{content:\"\\F2B5\"}.fa-envelope-open:before{content:\"\\F2B6\"}.fa-envelope-open-o:before{content:\"\\F2B7\"}.fa-linode:before{content:\"\\F2B8\"}.fa-address-book:before{content:\"\\F2B9\"}.fa-address-book-o:before{content:\"\\F2BA\"}.fa-vcard:before,.fa-address-card:before{content:\"\\F2BB\"}.fa-vcard-o:before,.fa-address-card-o:before{content:\"\\F2BC\"}.fa-user-circle:before{content:\"\\F2BD\"}.fa-user-circle-o:before{content:\"\\F2BE\"}.fa-user-o:before{content:\"\\F2C0\"}.fa-id-badge:before{content:\"\\F2C1\"}.fa-drivers-license:before,.fa-id-card:before{content:\"\\F2C2\"}.fa-drivers-license-o:before,.fa-id-card-o:before{content:\"\\F2C3\"}.fa-quora:before{content:\"\\F2C4\"}.fa-free-code-camp:before{content:\"\\F2C5\"}.fa-telegram:before{content:\"\\F2C6\"}.fa-thermometer-4:before,.fa-thermometer:before,.fa-thermometer-full:before{content:\"\\F2C7\"}.fa-thermometer-3:before,.fa-thermometer-three-quarters:before{content:\"\\F2C8\"}.fa-thermometer-2:before,.fa-thermometer-half:before{content:\"\\F2C9\"}.fa-thermometer-1:before,.fa-thermometer-quarter:before{content:\"\\F2CA\"}.fa-thermometer-0:before,.fa-thermometer-empty:before{content:\"\\F2CB\"}.fa-shower:before{content:\"\\F2CC\"}.fa-bathtub:before,.fa-s15:before,.fa-bath:before{content:\"\\F2CD\"}.fa-podcast:before{content:\"\\F2CE\"}.fa-window-maximize:before{content:\"\\F2D0\"}.fa-window-minimize:before{content:\"\\F2D1\"}.fa-window-restore:before{content:\"\\F2D2\"}.fa-times-rectangle:before,.fa-window-close:before{content:\"\\F2D3\"}.fa-times-rectangle-o:before,.fa-window-close-o:before{content:\"\\F2D4\"}.fa-bandcamp:before{content:\"\\F2D5\"}.fa-grav:before{content:\"\\F2D6\"}.fa-etsy:before{content:\"\\F2D7\"}.fa-imdb:before{content:\"\\F2D8\"}.fa-ravelry:before{content:\"\\F2D9\"}.fa-eercast:before{content:\"\\F2DA\"}.fa-microchip:before{content:\"\\F2DB\"}.fa-snowflake-o:before{content:\"\\F2DC\"}.fa-superpowers:before{content:\"\\F2DD\"}.fa-wpexplorer:before{content:\"\\F2DE\"}.fa-meetup:before{content:\"\\F2E0\"}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports) {
 
 module.exports = function escape(url) {
@@ -60756,43 +61577,43 @@ module.exports = function escape(url) {
 
 
 /***/ }),
-/* 233 */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713";
-
-/***/ }),
-/* 234 */
-/***/ (function(module, exports) {
-
-module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713";
-
-/***/ }),
 /* 235 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.woff2?af7ae505a9eed503f8b8e6982036873e";
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713";
 
 /***/ }),
 /* 236 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.woff?fee66e712a8a08eef5805a46892932ad";
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713";
 
 /***/ }),
 /* 237 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.ttf?b06871f281fee6b241d60582ae9369b9";
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.woff2?af7ae505a9eed503f8b8e6982036873e";
 
 /***/ }),
 /* 238 */
 /***/ (function(module, exports) {
 
-module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.svg?912ec66d7572ff821749319396470bde";
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.woff?fee66e712a8a08eef5805a46892932ad";
 
 /***/ }),
 /* 239 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.ttf?b06871f281fee6b241d60582ae9369b9";
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports) {
+
+module.exports = "/fonts/vendor/font-awesome/fontawesome-webfont.svg?912ec66d7572ff821749319396470bde";
+
+/***/ }),
+/* 241 */
 /***/ (function(module, exports) {
 
 
@@ -60887,13 +61708,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(241);
+var content = __webpack_require__(243);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -60918,7 +61739,7 @@ if(false) {
 }
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -60932,13 +61753,13 @@ exports.push([module.i, "html,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh
 
 
 /***/ }),
-/* 242 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(243);
+var content = __webpack_require__(245);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -60963,7 +61784,7 @@ if(false) {
 }
 
 /***/ }),
-/* 243 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)(false);
@@ -60971,16 +61792,1257 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "h1 {\n  font-size: 2.5rem; }\n\np {\n  font-size: 1em; }\n\npre {\n  font-size: 90%;\n  margin-top: 0;\n  margin-bottom: 1rem; }\n\ncode, kbd, pre, samp {\n  font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace; }\n\npre {\n  overflow: auto; }\n\nul {\n  padding-left: 40px;\n  margin-bottom: 20px;\n  list-style-type: disc; }\n\nul > li {\n  line-height: 1.6; }\n\n/* ################ AREA HOME ################ */\n.tag-post-item {\n  border-radius: 2px;\n  transition: box-shadow .25s;\n  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n  height: 150px;\n  padding: 10px;\n  margin-bottom: 15px; }\n\n.card-wrapper {\n  height: 100%;\n  width: 100%; }\n\na.text-center {\n  display: block;\n  width: 100%;\n  height: 100%; }\n\n/* ################ AREA LIST ################ */\nh1.post-list-title, .post-list-title > a {\n  color: #0b1a33;\n  white-space: normal;\n  /*word-break: break-word;*/ }\n\n.post-list-title > a {\n  font-size: 1.1rem; }\n\n.post-list-title > a:hover {\n  text-decoration: none;\n  color: #5488C9; }\n\n.post-list-heading {\n  border-bottom: 1px solid #d6d6d7;\n  height: 80px;\n  padding: 10px 0px 0px 10px; }\n\n.list-post {\n  border-right: 1px solid #0b1a33; }\n\n/* ################ AREA POST DETAIL ################ */\n.main-post {\n  background-color: #fff; }\n\n.is-markdown-title, .md-title {\n  text-align: left;\n  line-height: 1.2;\n  font-weight: 700;\n  color: #0b1a33;\n  word-wrap: break-word;\n  word-break: break-word;\n  font-size: 2.5rem; }\n\n.post-content-wrapper .post-content {\n  margin-top: 1.5rem;\n  font-size: 1rem; }\n\n/* ### sidebar post detail ### */\n.post-sidebar {\n  width: 100%;\n  margin-top: 2rem; }\n\n.flexbox {\n  display: flex; }\n\n.d-flex {\n  display: flex; }\n\n.post-sidebar .js-sidebar {\n  margin-top: calc(-60px - 2rem); }\n\n.js-sidebar {\n  min-height: calc(100% + 30px);\n  position: relative;\n  margin-top: -30px; }\n\n.post-sidebar .js-sidebar .sidebar-sticky {\n  padding-top: calc(60px + 2rem); }\n\n.sidebar-sticky.docked.top {\n  top: 0; }\n\n.sidebar-sticky.docked {\n  position: fixed; }\n\n.sidebar-sticky {\n  position: relative;\n  transition: width 0.45s cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n  padding: 30px 0;\n  width: 255px; }\n\n.sidebar-content-wrapper .sidebar-content {\n  padding-left: 1em;\n  border-left: 1px solid #d6d6d7; }\n\n.section-title-line {\n  display: flex; }\n\n.text-uppercase {\n  text-transform: uppercase !important; }\n\n.section-title-line > .filler-line {\n  margin-left: 1em;\n  flex-grow: 1;\n  border-color: #d6d6d7; }\n\nhr {\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  border: 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n  overflow: visible; }\n\n.post-toc {\n  padding: 0;\n  display: block;\n  margin-bottom: 0;\n  list-style: none; }\n\n.post-toc li {\n  ine-height: 1.2;\n  list-style: none;\n  padding: 5px 0;\n  font-size: 1rem; }\n\n.post-toc li .post-toc-link.active {\n  z-index: 10;\n  font-weight: 700;\n  position: relative;\n  color: #5488c7; }\n\n.post-toc li.index-item-level-2 > a {\n  padding-left: 1.75rem; }\n\n.post-toc li.index-item-level-3 > a {\n  padding-left: 2.5rem; }\n\n.post-toc li .post-toc-link {\n  display: block;\n  color: #0b1a33;\n  text-decoration: none; }\n\n.post-toc li .nav-link {\n  padding: 0; }\n\n#top-btn.top-btn-is-visible {\n  visibility: visible;\n  opacity: 1; }\n\n#top-btn {\n  opacity: 0;\n  z-index: 99;\n  right: 1.25rem;\n  width: 2.813rem;\n  bottom: 1.25rem;\n  height: 2.813rem;\n  display: flex;\n  display: -ms-flexbox;\n  -webkit-box-align: center;\n  -webkit-box-pack: center;\n  -ms-flex-align: center;\n  -ms-flex-pack: center;\n  position: fixed;\n  overflow: hidden;\n  visibility: hidden;\n  align-items: center;\n  text-decoration: none;\n  justify-content: center;\n  background-color: #5488c7;\n  border-radius: .188rem;\n  line-height: 1.6;\n  font-size: .875rem; }\n\n@media (min-width: 992px) {\n  .offset-lg-1 {\n    margin-left: 8.33333%; }\n  .col-lg-10 {\n    flex: 0 0 83.33333%;\n    max-width: 83.33333%; } }\n\n@media (min-width: 1200px) {\n  .offset-xl-0 {\n    margin-left: 0; }\n  .col-xl-9 {\n    flex: 0 0 75%;\n    max-width: 75%; } }\n\n.editor-preview-active h1, .editor-preview-side h1, .is-markdown-content h1, .md-contents h1 {\n  font-size: 1.95rem; }\n\n.editor-preview-active h1, .editor-preview-active h2, .editor-preview-active h3,\n.editor-preview-side h1, .editor-preview-side h2, .editor-preview-side h3,\n.is-markdown-content h1, .is-markdown-content h2, .is-markdown-content h3,\n.md-contents h1, .md-contents h2, .md-contents h3 {\n  padding-bottom: .5rem;\n  margin: 1.7rem 0 .6rem; }\n\n.editor-preview-active h1, .editor-preview-active h2, .editor-preview-active h3,\n.editor-preview-active h4, .editor-preview-active h5, .editor-preview-side h1,\n.editor-preview-side h2, .editor-preview-side h3, .editor-preview-side h4,\n.editor-preview-side h5, .is-markdown-content h1, .is-markdown-content h2,\n.is-markdown-content h3, .is-markdown-content h4, .is-markdown-content h5,\n.md-contents h1, .md-contents h2, .md-contents h3, .md-contents h4,\n.md-contents h5 {\n  font-weight: 700;\n  padding-bottom: .4rem;\n  border-bottom: 1px solid #dbe3e8; }\n\n.editor-preview-active p, .editor-preview-side p, .is-markdown-content p, .md-contents p {\n  text-align: left;\n  line-height: 1.65;\n  margin-bottom: .5em;\n  font-weight: 400;\n  color: #0b1a33;\n  letter-spacing: -.003em;\n  word-break: break-word;\n  word-wrap: break-word; }\n\n.editor-preview-active li, .editor-preview-active p, .editor-preview-side li,\n.editor-preview-side p, .is-markdown-content li, .is-markdown-content p,\n.md-contents li, .md-contents p {\n  font-size: 1em; }\n\n.editor-preview-active pre code:not(.hljs), .editor-preview-side pre code:not(.hljs), .is-markdown-content pre code:not(.hljs), .md-contents pre code:not(.hljs) {\n  color: #fff;\n  padding: 1rem;\n  display: block;\n  overflow-x: auto;\n  position: relative;\n  border-radius: 3px;\n  background-color: #282c34; }\n\npre code {\n  padding: 0;\n  font-size: inherit;\n  color: inherit;\n  background-color: transparent;\n  border-radius: 0; }\n\ncode {\n  padding: .2rem .4rem;\n  font-size: 90%;\n  color: #bd4147;\n  background-color: #f6f6f7;\n  border-radius: .25rem; }\n\ncode, kbd, pre, samp {\n  font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace; }\n\n.hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-symbol, .hljs-title {\n  color: #61aeee; }\n\n.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {\n  color: #98c379; }\n\n.editor-preview-active h3, .editor-preview-side h3, .is-markdown-content h3, .md-contents h3 {\n  font-size: 1.45rem; }\n\n.hljs-comment, .hljs-quote {\n  color: #5c6370;\n  font-style: italic; }\n\n.hljs-doctag, .hljs-formula, .hljs-keyword {\n  color: #c678dd; }\n\n.md-contents pre code:not(.hljs) span {\n  line-height: 1.6; }\n", ""]);
+exports.push([module.i, "h1 {\n  font-size: 2.5rem; }\n\nh1 {\n  font-size: 2.0rem; }\n\n.h2,\nh2 {\n  font-size: 1.286rem; }\n\n.h3,\nh3 {\n  font-size: 1.143rem; }\n\np {\n  font-size: 1em; }\n\npre {\n  font-size: 90%;\n  margin-top: 0;\n  margin-bottom: 1rem; }\n\ncode, kbd, pre, samp {\n  font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace; }\n\npre {\n  overflow: auto; }\n\nul {\n  padding-left: 40px;\n  margin-bottom: 20px;\n  list-style-type: disc; }\n\nul > li {\n  line-height: 1.6; }\n\n/* ################ AREA HOME ################ */\n.tag-post-item {\n  border-radius: 2px;\n  transition: box-shadow .25s;\n  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);\n  height: 150px;\n  padding: 10px;\n  margin-bottom: 15px; }\n\n.card-wrapper {\n  height: 100%;\n  width: 100%; }\n\na.text-center {\n  display: block;\n  width: 100%;\n  height: 100%; }\n\n/* ################ AREA LIST ################ */\nh1.post-list-title, .post-list-title > a {\n  color: #0b1a33;\n  white-space: normal;\n  /*word-break: break-word;*/ }\n\n.post-list-title > a {\n  font-size: 1.1rem; }\n\n.post-list-title > a:hover {\n  text-decoration: none;\n  color: #5488C9; }\n\n.post-list-heading {\n  border-bottom: 1px solid #d6d6d7;\n  height: 80px;\n  padding: 10px 0px 0px 10px; }\n\n.list-post {\n  border-right: 1px solid #0b1a33; }\n\n/* ################ AREA POST DETAIL ################ */\n.main-post {\n  background-color: #fff; }\n\n.is-markdown-title, .md-title {\n  text-align: left;\n  line-height: 1.2;\n  font-weight: 700;\n  color: #0b1a33;\n  word-wrap: break-word;\n  word-break: break-word;\n  font-size: 2.5rem; }\n\n.post-content-wrapper .post-content {\n  margin-top: 1.5rem;\n  font-size: 1rem; }\n\n/* ### sidebar post detail ### */\n.post-sidebar {\n  width: 100%;\n  margin-top: 2rem; }\n\n.flexbox {\n  display: flex; }\n\n.d-flex {\n  display: flex; }\n\n.post-sidebar .js-sidebar {\n  margin-top: calc(-60px - 2rem); }\n\n.js-sidebar {\n  min-height: calc(100% + 30px);\n  position: relative;\n  margin-top: -30px; }\n\n.post-sidebar .js-sidebar .sidebar-sticky {\n  padding-top: calc(60px + 2rem); }\n\n.sidebar-sticky.docked.top {\n  top: 0; }\n\n.sidebar-sticky.docked {\n  position: fixed; }\n\n.sidebar-sticky {\n  position: relative;\n  transition: width 0.45s cubic-bezier(0.23, 1, 0.32, 1) 0ms;\n  padding: 30px 0;\n  width: 255px; }\n\n.sidebar-content-wrapper .sidebar-content {\n  padding-left: 1em;\n  border-left: 1px solid #d6d6d7; }\n\n.section-title-line {\n  display: flex; }\n\n.text-uppercase {\n  text-transform: uppercase !important; }\n\n.section-title-line > .filler-line {\n  margin-left: 1em;\n  flex-grow: 1;\n  border-color: #d6d6d7; }\n\nhr {\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  border: 0;\n  border-top: 1px solid rgba(0, 0, 0, 0.1); }\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n  overflow: visible; }\n\n.post-toc {\n  padding: 0;\n  display: block;\n  margin-bottom: 0;\n  list-style: none; }\n\n.post-toc li {\n  ine-height: 1.2;\n  list-style: none;\n  padding: 5px 0;\n  font-size: 1rem; }\n\n.post-toc li .post-toc-link.active {\n  z-index: 10;\n  font-weight: 700;\n  position: relative;\n  color: #5488c7; }\n\n.post-toc li.index-item-level-2 > a {\n  padding-left: 1.75rem; }\n\n.post-toc li.index-item-level-3 > a {\n  padding-left: 2.5rem; }\n\n.post-toc li .post-toc-link {\n  display: block;\n  color: #0b1a33;\n  text-decoration: none; }\n\n.post-toc li .nav-link {\n  padding: 0; }\n\n#top-btn.top-btn-is-visible {\n  visibility: visible;\n  opacity: 1; }\n\n#top-btn {\n  opacity: 0;\n  z-index: 99;\n  right: 1.25rem;\n  width: 2.813rem;\n  bottom: 1.25rem;\n  height: 2.813rem;\n  display: flex;\n  display: -ms-flexbox;\n  -webkit-box-align: center;\n  -webkit-box-pack: center;\n  -ms-flex-align: center;\n  -ms-flex-pack: center;\n  position: fixed;\n  overflow: hidden;\n  visibility: hidden;\n  align-items: center;\n  text-decoration: none;\n  justify-content: center;\n  background-color: #5488c7;\n  border-radius: .188rem;\n  line-height: 1.6;\n  font-size: .875rem; }\n\n@media (min-width: 992px) {\n  .offset-lg-1 {\n    margin-left: 8.33333%; }\n  .col-lg-10 {\n    flex: 0 0 83.33333%;\n    max-width: 83.33333%; } }\n\n@media (min-width: 1200px) {\n  .offset-xl-0 {\n    margin-left: 0; }\n  .col-xl-9 {\n    flex: 0 0 75%;\n    max-width: 75%; } }\n\n.editor-preview-active h4, .editor-preview-side h4, .is-markdown-content h4, .md-contents h4 {\n  margin: .6em 0;\n  font-size: 1.15rem; }\n\n.editor-preview-active h1, .editor-preview-side h1, .is-markdown-content h1, .md-contents h1 {\n  font-size: 1.95rem; }\n\n.editor-preview-active h1, .editor-preview-active h2, .editor-preview-active h3,\n.editor-preview-side h1, .editor-preview-side h2, .editor-preview-side h3,\n.is-markdown-content h1, .is-markdown-content h2, .is-markdown-content h3,\n.md-contents h1, .md-contents h2, .md-contents h3 {\n  padding-bottom: .5rem;\n  margin: 1.7rem 0 .6rem; }\n\n.editor-preview-active h1, .editor-preview-active h2, .editor-preview-active h3,\n.editor-preview-active h4, .editor-preview-active h5, .editor-preview-side h1,\n.editor-preview-side h2, .editor-preview-side h3, .editor-preview-side h4,\n.editor-preview-side h5, .is-markdown-content h1, .is-markdown-content h2,\n.is-markdown-content h3, .is-markdown-content h4, .is-markdown-content h5,\n.md-contents h1, .md-contents h2, .md-contents h3, .md-contents h4,\n.md-contents h5 {\n  font-weight: 700;\n  padding-bottom: .4rem;\n  border-bottom: 1px solid #dbe3e8; }\n\n.editor-preview-active p, .editor-preview-side p, .is-markdown-content p, .md-contents p {\n  text-align: left;\n  line-height: 1.65;\n  margin-bottom: .5em;\n  font-weight: 400;\n  color: #0b1a33;\n  letter-spacing: -.003em;\n  word-break: break-word;\n  word-wrap: break-word; }\n\n.editor-preview-active li, .editor-preview-active p, .editor-preview-side li,\n.editor-preview-side p, .is-markdown-content li, .is-markdown-content p,\n.md-contents li, .md-contents p {\n  font-size: 1em; }\n\n.editor-preview-active pre code:not(.hljs), .editor-preview-side pre code:not(.hljs), .is-markdown-content pre code:not(.hljs), .md-contents pre code:not(.hljs) {\n  color: #fff;\n  padding: 1rem;\n  display: block;\n  overflow-x: auto;\n  position: relative;\n  border-radius: 3px;\n  background-color: #282c34; }\n\npre code {\n  padding: 0;\n  font-size: inherit;\n  color: inherit;\n  background-color: transparent;\n  border-radius: 0; }\n\ncode {\n  padding: .2rem .4rem;\n  font-size: 90%;\n  color: #bd4147;\n  background-color: #f6f6f7;\n  border-radius: .25rem; }\n\ncode, kbd, pre, samp {\n  font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace; }\n\n.hljs-bullet, .hljs-link, .hljs-meta, .hljs-selector-id, .hljs-symbol, .hljs-title {\n  color: #61aeee; }\n\n.hljs-addition, .hljs-attribute, .hljs-meta-string, .hljs-regexp, .hljs-string {\n  color: #98c379; }\n\n.editor-preview-active h3, .editor-preview-side h3, .is-markdown-content h3, .md-contents h3 {\n  font-size: 1.45rem; }\n\n.hljs-comment, .hljs-quote {\n  color: #5c6370;\n  font-style: italic; }\n\n.hljs-doctag, .hljs-formula, .hljs-keyword {\n  color: #c678dd; }\n\n.md-contents pre code:not(.hljs) span {\n  line-height: 1.6; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 244 */
+/* 246 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Dashboard__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Dashboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__Dashboard__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SqlComparison__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SqlComparison___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__SqlComparison__);
+
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ([{
+  path: '/mongodb',
+  name: 'mongodb',
+  component: __WEBPACK_IMPORTED_MODULE_0__index___default.a,
+  redirect: { name: 'mongodbDashboard' },
+  children: [{
+    path: 'dashboard',
+    name: 'mongodbDashboard',
+    component: __WEBPACK_IMPORTED_MODULE_1__Dashboard___default.a
+  }, {
+    path: 'sql-comparison',
+    name: 'SqlComparison',
+    component: __WEBPACK_IMPORTED_MODULE_2__SqlComparison___default.a
+  }]
+}]);
+
+/***/ }),
+/* 254 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(255)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(257)
+/* template */
+var __vue_template__ = __webpack_require__(258)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/documents/mongodb/index.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-32678dd2", Component.options)
+  } else {
+    hotAPI.reload("data-v-32678dd2", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(256);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("1df7b2c8", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-32678dd2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-32678dd2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.content {\n    font-size: 16px;\n    line-height: 24px;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    margin: 45px auto 0;\n}\n@media (max-width: 1263px) {\n#left-column {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n}\n}\n@media (max-width: 1093px) {\n#left-column, .sphinxsidebar {\n        /*display: none;*/\n}\n}\n.mongodb#left-column {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-negative: 1;\n    flex-shrink: 1;\n    -webkit-box-flex: 0;\n    -ms-flex-positive: 0;\n    flex-grow: 0;\n    -ms-flex-preferred-size: 330px;\n    flex-basis: 330px;\n    min-width: 330px;\n    display: flex;\n    overflow-y: auto;\n    border-right: 1px solid #e0e7e8;\n    background-color: #fff;\n}\n#left-column {\n    -ms-flex-negative: 1;\n    flex-shrink: 1;\n    -webkit-box-flex: 0;\n    -ms-flex-positive: 0;\n    flex-grow: 0;\n    -ms-flex-preferred-size: 330px;\n    flex-basis: 330px;\n    min-width: 330px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    overflow-y: auto;\n    border-right: 1px solid #e0e7e8;\n}\n#left-column, #topbar, .tab-strip__dropdown, .tab-strip__dropdown>li {\n    background-color: #fff;\n}\ndiv.sphinxsidebar {\n    font-size: 16px;\n    line-height: 20px;\n    top: 45px;\n    bottom: 0;\n    position: fixed;\n    overflow-y: auto;\n}\ndiv.sphinxsidebarwrapper {\n    padding: 0;\n    min-height: 100%;\n    width: 330px;\n    right: 0;\n}\n#closeNav {\n    font-size: 14px;\n    color: #333!important;\n    text-decoration: none;\n    position: relative;\n    right: 12px;\n    display: block;\n    top: 12px;\n}\n#btnv .btn-arrow-left, #btnv .btn-next-text, #closeNav, .align-right, .modal-footer, .text-right, blockquote.pull-right p, blockquote.pull-right small {\n    text-align: right;\n}\n.sphinxsidebarwrapper .toctree-l1 li.current.selected-item>ul, a.list-group-item .list-group-item-heading, div.sphinxsidebar a, input[type=text]:disabled {\n    color: #333;\n}\ndiv.sphinxsidebar h3 {\n    padding: 6px 12px;\n    margin: 5px 0 0 10px;\n    font-size: 14px;\n    line-height: 24px;\n    font-weight: 700;\n}\ndiv.sphinxsidebar h3 a.index-link {\n    text-transform: uppercase;\n}\ndiv.sphinxsidebar ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    color: #000;\n}\n.sphinxsidebarwrapper>ul>.toctree-l1 {\n    line-height: 24px;\n    border-top: 1px solid #e0e7e8;\n    padding: 10px 0;\n}\ndiv.sphinxsidebarwrapper ul {\n    margin: 0;\n    padding: 0;\n}\n.sphinxsidebarwrapper>ul>.toctree-l1>a {\n    line-height: 24px;\n    padding: 0 30px;\n    width: 100%;\n    display: inline-block;\n}\n.sphinxsidebarwrapper .toctree-l1 li.current.selected-item>a {\n    color: #69b241;\n    background-color: #f5f6f7;\n    border-right: 5px solid #69b241;\n}\n.sphinxsidebarwrapper li.toctree-l1 ul>li>a {\n    line-height: 24px;\n    display: inline-block;\n    width: 100%;\n    position: relative;\n}\ndiv.sphinxsidebar li.toctree-l2>a {\n    padding-left: 52px;\n}\n.sphinxsidebarwrapper .toctree-l1 li a {\n    padding: 5px 5px 5px 0;\n}\ndiv.sphinxsidebar li.toctree-l4>a {\n    padding-left: 104px;\n}\ndiv.sphinxsidebar li.toctree-l3>a {\n    padding-left: 78px;\n}\n.expand-icon.docs-expand-arrow {\n    border-radius: 3px;\n    border-right: 3px solid #b3bbc1;\n    border-top: 3px solid #b3bbc1;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    content: '';\n    height: 13px;\n    margin-left: -23px;\n    -webkit-transform: rotate(45deg);\n    transform: rotate(45deg);\n    -webkit-transition: -webkit-transform .2s ease-in-out;\n    transition: -webkit-transform .2s ease-in-out;\n    transition: transform .2s ease-in-out;\n    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;\n    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;\n}\n.expand-icon, .expand-icon.docs-expand-arrow {\n    position: absolute;\n    top: 8px;\n    width: 13px;\n    display: inline-block;\n}\n.expand-icon {\n    background-repeat: no-repeat;\n    height: 16px;\n    margin-left: -21px;\n}\n.btn-danger.active, .btn-danger:active, .btn-default.active, .btn-default:active, .btn-info.active, .btn-info:active, .btn-primary.active, .btn-primary:active, .btn-success.active, .btn-success:active, .btn-warning.active, .btn-warning:active, .open .dropdown-toggle.btn-danger, .open .dropdown-toggle.btn-default, .open .dropdown-toggle.btn-info, .open .dropdown-toggle.btn-primary, .open .dropdown-toggle.btn-success, .open .dropdown-toggle.btn-warning, .sphinxsidebarwrapper .toctree-l1 li.current.selected-item>a>.expand-icon.docs-expand-arrow, .sphinxsidebarwrapper .toctree-l1 li>a>.expand-icon.docs-expand-arrow, button, input, select[multiple], textarea {\n    background-image: none;\n}\n\n/* Main column area */\n.content .main-column {\n    -webkit-box-ordinal-group: 2;\n    -ms-flex-order: 1;\n    order: 1;\n    min-height: 600px;\n    width: 68%;\n    max-width: 800px;\n    -webkit-box-flex: 2;\n    -ms-flex-positive: 2;\n    flex-grow: 2;\n    margin: 40px 15px;\n    -webkit-transition: margin-left .4s cubic-bezier(.02,.01,.47,1);\n    transition: margin-left .4s cubic-bezier(.02,.01,.47,1);\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    display: inline-block;\n    overflow-x: scroll;\n}\n#showNav {\n    display: none;\n    position: fixed;\n    top: 90px;\n    font-size: 14px;\n    margin-top: 70px;\n    text-align: center;\n    left: 30px;\n    border: 1.5px solid #7fc857;\n    padding: 5px 10px;\n    -webkit-transform: rotate(90deg);\n    transform: rotate(90deg);\n    -webkit-transform-origin: left top 0;\n    transform-origin: left top 0;\n    cursor: pointer;\n}\n#showNav, .searchButton {\n    background-color: #7fc857;\n    color: #fff;\n}\n#showNav, .well-sm {\n    border-radius: 3px;\n}\ndiv.document {\n    margin: 25px;\n}\ndiv.body {\n    -webkit-transition: opacity .25s linear;\n    transition: opacity .25s linear;\n}\ndiv.body div.bc {\n    background: #fff;\n    cursor: default;\n}\ndiv.body div.bc, dl.method dt {\n    margin-bottom: 24px;\n}\ndiv.body div.bc ul {\n    padding: 0;\n    margin: 0;\n}\ndiv.body div.bc ul li {\n    list-style: none;\n    font-size: 13px;\n    display: inline;\n}\ndiv.body li {\n    padding-top: .2em;\n}\na, a>code, a>tt, div.body div.bc ul li a {\n    color: #006cbc;\n}\ndiv.body h1 {\n    border-top: none;\n    font-size: 36px;\n    line-height: 48px;\n    padding: 0;\n    margin: -24px 0 24px;\n}\ndiv.body div.contents {\n    padding: 0 .5em .5em;\n}\ndiv.topic {\n    border: 1px solid #ccc;\n    padding: 7px 7px 0;\n    margin: 10px 0;\n}\n.btn-default, .form-control, .img-thumbnail, .table .table, body, div.highlight, div.topic {\n    background-color: #fff;\n}\n.body p, h2, h3, h4 {\n    margin: 24px 0;\n}\np.topic-title {\n    margin-top: 10px;\n}\ndl.glossary dt, p.topic-title {\n    font-size: 1.1em;\n    font-weight: 700;\n}\n.first {\n    margin-top: 0!important;\n}\ndiv.body div.contents.twocols ul {\n    margin: 0;\n    padding-left: 1em;\n    -webkit-column-count: 2;\n    column-count: 2;\n    -webkit-column-gap: 10px;\n    column-gap: 10px;\n    -webkit-columns: 2;\n    columns: 2;\n}\ndiv.body div.contents li {\n    padding-top: .25em;\n    column-break-inside: avoid;\n    list-style-position: inside;\n}\n.sphinxsidebarwrapper .toctree-l1 li.current.selected-item>a>.expand-icon {\n    background-image: url(https://docs.mongodb.com/manual/_static/images/page-icon-active.png);\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 257 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Sidebar_Index__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Sidebar_Index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Sidebar_Index__);
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    sidebarPage: __WEBPACK_IMPORTED_MODULE_0__Sidebar_Index___default.a
+  }
+});
+
+/***/ }),
+/* 258 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "content mongodb" },
+    [_c("sidebarPage"), _vm._v(" "), _c("router-view")],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-32678dd2", module.exports)
+  }
+}
+
+/***/ }),
+/* 259 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(260)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(263)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/documents/mongodb/Sidebar/Index.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-44efe8e4", Component.options)
+  } else {
+    hotAPI.reload("data-v-44efe8e4", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(261);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("e3922950", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-44efe8e4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue", function() {
+     var newContent = require("!!../../../../../../../node_modules/css-loader/index.js!../../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-44efe8e4\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\np{\n    color: #494747;\n    font-family: Akzidenz,\"Helvetica Neue\",Helvetica,Arial,sans-serif;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 262 */,
+/* 263 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { attrs: { id: "left-column" } }, [
+    _c("aside", { staticClass: "sidebar", attrs: { id: "sidebar" } }, [
+      _c(
+        "div",
+        { staticClass: "sphinxsidebar", attrs: { id: "sphinxsidebar" } },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "sphinxsidebarwrapper",
+              attrs: { id: "sphinxsidebarwrapper" }
+            },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "closeNav",
+                  attrs: { href: "javascript:void(0)", id: "closeNav" }
+                },
+                [_vm._v("Close ×")]
+              ),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("ul", { staticClass: "current" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _vm._m(2),
+                _vm._v(" "),
+                _c("li", { staticClass: "toctree-l1" }, [
+                  _c(
+                    "a",
+                    { staticClass: "reference internal", attrs: { href: "" } },
+                    [_vm._v("MongoDB CRUD Operations")]
+                  ),
+                  _vm._v(" "),
+                  _c("ul", { staticClass: "current" }, [
+                    _c(
+                      "li",
+                      { staticClass: "toctree-l2 current selected-item" },
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "reference internal current",
+                            attrs: { to: { name: "SqlComparison" } }
+                          },
+                          [
+                            _c("span", { staticClass: "expand-icon" }),
+                            _vm._v(
+                              "SQL to MongoDB Mapping Chart\n                  "
+                            )
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._m(3),
+                _vm._v(" "),
+                _vm._m(4),
+                _vm._v(" "),
+                _vm._m(5),
+                _vm._v(" "),
+                _vm._m(6),
+                _vm._v(" "),
+                _vm._m(7)
+              ])
+            ]
+          )
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", [
+      _c("a", { staticClass: "index-link", attrs: { href: "../../" } }, [
+        _vm._v("MongoDB Manual")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "toctree-l1 current" }, [
+      _c(
+        "a",
+        {
+          staticClass: "reference internal",
+          attrs: { href: "../../introduction/" }
+        },
+        [_vm._v("Introduction")]
+      ),
+      _vm._v(" "),
+      _c("ul", { staticStyle: { display: "none" } }, [
+        _c("li", { staticClass: "toctree-l2 current selected-item" }, [
+          _c(
+            "a",
+            {
+              staticClass: "reference internal current",
+              attrs: { href: "../../tutorial/getting-started/" }
+            },
+            [
+              _c("span", { staticClass: "expand-icon" }),
+              _vm._v("Getting Started")
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "toctree-l1" }, [
+      _c(
+        "a",
+        {
+          staticClass: "reference internal",
+          attrs: { href: "../../installation/" }
+        },
+        [_vm._v("Installation")]
+      ),
+      _vm._v(" "),
+      _c("ul", { staticStyle: { display: "none" } }, [
+        _c("li", { staticClass: "toctree-l2" }, [
+          _c(
+            "a",
+            {
+              staticClass: "reference internal",
+              attrs: { href: "../administration/install-community/" }
+            },
+            [
+              _c("span", { staticClass: "expand-icon docs-expand-arrow" }),
+              _vm._v("Install MongoDB Community Edition\n                ")
+            ]
+          ),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", { staticClass: "toctree-l3" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "reference internal",
+                  attrs: { href: "../administration/install-on-linux/" }
+                },
+                [
+                  _c("span", { staticClass: "expand-icon docs-expand-arrow" }),
+                  _vm._v("Install on Linux\n                    ")
+                ]
+              ),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", { staticClass: "toctree-l4" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "reference internal",
+                      attrs: { href: "../tutorial/install-mongodb-on-red-hat/" }
+                    },
+                    [
+                      _c("span", { staticClass: "expand-icon" }),
+                      _vm._v("Install on Red Hat\n                        ")
+                    ]
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "toctree-l1" }, [
+      _c("a", { staticClass: "reference internal", attrs: { href: "" } }, [
+        _vm._v("Aggregation")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "toctree-l1" }, [
+      _c("a", { staticClass: "reference internal", attrs: { href: "" } }, [
+        _vm._v("Data Models")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "toctree-l1" }, [
+      _c("a", { staticClass: "reference internal", attrs: { href: "" } }, [
+        _vm._v("Indexes")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "toctree-l1" }, [
+      _c("a", { staticClass: "reference internal", attrs: { href: "" } }, [
+        _vm._v("Indexes")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "toctree-l1" }, [
+      _c(
+        "a",
+        { staticClass: "reference internal current", attrs: { href: "" } },
+        [_vm._v("Frequently Asked Questions")]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-44efe8e4", module.exports)
+  }
+}
+
+/***/ }),
+/* 264 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(265)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/documents/mongodb/Dashboard.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7629498e", Component.options)
+  } else {
+    hotAPI.reload("data-v-7629498e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 265 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "main-column" } }, [
+      _c("span", { staticClass: "showNav", attrs: { id: "showNav" } }, [
+        _vm._v("Navigation")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "document" }, [
+        _c("div", { staticClass: "documentwrapper" }, [
+          _c("div", { staticClass: "bodywrapper" }, [
+            _c("div", { staticClass: "body" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "edit-link",
+                  attrs: {
+                    href:
+                      "https://github.com/mongodb/docs/blob/v3.6/source/tutorial/install-mongodb-on-red-hat.txt",
+                    target: "_blank",
+                    title:
+                      "Edit tutorial/install-mongodb-on-red-hat.txt on GitHub"
+                  }
+                },
+                [_c("span", { staticClass: "icon-edit" })]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "bc" }, [
+                _c("ul", [
+                  _c("li", [
+                    _c("a", { attrs: { href: "../../installation/" } }, [
+                      _vm._v("Install MongoDB")
+                    ]),
+                    _c("span", { staticClass: "bcpoint" }, [_vm._v(" > ")])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href: "../../administration/install-on-linux/"
+                        }
+                      },
+                      [_vm._v("Install MongoDB Community Edition on Linux")]
+                    ),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "bcpoint" }, [_vm._v(" > ")])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Install MongoDB Community Edition on Red Hat Enterprise or CentOS Linux"
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "section",
+                  attrs: {
+                    id:
+                      "install-mongodb-community-edition-on-red-hat-enterprise-or-centos-linux"
+                  }
+                },
+                [
+                  _c("h1", [
+                    _vm._v(
+                      "Install MongoDB Community Edition on Red Hat Enterprise or CentOS Linux"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "contents twocols local topic",
+                      attrs: { id: "on-this-page" }
+                    },
+                    [
+                      _c("p", { staticClass: "topic-title first" }, [
+                        _vm._v("On this page")
+                      ]),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "simple" }, [
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "reference internal",
+                              attrs: { href: "#overview", id: "id5" }
+                            },
+                            [_vm._v("Overview")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "reference internal",
+                              attrs: { href: "#packages", id: "id6" }
+                            },
+                            [_vm._v("Packages")]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "reference internal",
+                              attrs: {
+                                href: "#install-mongodb-community-edition",
+                                id: "id7"
+                              }
+                            },
+                            [_vm._v("Install MongoDB Community Edition")]
+                          )
+                        ])
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7629498e", module.exports)
+  }
+}
+
+/***/ }),
+/* 266 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(267)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(270)
+/* template */
+var __vue_template__ = __webpack_require__(269)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/layouts/header/HeaderMongo.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-524000e2", Component.options)
+  } else {
+    hotAPI.reload("data-v-524000e2", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 267 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(268);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("5f149f9a", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-524000e2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderMongo.vue", function() {
+     var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-524000e2\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./HeaderMongo.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 268 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*END media (min-width: 768px) */\n._collapse {\n  display: none;\n}\n._navbar-default ._navbar-toggle {\n    border-color: #ddd;\n}\n._navbar {\n    position: relative;\n    min-height: 50px;\n    margin-bottom: 20px;\n    border: 1px solid transparent;\n}\n._navbar-brand {\n    float: left; \n    height: 50px;\n    padding: 15px 15px;\n    font-size: 18px;\n    line-height: 20px;\n}\n._navbar-nav>li>a {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    line-height: 20px;\n}\n._nav>li>a {\n    position: relative;\n    display: block;\n    padding: 10px 15px;\n    font-size: 85%;\n}\n._navbar-header>a {\n    font-size: 85%;\n}\n._navbar-default {\n    border-color: #e7e7e7;\n}\n._navbar-toggle {\n    position: relative;\n    float: right;\n    padding: 9px 10px;\n    margin-top: 8px;\n    margin-right: 15px;\n    margin-bottom: 8px;\n    background-color: transparent;\n    background-image: none;\n    border: 1px solid transparent;\n    border-radius: 4px;\n}\n._navbar ul{\n  list-style: none;\n}\n._navbar-default {\n    background-color: #f8f8f8;\n    border-color: #e7e7e7;\n}\n._sr-only {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    padding: 0;\n    margin: -1px;\n    overflow: hidden;\n    clip: rect(0,0,0,0);\n    border: 0;\n}\n._navbar-default ._navbar-toggle ._icon-bar {\n    background-color: #888;\n}\n._navbar-toggle ._icon-bar+._icon-bar {\n    margin-top: 4px;\n}\n._navbar-toggle ._icon-bar {\n    display: block;\n    width: 22px;\n    height: 2px;\n    border-radius: 1px;\n}\n.container-fluid>._navbar-collapse, .container-fluid>._navbar-header{\n    margin-right: -15px;\n    margin-left: -15px;\n}\n._navbar-collapse._in {\n    overflow-y: auto;\n}\n._collapse._in {\n    display: block;\n}\n._navbar-collapse {\n    padding-right: 15px;\n    padding-left: 15px;\n    overflow-x: visible;\n    -webkit-overflow-scrolling: touch;\n    border-top: 1px solid transparent;\n    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);\n    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);\n}\n._collapse {\n    display: none;\n}\n._navbar-nav {\n}\nul._navbar-nav {\n  padding:0 20px 0 20px;\n}\n._navbar-default ._navbar-collapse, ._navbar-default{\n    border-color: #e7e7e7;\n}\n._navbar-header:after{\n  display: table;\n  content: \"\";\n  clear: both;\n}\n._container-fluid>._navbar-collapse, ._container-fluid>._navbar-header{\n    margin-right: -15px;\n    margin-left: -15px;\n}\nnav {\n    padding-left: 0;\n    margin-bottom: 0;\n    list-style: none;\n}\n@media (min-width: 910px) {\n._navbar-collapse._collapse {\n    display: block!important;\n    height: auto!important;\n    padding-bottom: 0;\n    overflow: visible!important;\n}\n._navbar-toggle {\n    display: none;\n}\n._navbar-header {\n    float: left;\n}\n}\n@media (max-width: 768px) {\n#_navbar>ul>li {\n    border-bottom: 1px solid #e2d1d1;\n}\n}\n@media (min-width: 768px) {\n._navbar {\n      border-radius: 4px;\n}\n._navbar-collapse, ._navbar-header {\n    margin-right: 0;\n    margin-left: 0;\n}\n._navbar-nav {\n    float: left;\n    margin: 0;\n}\n._navbar-nav>li {\n    float: left;\n}\n._navbar-nav>li>a {\n    padding-top: 15px;\n    padding-bottom: 15px;\n}\n/*  ._navbar-collapse._collapse {\n    display: block!important;\n    height: auto!important;\n    padding-bottom: 0;\n    overflow: visible!important;\n  }*/\n._navbar-collapse {\n    width: auto;\n    border-top: 0;\n    -webkit-box-shadow: none;\n    box-shadow: none;\n}\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 269 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("nav", { staticClass: "_navbar _navbar-default" }, [
+    _c("div", { staticClass: "_container-fluid" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "_navbar-collapse _collapse", attrs: { id: "_navbar" } },
+        [
+          _c("ul", { staticClass: "_nav _navbar-nav" }, [
+            _c(
+              "li",
+              { staticClass: "active" },
+              [_c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")])],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [_c("router-link", { attrs: { to: "/php" } }, [_vm._v("PHP")])],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [
+                _c("router-link", { attrs: { to: "/english" } }, [
+                  _vm._v("English")
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [
+                _c("router-link", { attrs: { to: "/laravel" } }, [
+                  _vm._v("Laravel")
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [_c("router-link", { attrs: { to: "/vue" } }, [_vm._v("Vue")])],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [
+                _c("router-link", { attrs: { to: "/developer" } }, [
+                  _vm._v("Developer")
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [_c("router-link", { attrs: { to: "/sql" } }, [_vm._v("SQL")])],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [
+                _c("router-link", { attrs: { to: "/server" } }, [
+                  _vm._v("Server")
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [_c("router-link", { attrs: { to: "/git" } }, [_vm._v("Git")])],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [
+                _c("router-link", { attrs: { to: "/git" } }, [
+                  _vm._v("Design Pattern")
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "li",
+              [
+                _c("router-link", { attrs: { to: "/mongodb" } }, [
+                  _vm._v("MongoDB")
+                ])
+              ],
+              1
+            )
+          ])
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "_navbar-header" }, [
+      _c(
+        "button",
+        {
+          staticClass: "_navbar-toggle",
+          attrs: {
+            type: "button",
+            "data-toggle": "collapse",
+            "data-target": "#_navbar",
+            "aria-expanded": "true",
+            "aria-controls": "navbar"
+          }
+        },
+        [
+          _c("span", { staticClass: "_sr-only" }, [
+            _vm._v("Toggle navigation")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "_icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "_icon-bar" }),
+          _vm._v(" "),
+          _c("span", { staticClass: "_icon-bar" })
+        ]
+      ),
+      _vm._v(" "),
+      _c("a", { staticClass: "_navbar-brand", attrs: { href: "#" } }, [
+        _vm._v("Document")
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-524000e2", module.exports)
+  }
+}
+
+/***/ }),
+/* 270 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+/* 271 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(272)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/documents/mongodb/SqlComparison.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0800151c", Component.options)
+  } else {
+    hotAPI.reload("data-v-0800151c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "main-column", attrs: { id: "main-column" } },
+      [
+        _c("span", { staticClass: "showNav", attrs: { id: "showNav" } }, [
+          _vm._v("Navigation")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "document" }, [
+          _c("div", { staticClass: "documentwrapper" }, [
+            _c("div", { staticClass: "bodywrapper" }, [
+              _c("div", { staticClass: "body" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "edit-link",
+                    attrs: {
+                      href:
+                        "https://github.com/mongodb/docs/blob/v3.6/source/tutorial/install-mongodb-on-red-hat.txt",
+                      target: "_blank",
+                      title:
+                        "Edit tutorial/install-mongodb-on-red-hat.txt on GitHub"
+                    }
+                  },
+                  [_c("span", { staticClass: "icon-edit" })]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "bc" }, [
+                  _c("ul", [
+                    _c("li", [
+                      _c("a", { attrs: { href: "../../installation/" } }, [
+                        _vm._v("MongoDB CRUD Operations")
+                      ]),
+                      _c("span", { staticClass: "bcpoint" }, [_vm._v(" > ")])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [_vm._v("SQL to MongoDB Mapping Chart")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "section",
+                    attrs: {
+                      id:
+                        "install-mongodb-community-edition-on-red-hat-enterprise-or-centos-linux"
+                    }
+                  },
+                  [
+                    _c("h1", [_vm._v("SQL to MongoDB Mapping Chart")]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "contents singlecol local topic",
+                        attrs: { id: "on-this-page" }
+                      },
+                      [
+                        _c("p", { staticClass: "topic-title first" }, [
+                          _vm._v("On this page")
+                        ]),
+                        _vm._v(" "),
+                        _c("ul", { staticClass: "simple" }, [
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "reference internal",
+                                attrs: {
+                                  href: "#terminology-and-concepts",
+                                  id: "id1"
+                                }
+                              },
+                              [_vm._v("Terminology and Concepts")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "reference internal",
+                                attrs: { href: "#executables", id: "id2" }
+                              },
+                              [_vm._v("Executables")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "reference internal",
+                                attrs: { href: "#examples", id: "id3" }
+                              },
+                              [_vm._v("Examples")]
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("li", [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "reference internal",
+                                attrs: {
+                                  href: "#additional-resources",
+                                  id: "id4"
+                                }
+                              },
+                              [_vm._v("Additional Resources")]
+                            )
+                          ])
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n              In addition to the charts that follow, you might want to consider the Frequently Asked Questions section for a selection of common questions about MongoDB.\n            "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("h2", [_vm._v("Terminology and Concepts")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n              The following table presents the various SQL terminology and concepts and the corresponding MongoDB terminology and concepts.\n            "
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-0800151c", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

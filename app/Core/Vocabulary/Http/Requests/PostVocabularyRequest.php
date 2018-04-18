@@ -23,6 +23,7 @@ class PostVocabularyRequest extends FormRequest
     public function rules()
     {
         return [
+            'word' => 'required'
         ];
     }
 }

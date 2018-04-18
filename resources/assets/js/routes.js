@@ -12,6 +12,7 @@ import PHPRoutes        from './components/documents/php/router';
 import LaravelRoutes    from './components/documents/laravel/router';
 import JavascriptRoutes from './components/documents/javascript/router';
 import VueRoutes        from './components/documents/vue/router';
+import MongoDB          from './components/documents/mongodb/router';
 
 const baseRoutes = [
     { path: '/',           component: Dashboard},
@@ -27,7 +28,8 @@ const routes = baseRoutes.concat(
     PHPRoutes,
     LaravelRoutes,
     JavascriptRoutes,
-    VueRoutes
+    VueRoutes,
+    MongoDB
 );
 
 export default routes;

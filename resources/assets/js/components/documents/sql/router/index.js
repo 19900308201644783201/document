@@ -2,6 +2,7 @@ import sql                from '../index';
 import bTreeAndHashIndex  from '../bTreeAndHashIndex';
 import MysqlAndMongoDB    from '../MysqlAndMongoDB';
 import ListContainer      from '../ListSql';
+import DeepIndexMysql     from '../DeepIndexMysql';
 
 export default [
   {
@@ -26,6 +27,11 @@ export default [
         path: 'mongodb-and-mysql',
         name: 'mongodb-and-mysql',
         component: MysqlAndMongoDB
+      },
+      {
+        path: 'deep-index-mysql',
+        name: 'DeepIndexMysql',
+        component: DeepIndexMysql
       }
     ]
   }

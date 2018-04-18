@@ -1,6 +1,19 @@
 h1 {
   font-size: 2.5rem;
 }
+h1 {
+  font-size: 2.0rem;
+}
+
+.h2,
+h2 {
+    font-size: 1.286rem
+}
+
+.h3,
+h3 {
+    font-size: 1.143rem
+}
 
 p {
   font-size: 1em;
@@ -223,6 +236,12 @@ hr {
       max-width: 75%;
   }
 }
+
+.editor-preview-active h4, .editor-preview-side h4, .is-markdown-content h4, .md-contents h4 {
+    margin: .6em 0;
+    font-size: 1.15rem;
+}
+
 .editor-preview-active h1, .editor-preview-side h1, .is-markdown-content h1, .md-contents h1 {
     font-size: 1.95rem;
 }

@@ -1,11 +1,16 @@
 <template>
-  <div class="col-md-10 col-md-offset-2 main">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h1 class="text-center">Mysql and MongoDB</h1>
-      </div><!-- End panel-heading -->
-      <div class="panel-body">
-        <h2>MongoDB là gì?</h2>
+  <div class="row">
+    <div class="container">
+
+      <div class="col-xl-9 offset-xl-0 col-lg-10 offset-lg-1">
+        <div class="post-content-wrapper">
+          <div class="post-meta">
+            <h1 class="is-markdown-title">Introduce About SCSS</h1>
+          </div><!-- End post-meta -->
+
+          <div class="md-contents post-content">
+
+               <h2>MongoDB là gì?</h2>
         <p>- MongoDB là một hệ quản trị cơ sở dữ liệu mã nguồn mở được viết bằng C++ thuộc NoSQL. Nó được thiết kế theo kiểu hướng đối tượng, các bảng trong MongoDB được cấu trúc rất linh hoạt, cho phép các dữ liệu lưu trữ trên bảng không cần tuân theo một cấu trúc nhất định nào cả (điều này rất thích hợp để làm big data).</p>
         <p>- MongoDB lưu trữ dữ liệu theo hướng tài liệu (document), các dữ liệu được lưu trữ trong document kiểu JSON nên truy vấn sẽ rất nhanh.</p>
         <p>Nếu như bạn biết sử dụng JSON thì trong MongoDB cũng có cấu trúc lưu trữ tương tự, chính vì thế nó có hiệu suất cao, tương tác nhanh và khả năng mở rộng tốt</p>
@@ -65,33 +70,33 @@
 
         <p><strong>Trường hợp RDBMS: </strong> có các table, nên khi truy vấn ta sẽ join các bảng lại với nhau để lấy thông tin</p>
         <pre><code>
-- posts(id, title, description, url, likes, post_by)
-- tag_list(id, post_id, tag)
-- comment(id, post_id, by_user, message, data_time, likes)
+<span>- posts(id, title, description, url, likes, post_by)</span>
+<span>- tag_list(id, post_id, tag)</span>
+<span>- comment(id, post_id, by_user, message, data_time, likes)</span>
 </code></pre>
 
         <p><strong>Trường hợp MongoDB</strong>: Ta sẽ có 1 collection tên post có cấu trúc như sau:</p>
         <pre><code>
 {
-   _id: ObjectId(7df78ad8902c)
-   title: 'What is the MongoDb', 
-   description: 'MongoDB  NO-SQL',
-   by: POST_BY,
-   url: URL_OF_POST,
-   tags: [TAG1, TAG2, TAG3],
-   likes: TOTAL_LIKES, 
-   comments: [    
+   <span>_id: ObjectId(7df78ad8902c)</span>
+   <span>title: 'What is the MongoDb',</span>
+   <span>description: 'MongoDB  NO-SQL',</span>
+   <span>by: POST_BY,</span>
+   <span>url: URL_OF_POST,</span>
+   <span>tags: [TAG1, TAG2, TAG3],</span>
+   <span>likes: TOTAL_LIKES,</span>
+   <span>comments: [</span>
       {
-         user:'COMMENT_BY',
-         message: TEXT,
-         dateCreated: DATE_TIME,
-         like: 1
+         <span>user:'COMMENT_BY',</span>
+         <span>message: TEXT,</span>
+         <span>dateCreated: DATE_TIME,</span>
+         <span>like: 1</span>
       },
       {
-         user:'COMMENT_BY',
-         message: TEXT,
-         dateCreated: DATE_TIME,
-         like: 2
+         <span>user:'COMMENT_BY',</span>
+         <span>message: TEXT,</span>
+         <span>dateCreated: DATE_TIME,</span>
+         <span>like: 2</span>
       }
    ]
 }          
@@ -101,53 +106,53 @@
 
         <p><strong>Trường hợp RDBMS: </strong></p>
         <pre><code>
-- product(id, name, price, status)
-- product_image(id, image_path, product_id)
+<span>- product(id, name, price, status)</span>
+<span>- product_image(id, image_path, product_id)</span>
 </code></pre>
 
         <p><strong>Trường hợp MongoDB</strong>: Ta sẽ có 1 collection tên product có cấu trúc như sau:</p>
         <pre><code>
 {
-   _id: ObjectId(7df78ad8902c)
-   name: 'product name',
-   price: 50000,
-   status: 0,
-   image: [
-      {"image_path": "image url1"},
-      {"image_path": "image url2"},
-      {"image_path": "image url3"},
+   <span>_id: ObjectId(7df78ad8902c)</span>
+   <span>name: 'product name',</span>
+   <span>price: 50000,</span>
+   <span>status: 0,</span>
+   <span>image: [</span>
+      <span>{"image_path": "image url1"},</span>
+      <span>{"image_path": "image url2"},</span>
+      <span>{"image_path": "image url3"},</span>
    ]
-}          
+}
 </code></pre>
     <p><strong>Trường hợp MongoDB</strong></p>
 <pre><code>
 {
-  "_id": 1001,
-  "title": 'welcome to MongoDB',
-  "course_id": 1,
-  "duration_in_sec": 1707,
-  "lectures": [
+  <span>"_id": 1001,</span>
+  <span>"title": 'welcome to MongoDB',</span>
+  <span>"course_id": 1,</span>
+  <span>"duration_in_sec": 1707,</span>
+  <span>"lectures": [</span>
     {
-      "id": 10101,
-      "title": "welcome and thanks for comming",
-      "video_url": "https://s3.amazonaws.com/../welcome.mp4",
-      "duration_in_sec": 380
+      <span>"id": 10101,</span>
+      <span>"title": "welcome and thanks for comming",</span>
+      <span>"video_url": "https://s3.amazonaws.com/../welcome.mp4",</span>
+      <span>"duration_in_sec": 380</span>
     },
     {
-      "id": 10102,
-      "title": "Lynux install MongoBD",
-      "video_url": "https://s3.amazonaws.com/../install mongoDB.mp4",
-      "duration_in_sec": 307
+      <span>"id": 10102,</span>
+      <span>"title": "Lynux install MongoBD",</span>
+      <span>"video_url": "https://s3.amazonaws.com/../install mongoDB.mp4",</span>
+      <span>"duration_in_sec": 307</span>
     }
   ]
 }
 </code></pre>
         <p><strong>In RDBMS: How do we model with documents?</strong></p>
 <pre><code>
-Book: id, title, ISBN, published, [publish_id]
-Publisher: id, name, founded
-User: id, email, created
-Rating: id, [user_id], [book_id], value
+<span>Book: id, title, ISBN, published, [publish_id]</span>
+<span>Publisher: id, name, founded</span>
+<span>User: id, email, created</span>
+<span>Rating: id, [user_id], [book_id], value</span>
 </code></pre>
         <h4>Cấu trúc Mysql and MongoDB</h4>
         <table class="table table-striped">
@@ -196,13 +201,46 @@ db.collection.insertOne(
 ]);
 </code></pre>
 
+            <h1 id="abc">1.Abc</h1>
+            <p>Introduce about scss</p>
 
-      </div><!-- End panel-body -->
-    </div><!-- End panel-default -->
-  </div><!-- End main -->
+            <h1 id="abc">2.Abc</h1>
+            <p>Introduce about scss</p>
+
+            <h1 id="abc">3.Abc</h1>
+            <p>Introduce about scss</p>
+
+          </div><!-- End post-content -->
+
+        </div><!-- End post-content-wrapper -->
+      </div><!-- END col-xl-9 offset-xl-0 col-lg-10 offset-lg-1 -->
+
+      <div class="col-md-3 hidden-lg-down d-flex">
+        <div class="post-sidebar flexbox">
+          <div class="js-sidebar">
+            <div class="sidebar-sticky sidebar-content-wrapper docked top">
+              <div class="sidebar-content">
+                <div class="post-index">
+                  <div class="section-title-line">
+                    <h4 class="text-uppercase">Index</h4>
+                    <hr class="filler-line">
+                  </div><!-- End section-title-line -->
+                  <ul id="markdown-toc" class="post-toc nav">
+                    <li class="nav-item index-item-level-2">
+                      <a href="#vay-thi-svg-la-cai-gi-0" class="post-toc-link nav-link active">Vậy thì... SVG là cái gì?</a>
+                    </li>
+                    <li class="nav-item index-item-level-3">
+                      <a href="#bao-dam-chat-luong-hinh-anh-2" class="post-toc-link nav-link">Bảo đảm chất lượng hình ảnh</a>
+                    </li>
+                  </ul>
+                </div><!-- End post-index -->
+              </div><!-- End sidebar-content -->
+            </div><!-- End sidebar-sticky sidebar-content-wrapper docked top -->
+          </div><!-- End js-sidebar -->
+        </div><!-- End post-sidebar flexbox -->
+      </div> <!-- End col-md-3 hidden-lg-down -->
+
+      <a id="top-btn" href="javascript:void(0);" class="hidden-sm-down top-btn-is-visible"><i aria-hidden="true" class="fa fa-arrow-up"></i></a>
+    </div><!-- End Container -->
+  </div><!-- End row -->
 </template>
-<style>
-    .comment {
-        color:red;
-    }
-</style>

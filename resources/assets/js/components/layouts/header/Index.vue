@@ -44,6 +44,9 @@
         <li>
           <router-link to="/git">Design Pattern</router-link>
         </li>
+        <li>
+          <router-link to="/mongodb">MongoDB</router-link>
+        </li>
       </ul>
     </div>
   </nav>
