@@ -5,17 +5,15 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+// require('./bootstrap');
 
 window.Vue = require('vue');
 
-import App from './app.vue'
+import App       from './app.vue'
 import vueRouter from 'vue-router'
-import Routes from './routes'
+import Routes    from './routes'
 import { http }  from './services/http'
-import './static-loader';
-import '../sass/meyer-reset.min.css'
-import '../sass/main.scss'
+import           './static-loader';
 
 Vue.use(vueRouter)
 

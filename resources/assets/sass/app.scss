@@ -1,9 +1,17 @@
+@charset "utf-8";
+@import "meyer-reset.min.css";
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/shared.scss";
+@import "partials/footer.scss";
+@import "partials/header.scss";
+@import "base-elements/core.scss";
+@import "partials/home.scss";
+@import "partials/bootstrap/grid.scss";
+
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
-@import "variables";
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "~bootstrap-sass/assets/stylesheets/bootstrap";

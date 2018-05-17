@@ -1,14 +1,18 @@
 <template>
-  <div class="row">
+  <div class="content mongodb">
     <sidebarPage></sidebarPage>
     <router-view></router-view>
   </div>
 </template>
 <script>
-  import sidebarPage from './side-bar';
-  export default {
-    components: {
-      sidebarPage
-    }
+import sidebarPage from './sidebar/index';
+export default {
+  components: {
+    sidebarPage
   }
-</script>
+}
+</script>  
+<style style="sass">
+  @import '../../../../sass/mongo.scss';
+</style> 
+

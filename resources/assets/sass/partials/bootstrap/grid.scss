@@ -1,0 +1,45 @@
+._row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 576px){
+  ._container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  ._container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px){
+  ._container {
+      max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px){
+  ._container {
+    max-width: 1140px;
+  }
+}
+
+._container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+

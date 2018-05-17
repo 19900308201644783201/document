@@ -1,7 +1,7 @@
 <template>
   <main>
-    <div class="row">
-      <div class="container">
+    <div class="_row">
+      <div class="_container">
 
         <div class="col-md-3 tag-post-item">
           <router-link :to="{ path: '/php' }" class="text-center">PHP
@@ -25,7 +25,7 @@
         <div class="col-md-3 tag-post-item">
           <router-link :to="{ path: '/vue' }" class="text-center">Vue js
             <div class="card-wrapper"></div>
-           </router-link>
+          </router-link>
         </div><!-- End tag-post-item -->
 
         <div class="col-md-3 tag-post-item">
@@ -69,5 +69,5 @@
       </div> <!-- container -->
     </div><!-- End row -->
   </main>
-  </div>
+</div>
 </template>

@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('document');
 });
+
 Route::get('document', function () {
     return view('documents.index');
-});
-Route::get('exercise', 'ExerciseController@index');
+})->name('document');
 
-Route::resource('orders', 'OrderController');
+Route::get('exercise', 'ExerciseController@index');
