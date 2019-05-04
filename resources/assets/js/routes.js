@@ -1,27 +1,33 @@
-import cssComp    from './components/documents/css/index.vue'
-import developer  from './components/documents/developer/index.vue'
-import jsComp     from './components/documents/js/index.vue'
-import TypeScript from './components/documents/typescript/index.vue'
-import laravel    from './components/documents/laravel/index.vue'
-import php        from './components/documents/php/index.vue'
-import vueComp    from './components/documents/vue/index.vue'
-import server     from './components/documents/server/index.vue'
+import TypeScript from './components/documents/typescript/index.vue';
 
-import EnglishRoutes from './components/documents/english/router'
-import ServerRoute   from './components/documents/server/router'
+import Dashboard  from './components/documents/home';
 
-const Dashboard = { template: '<div>foo</div>' }
+import EnglishRoutes    from './components/documents/english/router';
+import ServerRoutes     from './components/documents/server/router';
+import DeveloperRoutes  from './components/documents/developer/router';
+import GitRoutes        from './components/documents/git/router/';
+import SqlRoutes        from './components/documents/sql/router';
+import cssRoutes        from './components/documents/css/router';
+import PHPRoutes        from './components/documents/php/router';
+import LaravelRoutes    from './components/documents/laravel/router';
+import JavascriptRoutes from './components/documents/javascript/router';
+import VueRoutes        from './components/documents/vue/router';
+
 const baseRoutes = [
     { path: '/',           component: Dashboard},
-    { path: '/css',        component: cssComp},
-    { path: '/developer',  component: developer},
-    { path: '/laravel',    component: laravel},
-    { path: '/php',        component: php},
-    { path: '/vue',        component: vueComp},
-    { path: '/js',         component: jsComp},
-    { path: '/typescript', component: TypeScript},
-    { path: '/server',     component: server}
+    { path: '/typescript', component: TypeScript}
 ];
-const routes = baseRoutes.concat(EnglishRoutes, ServerRoute /* , otherRouter */);
+const routes = baseRoutes.concat(
+    EnglishRoutes,
+    ServerRoutes,
+    DeveloperRoutes,
+    GitRoutes,
+    SqlRoutes,
+    cssRoutes,
+    PHPRoutes,
+    LaravelRoutes,
+    JavascriptRoutes,
+    VueRoutes
+);
 
 export default routes;

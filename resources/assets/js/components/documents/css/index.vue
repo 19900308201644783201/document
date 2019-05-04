@@ -1,18 +1,10 @@
 <template>
-    <div>
-        <div class="col-md-3 left-side-bar">
-            <sidebarPage></sidebarPage>
-        </div>
-        <div class="col-md-9 content-header-fixed">
-            <h3>Css</h3>
-        </div>
-    </div>
+  <div class="row">
+    <router-view></router-view>
+  </div>
 </template>
 <script>
-    import sidebarPage from './side-bar'
-    export default {
-        components : {
-            sidebarPage
-        }
-    }
+export default {
+  components : {}
+}
 </script>

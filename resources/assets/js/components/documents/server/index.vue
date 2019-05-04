@@ -5,9 +5,9 @@
   </div>
 </template>
 <script>
-  import sidebarPage from './side-bar'
+  import sidebarPage from './side-bar';
   export default {
-    components : {
+    components: {
       sidebarPage
     }
   }
